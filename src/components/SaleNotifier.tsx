@@ -129,7 +129,7 @@ const SaleNotifier = () => {
       className="fixed bottom-4 left-4 z-[60] flex w-[300px] max-w-[92vw] animate-in slide-in-from-left-4 fade-in items-center gap-3 rounded-lg border border-border bg-white p-3 shadow-xl"
     >
       <a
-        href={`/products/${notice.productSlug}`}
+        href={`/produtos/${notice.productSlug}`}
         className="flex flex-shrink-0 items-center justify-center"
       >
         <img

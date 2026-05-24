@@ -67,7 +67,7 @@ const CartDrawer = () => {
                     <X className="h-4 w-4" />
                   </button>
                   <Link
-                    to={`/products/${item.product.id}`}
+                    to={`/produtos/${item.product.id}`}
                     onClick={() => setIsOpen(false)}
                     className="h-20 w-20 flex-shrink-0"
                   >
@@ -79,7 +79,7 @@ const CartDrawer = () => {
                   </Link>
                   <div className="flex flex-1 flex-col pr-4">
                     <Link
-                      to={`/products/${item.product.id}`}
+                      to={`/produtos/${item.product.id}`}
                       onClick={() => setIsOpen(false)}
                       className="text-[13px] leading-tight text-gray-700 no-underline hover:text-[#29ABE2] line-clamp-2"
                     >

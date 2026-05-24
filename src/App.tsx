@@ -91,7 +91,7 @@ const App = () => (
               <Routes>
                 <Route path="/" element={<Index />} />
                 <Route path="/collections/:category" element={<CategoryPage />} />
-                <Route path="/products/:slug" element={<ProductPage />} />
+                <Route path="/produtos/:slug" element={<ProductPage />} />
                 <Route path="/produtos/:slug" element={<ProductPage />} />
                 <Route path="/carrinho" element={<Navigate to="/checkout" replace />} />
                 <Route path="/checkout" element={<CheckoutPage />} />

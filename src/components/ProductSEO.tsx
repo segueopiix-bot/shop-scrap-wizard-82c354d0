@@ -27,7 +27,7 @@ export function ProductSEO({
   marca = "",
   gtin = "",
 }: ProductSEOProps) {
-  const url = `https://lojas-epoca.store/products/${slug}`;
+  const url = `https://lojas-epoca.store/produtos/${slug}`;
   const titulo = `${nome} | Tendência Cosméticos`;
   const descricaoMeta = descricao.length > 155
     ? descricao.substring(0, 152) + "..."
