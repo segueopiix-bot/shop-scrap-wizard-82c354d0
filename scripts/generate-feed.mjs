@@ -13,18 +13,53 @@
  */
 import fs from "node:fs";
 import path from "node:path";
-import crypto from "node:crypto";
 import { fileURLToPath } from "node:url";
 
-// Google Merchant exige g:id <= 50 chars. Mantém o id original quando couber;
-// caso contrário, gera um id curto e estável baseado em hash do slug.
 const MAX_ID_LEN = 50;
-const shortenId = (id) => {
-  if (id.length <= MAX_ID_LEN) return id;
-  const hash = crypto.createHash("sha1").update(id).digest("hex").slice(0, 10);
-  // Mantém prefixo "epoca-" quando existir, para legibilidade.
-  const prefix = id.startsWith("epoca-") ? "epoca-" : "p-";
-  return `${prefix}${hash}`;
+const slugify = (value) => String(value ?? "")
+  .normalize("NFD")
+  .replace(/[\u0300-\u036f]/g, "")
+  .replace(/&/g, " e ")
+  .replace(/[’'`´]/g, "")
+  .toLowerCase()
+  .replace(/[^a-z0-9]+/g, "-")
+  .replace(/^-+|-+$/g, "")
+  .replace(/-+/g, "-");
+
+const limitSlug = (value, max = MAX_ID_LEN) => {
+  const clean = slugify(value);
+  if (clean.length <= max) return clean;
+
+  const parts = clean.split("-").filter(Boolean);
+  let out = "";
+
+  for (const part of parts) {
+    const candidate = out ? `${out}-${part}` : part;
+    if (candidate.length > max) break;
+    out = candidate;
+  }
+
+  return (out || clean.slice(0, max)).replace(/-+$/g, "");
+};
+
+const joinIdParts = (parts, max = MAX_ID_LEN) => {
+  const cleaned = parts.map((part) => slugify(part)).filter(Boolean);
+  if (!cleaned.length) return "produto";
+  if (cleaned.length === 1) return limitSlug(cleaned[0], max);
+
+  const first = cleaned[0];
+  const tail = cleaned.at(-1);
+  const middle = cleaned.slice(1, -1);
+  let used = first;
+
+  for (const token of middle) {
+    const candidate = [used, token, tail].filter(Boolean).join("-");
+    if (candidate.length > max) break;
+    used = `${used}-${token}`;
+  }
+
+  const withTail = [used, tail].filter(Boolean).join("-");
+  return withTail.length <= max ? withTail : limitSlug(used, max);
 };
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
