@@ -868,7 +868,7 @@ const CheckoutPage = () => {
       <footer className="mt-8 bg-header py-6">
         <div className="mx-auto max-w-7xl px-4">
           <p className="text-[11px] leading-relaxed text-gray-400 text-center">
-            Drog Farmacêutica LTDA | CNPJ: 54.375.647/1166-72
+            Tendencia Cosmeticos | CNPJ: 22.556.253/0002-60
           </p>
         </div>
       </footer>
