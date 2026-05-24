@@ -70,6 +70,7 @@ const rawProducts: Product[] = [
   },
   {
     "id": "epoca-mascara-de-tratamento-l-oreal-professionnel-serie-expert-absolut-repair-molecular",
+    "ean": "3474637292454",
     "name": "Máscara de Tratamento L'Oréal Professionnel Absolut Repair Molecular 250ml",
     "image": "/products/mascara-de-tratamento-l-oreal-professionnel-serie-expert-absolut-repair-molecular-20-4-.jpg_b36d29cb.jpg",
     "images": [
@@ -101,6 +102,7 @@ const rawProducts: Product[] = [
   },
   {
     "id": "epoca-po-compacto-translucido-boca-rosa",
+    "ean": "7908847800728",
     "name": "Pó Compacto Translúcido Boca Rosa Cocada",
     "image": "/products/POTRANSCOC-FECHADO-7908847800704-jpg_5453631a.jpg",
     "images": [
@@ -136,6 +138,7 @@ const rawProducts: Product[] = [
   },
   {
     "id": "epoca-esponja-de-maquiagem-oceane-flat-blend",
+    "ean": "7898925598060",
     "name": "Esponja de Maquiagem Océane - Flat Blend Verde",
     "image": "/products/esponja-de-maquiagem-oceane-flat-blend--1-_03d5a549.jpg",
     "images": [
@@ -158,6 +161,7 @@ const rawProducts: Product[] = [
   },
   {
     "id": "epoca-wella-professionals-ultimate-luxe-oil-oleo-capilar",
+    "ean": "4064666594224",
     "name": "Óleo Capilar Wella Professionals Ultimate Luxe Oil 30ml",
     "image": "/products/wella-professionals-ultimate-luxe-oil-oleo-capilar--1-_c0ea063e.jpg",
     "images": [
@@ -180,6 +184,7 @@ const rawProducts: Product[] = [
   },
   {
     "id": "epoca-protetor-solar-facial-com-cor-la-roche-posay-anthelios-ultra-cover-fps60",
+    "ean": "7899706186179",
     "name": "Protetor Solar Facial com Cor Toque Seco FPS 60 La Roche-Posay Anthelios Ultra Cover 2.0",
     "image": "/products/protetor-solar-facial-com-cor-la-roche-posay-anthelios-ultra-cover-fps60--1---1-_7cea1ea5.jpg",
     "images": [
@@ -212,6 +217,7 @@ const rawProducts: Product[] = [
   },
   {
     "id": "epoca-po-compacto-protetor-solar-mantecorp-skincare-episol-fps-50",
+    "ean": "7891142204103",
     "name": "Protetor Solar Facial em Pó Compacto Mantecorp Skincare Episol Color FPS50 Extra clara",
     "image": "/products/Po-Compacto-Protetor-Solar-FPS-50-Episol---Mantecorp-Skincare-extra-clara_b71b5263.jpg",
     "images": [
@@ -301,6 +307,7 @@ const rawProducts: Product[] = [
   },
   {
     "id": "epoca-kerastase-resistance-masque-therapiste-mascara-de-tratamento",
+    "ean": "3474636397983",
     "name": "Kérastase Résistance Masque Thérapiste - Máscara de Tratamento 200ml",
     "image": "/products/therapiste--1-_6cc7fc2f.jpg",
     "images": [
@@ -358,6 +365,7 @@ const rawProducts: Product[] = [
   },
   {
     "id": "epoca-blush-stick-bruna-tavares-bt-coca-cola-7g",
+    "ean": "7908985910488",
     "name": "BT Coca Cola Blush Stick Bruna Tavares 7g Drink Please",
     "image": "/products/blush-stick-bruna-tavares-bt-coca-cola-7g--2-_8bea63ae.jpg",
     "images": [
@@ -438,6 +446,7 @@ const rawProducts: Product[] = [
   },
   {
     "id": "epoca-serum-facial-skinceuticals-p-tiox",
+    "ean": "7908785408000",
     "name": "Sérum Facial Skinceuticals P-Tiox 30ml",
     "image": "/products/serum-facial-skinceuticals-p-tiox--1-_e0756448.jpg",
     "images": [
@@ -459,6 +468,7 @@ const rawProducts: Product[] = [
   },
   {
     "id": "epoca-la-roche-posay-cicaplast-baume-b5-plus-kit-com-2-unidades",
+    "ean": "7899706182935",
     "name": "La Roche-Posay Cicaplast Baume B5 Plus Kit com 2 unidades",
     "image": "/products/la-roche-posay-cicaplast-baume-b5-plus-kit-com-2-unidades_6b154eee.jpg",
     "images": [
@@ -473,6 +483,7 @@ const rawProducts: Product[] = [
   },
   {
     "id": "epoca-creme-hidratante-creamy-calming-cream",
+    "ean": "7898965429195",
     "name": "Creme Hidratante Facial Creamy - Calming Cream 40g",
     "image": "/products/creme-hidratante-creamy-calming-cream-20-5-.jpg_7647ebde.jpg",
     "images": [
@@ -510,6 +521,7 @@ const rawProducts: Product[] = [
   },
   {
     "id": "epoca-wella-professional-ultimate-luxe-oil-mascara-travel-size",
+    "ean": "4064666593593",
     "name": "Wella Professionals Ultimate Luxe Oil Máscara Travel Size 30ml",
     "image": "/products/wella-professional-ultimate-luxe-oil-mascara--6-_242dca76.jpg",
     "images": [
@@ -527,6 +539,7 @@ const rawProducts: Product[] = [
   },
   {
     "id": "epoca-base-multifuncional-boca-rosa-stick-pele",
+    "ean": "7908847800001",
     "name": "Base Multifuncional Boca Rosa - Stick Pele BR01",
     "image": "/products/STICKPELE-BR01-7908847800001-jpg_63ef6391.jpg",
     "images": [
@@ -651,6 +664,7 @@ const rawProducts: Product[] = [
   },
   {
     "id": "epoca-wella-professionals-oil-reflections-kit-shampoo-condicionador-250ml",
+    "ean": "1002886889570",
     "name": "Wella Professionals Oil Reflections Kit – Shampoo + Condicionador",
     "image": "/products/wella-professionals-oil-reflections-kit-shampoo-condicionador-250ml_587e076f.jpg",
     "images": [
@@ -665,6 +679,7 @@ const rawProducts: Product[] = [
   },
   {
     "id": "epoca-serum-la-roche-posay-mela-b3",
+    "ean": "3337875890021",
     "name": "LA ROCHE-POSAY Mela B3, Sérum Facial Clareador 30ml",
     "image": "/products/serum-la-roche-posay-mela-b3--3-_91b0ef04.jpg",
     "images": [
@@ -686,6 +701,7 @@ const rawProducts: Product[] = [
   },
   {
     "id": "epoca-wella-professionals-invigo-nutri-enrich-kit-shampoo-condicionador",
+    "ean": "7804794309843",
     "name": "Wella Professionals Invigo Nutri-Enrich Kit – Shampoo + Condicionador",
     "image": "/products/kit-2_cbded4e3.jpg",
     "images": [
@@ -700,6 +716,7 @@ const rawProducts: Product[] = [
   },
   {
     "id": "epoca-epoca-cosmeticos-sacola-presenteavel",
+    "ean": "7908472300921",
     "name": "Época Cosméticos Sacola Presenteável",
     "image": "/products/epoca-cosmeticos-sacola-presenteavel-tam-p--1-_f4230acf.jpg",
     "images": [
@@ -901,6 +918,7 @@ const rawProducts: Product[] = [
   },
   {
     "id": "epoca-esponja-para-acabamento-oceane-mini-powder-puff",
+    "ean": "7908725500009",
     "name": "Esponja para Acabamento Océane - Mini Powder Puff 1 Un",
     "image": "/products/esponja-para-acabamento-oceane-mini-powder-puff--2-_5c87060f.jpg",
     "images": [
@@ -941,6 +959,7 @@ const rawProducts: Product[] = [
   },
   {
     "id": "epoca-wella-professionals-ultimate-repair-miniatura-shampoo",
+    "ean": "4064666686950",
     "name": "Wella Professionals Ultimate Repair Miniatura Shampoo 50ml",
     "image": "/products/wella-professionals-ultimate-repair-miniatura-shampoo--1-_9649348b.jpg",
     "images": [
@@ -987,6 +1006,7 @@ const rawProducts: Product[] = [
   },
   {
     "id": "epoca-esponja-de-maquiagem-oceane-edition-flat-drop-preto",
+    "ean": "7898576392864",
     "name": "Esponja de Maquiagem Océane Edition Flat Drop – Preto 1 Un",
     "image": "/products/esponja-de-maquiagem-oceane-edition-flat-drop-preto_3e7f706f.jpg",
     "images": [
@@ -1004,6 +1024,7 @@ const rawProducts: Product[] = [
   },
   {
     "id": "epoca-cetaphil-kit-com-dois-cremes-hidratantes",
+    "ean": "7897930777316",
     "name": "Cetaphil Kit com Dois Cremes Hidratantes Pele Extremamente Seca e Sensível",
     "image": "/products/cetaphil-kit-com-dois-cremes-hidratantes--2-_6e0a5483.jpg",
     "images": [
@@ -1025,6 +1046,7 @@ const rawProducts: Product[] = [
   },
   {
     "id": "epoca-fixador-de-maquiagem-vizzela-real-fix",
+    "ean": "7908517900406",
     "name": "Fixador de Maquiagem Vizzela Real Fix 150ml",
     "image": "/products/fixador-de-maquiagem-vizzela-real-fix--1-_ef1cfa98.jpg",
     "images": [
@@ -1085,6 +1107,7 @@ const rawProducts: Product[] = [
   },
   {
     "id": "epoca-wella-professionals-invigo-nutri-enrich-mascara-30ml",
+    "ean": "7792256697730",
     "name": "Wella Professionals Invigo Nutri-Enrich Máscara 30ml",
     "image": "/products/wella-professionals-invigo-nutri-enrich-mascara-30ml_5c2b0afa.jpg",
     "images": [
@@ -1099,6 +1122,7 @@ const rawProducts: Product[] = [
   },
   {
     "id": "epoca-wella-professionals-invigo-nutri-enrich-shampoo-50ml",
+    "ean": "7896235353683",
     "name": "Wella Professionals Invigo Nutri-Enrich Shampoo 50ml",
     "image": "/products/wella-professionals-invigo-nutri-enrich-shampoo-50ml_c8b7c2b3.jpg",
     "images": [
@@ -1128,6 +1152,7 @@ const rawProducts: Product[] = [
   },
   {
     "id": "epoca-protetor-solar-com-cor-fps70-mantecorp-skicare-episol",
+    "ean": "7891142145703",
     "name": "Protetor Solar com Cor Mantecorp Skincare Episol Color FPS70 1",
     "image": "/products/protetor-solar-com-cor-fps70-mantecorp-skicare-episol--1-_079d9f56.jpg",
     "images": [
@@ -1161,6 +1186,7 @@ const rawProducts: Product[] = [
   },
   {
     "id": "epoca-oleo-demaquilante-facial-biore-make-up-remover-refil",
+    "ean": "4901301299031",
     "name": "Óleo Demaquilante Facial Bioré - Cleansing Oil Refil 210ml",
     "image": "/products/oleo-demaquilante-facial-biore-make-up-remover_3bcaf6bb.jpg",
     "images": [
@@ -1178,6 +1204,7 @@ const rawProducts: Product[] = [
   },
   {
     "id": "epoca-protetor-solar-facial-dermage-photoage-water-fps50",
+    "ean": "7895389157857",
     "name": "Protetor Solar Facial Dermage – Photoage Water FPS50 40g",
     "image": "/products/protetor-solar-facial-dermage-photoage-water-fps50_-1-_57b0ead9.jpg",
     "images": [
@@ -1215,6 +1242,7 @@ const rawProducts: Product[] = [
   },
   {
     "id": "epoca-mascara-incolor-para-sobrancelhas-dailus-gel-para-sobrancelhas",
+    "ean": "7894222022246",
     "name": "Gel Incolor para Sobrancelhas Dailus",
     "image": "/products/mascara-incolor-para-sobrancelhas-dailus-gel-para-sobrancelhas_cf6ca3ab.jpg",
     "images": [
@@ -1231,6 +1259,7 @@ const rawProducts: Product[] = [
   },
   {
     "id": "epoca-base-liquida-niina-secrets-by-eudora-hidra-glow",
+    "ean": "7891033932740",
     "name": "Base Líquida Niina Secrets by Eudora – Hidra Glow 00",
     "image": "/products/base-liquida-niina-secrets-by-eudora-hidra-glow-00_dabfce2e.jpg",
     "images": [
@@ -1340,6 +1369,7 @@ const rawProducts: Product[] = [
   },
   {
     "id": "epoca-creme-reparador-intensivo-eucerin-aquaphor-2-10ml",
+    "ean": "4005800220012",
     "name": "Eucerin Pomada Reparadora Intensiva Aquaphor DuoPack 2x10ml",
     "image": "/products/image_183884db07384d71f4119c41577a35a3.jpg",
     "images": [
@@ -1379,6 +1409,7 @@ const rawProducts: Product[] = [
   },
   {
     "id": "epoca-protetor-solar-facial-biore-aqua-rich-watery-essence-fps-50",
+    "ean": "4901301416957",
     "name": "Protetor Solar Bioré - Aqua Rich Watery Essence FPS 50 50g",
     "image": "/products/protetor-solar-facial-biore-aqua-rich-watery-essence-fps-50--8-_457c7314.webp",
     "images": [
@@ -1402,6 +1433,7 @@ const rawProducts: Product[] = [
   },
   {
     "id": "epoca-protetor-solar-facial-biore-perfect-milk-50-fps",
+    "ean": "4901301303844",
     "name": "Protetor Solar Facial Bioré Perfect Milk 50 FPS 40ml",
     "image": "/products/4901301303844---2-.jpg_1b22353c.jpg",
     "images": [
@@ -1422,6 +1454,7 @@ const rawProducts: Product[] = [
   },
   {
     "id": "epoca-oleo-demaquilante-facial-biore-make-up-remover",
+    "ean": "7898954042640",
     "name": "Óleo Demaquilante Facial Bioré - Cleansing Oil 150ml",
     "image": "/products/oleo-demaquilante-facial-biore-make-up-remover-150ml_b6bac960.jpg",
     "images": [
@@ -1533,6 +1566,7 @@ const rawProducts: Product[] = [
   },
   {
     "id": "epoca-wella-professionals-invigo-nutri-enrich-booster-shampoo",
+    "ean": "7804794309843",
     "name": "Wella Professionals Invigo Nutri-Enrich - Shampoo 1L",
     "image": "/products/4064666435459_1_0b3523b3.jpg",
     "images": [
@@ -1558,6 +1592,7 @@ const rawProducts: Product[] = [
   },
   {
     "id": "epoca-wella-professionals-invigo-nutri-enrich-mascara",
+    "ean": "7896235353713",
     "name": "Wella Professionals Invigo Nutri-Enrich - Máscara 150ml",
     "image": "/products/wella-professionals-invigo-nutri-enrich-mascara--1-_5a3fe656.jpg",
     "images": [
@@ -1589,6 +1624,7 @@ const rawProducts: Product[] = [
   },
   {
     "id": "epoca-wella-professionals-invigo-nutri-enrich-condicionador",
+    "ean": "7804794309843",
     "name": "Wella Professionals Invigo Nutri-Enrich - Condicionador 1L",
     "image": "/products/wella-professionals-invigo-nutri-enrich-condicionador--1-_6c630da2.jpg",
     "images": [
@@ -1618,6 +1654,7 @@ const rawProducts: Product[] = [
   },
   {
     "id": "epoca-enrich-wella-professionals-mascara-capilar-",
+    "ean": "8005610415871",
     "name": "Wella Professionals Fusion - Máscara Capilar 500ml",
     "image": "/products/enrich-wella-professionals-mascara-capilar-_-1-_e73ae751.jpg",
     "images": [
@@ -1640,6 +1677,7 @@ const rawProducts: Product[] = [
   },
   {
     "id": "epoca-wella-sp-oil-reflections-mascara-de-hidratacao",
+    "ean": "7896235353782",
     "name": "Wella Professionals Oil Reflections Máscara de Hidratação 150ml",
     "image": "/products/wella-sp-oil-reflections-mascara-de-hidratacao--1-_0099cdad.jpg",
     "images": [
@@ -1703,6 +1741,7 @@ const rawProducts: Product[] = [
   },
   {
     "id": "epoca-locao-corporal-hidratante-cerave-473ml",
+    "ean": "0337875597336",
     "name": "Loção Hidratante Corporal CeraVe para Pele Seca a Extra Seca com Ácido Hialurônico e Ceramidas 473ml",
     "image": "/products/01_Pack-Fundo-Branco-7899706159272_dc016e17.jpg",
     "images": [
@@ -1724,6 +1763,7 @@ const rawProducts: Product[] = [
   },
   {
     "id": "epoca-locao-facial-hidratante-cerave",
+    "ean": "7908615090184",
     "name": "Loção Facial Hidratante PM com Ceramidas e Ácido Hialurônico CeraVe 52ml",
     "image": "/products/Locao-Facial-Hidratante-CeraVe-2--1-_92aa5b1a.jpg",
     "images": [
@@ -1745,6 +1785,7 @@ const rawProducts: Product[] = [
   },
   {
     "id": "epoca-encaracolando-a-juba-widi-care-creme-de-pentear",
+    "ean": "7898623240827",
     "name": "Widi Care Encaracolando a Juba Creme de Pentear 500ml",
     "image": "/products/encaracolando-a-juba-widi-care-leave-in_1f5f1e34.jpg",
     "images": [
@@ -1761,6 +1802,7 @@ const rawProducts: Product[] = [
   },
   {
     "id": "epoca-loreal-professionnel-inforcer-shampoo-anti-quebra",
+    "ean": "3474637217907",
     "name": "Shampoo Anti-quebra L’Oréal Professionnel Serie Expert Inforcer 300ml",
     "image": "/products/loreal-professionnel-inforcer-shampoo-anti-quebra--1-_e65e8163.jpg",
     "images": [
@@ -1782,6 +1824,7 @@ const rawProducts: Product[] = [
   },
   {
     "id": "epoca-hidratante-facial-vichy-mineral-89",
+    "ean": "3337875584296",
     "name": "Sérum Fortalecedor Facial Hidratante com Ácido Hialurônico Vichy Minéral 89 50ml",
     "image": "/products/3337875543248-1_3b0ec5c5.jpg",
     "images": [
@@ -1813,6 +1856,7 @@ const rawProducts: Product[] = [
   },
   {
     "id": "epoca-epidrat-calm-epidrat-locao-hidratante-corporal",
+    "ean": "7891142200235",
     "name": "Hidratante Facial Mantecorp Skincare Epidrat Calm 40g",
     "image": "/products/Hidratante-Facial-Epidrat-Calm---Mantecorp-Skincare---40g-2--2-_a463515a.jpg",
     "images": [
@@ -1830,6 +1874,7 @@ const rawProducts: Product[] = [
   },
   {
     "id": "epoca-agua-micelar-solucao-de-limpeza-facial-5-em-1-l-oreal-paris-demaquilante",
+    "ean": "7899706126335",
     "name": "Água Micelar L'Oréal Paris Solução de Limpeza Demaquilante 5 em 1 200ml",
     "image": "/products/7899706126335.jpg_0d2e307a.jpg",
     "images": [
@@ -1857,6 +1902,7 @@ const rawProducts: Product[] = [
   },
   {
     "id": "epoca-the-colossal-volum--express-maybelline-mascara-para-cilios",
+    "ean": "7898732010779",
     "name": "Máscara de Cílios Maybelline The Colossal Volum' Express Lavável Preto",
     "image": "/products/7899026456020_2_abf93038.jpg",
     "images": [
@@ -1928,6 +1974,7 @@ const rawProducts: Product[] = [
   },
   {
     "id": "epoca-mascara-sebastian-penetraitt",
+    "ean": "4015600055394",
     "name": "Máscara Sebastian Penetraitt 30ml",
     "image": "/products/4068359105902_eb61712e.jpg",
     "images": [
@@ -1978,6 +2025,7 @@ const rawProducts: Product[] = [
   },
   {
     "id": "epoca-brinde-full-size-vult-esmalte-5-free-amour-surpreender-8ml",
+    "ean": "7899852003931",
     "name": "Brinde Full Size Vult Esmalte 5 Free Amour Surpreender 8ml",
     "image": "/products/7899852025766_ddde4fb2.jpg",
     "images": [
@@ -1990,6 +2038,7 @@ const rawProducts: Product[] = [
   },
   {
     "id": "epoca-base-dior-forever-skin-wear-30ml",
+    "ean": "3348901578691",
     "name": "Base Dior Forever Skin Wear 30ml 0 Neutral",
     "image": "/products/1.3348901792585_f2b778d6.jpg",
     "images": [
@@ -2184,6 +2233,7 @@ const rawProducts: Product[] = [
   },
   {
     "id": "epoca-revlon-professional-uniq-one-kit-leave-in-2-unidades",
+    "ean": "8432225037172",
     "name": "Revlon Professional Uniq One Kit Leave In 2 Unidades",
     "image": "/products/duo-revlon-1-8432225139272_a3a17be2.jpg",
     "images": [
@@ -2200,6 +2250,7 @@ const rawProducts: Product[] = [
   },
   {
     "id": "epoca-biore-aqua-rich-watery-essence-kit-protetor-solar-fps-50-com-2-unidades",
+    "ean": "4901301416957",
     "name": "Bioré Aqua Rich Watery Essence Kit – Protetor Solar FPS 50 Com 2 Unidades 50g",
     "image": "/products/biore-aqua-rich-watery-essence-kit-protetor-solar-fps-50-com-2-unidades--1-_5c834dcc.png",
     "images": [
@@ -2218,6 +2269,7 @@ const rawProducts: Product[] = [
   },
   {
     "id": "epoca-protetor-solar-biore-aqua-rich-watery-essence",
+    "ean": "4901301416957",
     "name": "Protetor Solar Bioré Aqua Rich Watery Essence 120g",
     "image": "/products/protetor-solar-biore-aqua-rich-watery-essence_-1-_d022ac48.jpg",
     "images": [
@@ -2233,6 +2285,7 @@ const rawProducts: Product[] = [
   },
   {
     "id": "epoca-mascara-wella-professionals-blondorplex",
+    "ean": "4064666902425",
     "name": "Máscara Wella Professionals Blondorplex 150ml",
     "image": "/products/mascara-wella-professionals-blondorplex--4-_2a5d93fb.jpg",
     "images": [
@@ -2253,6 +2306,7 @@ const rawProducts: Product[] = [
   },
   {
     "id": "epoca-shampoo-fortificante-wella-professionals-blondorplex",
+    "ean": "4064666902944",
     "name": "Shampoo Fortificante Wella Professionals Blondorplex 250ml",
     "image": "/products/shampoo-fortificante-wella-professionals-blondorplex--1-_f601303b.png",
     "images": [
@@ -2275,6 +2329,7 @@ const rawProducts: Product[] = [
   },
   {
     "id": "epoca-oleo-capilar-gloss-absolu-kerastase-glaze",
+    "ean": "7010705672608",
     "name": "Óleo Capilar Kérastase Gloss Absolu Glaze 45ml",
     "image": "/products/oleo-capilar-gloss-absolu-kerastase-glaze--1-_9682674b.jpg",
     "images": [
@@ -2317,6 +2372,7 @@ const rawProducts: Product[] = [
   },
   {
     "id": "epoca-locao-fortalecedora-mantecorp-skincare-antiqueda-pielus-forte",
+    "ean": "7891142201331",
     "name": "Loção Fortalecedora Mantecorp Skincare Antiqueda Pielus Forte 120ml",
     "image": "/products/locao-fortalecedora-mantecorp-skincare-antiqueda-pielus-forte--2-.jpg_0dae96f3.jpg",
     "images": [
@@ -2335,6 +2391,7 @@ const rawProducts: Product[] = [
   },
   {
     "id": "epoca-serum-epigenetic-facial-eucerin-hyaluron-filler",
+    "ean": "4006000074405",
     "name": "EUCERIN Sérum Facial Anti-Idade Epigenetic 30ml",
     "image": "/products/serum-epigenetic-facial-eucerin-hyaluron-filler_505490d5.jpg",
     "images": [
@@ -2401,6 +2458,7 @@ const rawProducts: Product[] = [
   },
   {
     "id": "epoca-contorno-em-bastao-cremoso-oceane-contour-stick",
+    "ean": "7010704923821",
     "name": "Contorno em Bastão Cremoso Océane Contour Stick Marrom escuro",
     "image": "/products/contorno-em-bastao-cremoso-oceane-contour-stick-20-9-.jpg_e2b3b76c.jpg",
     "images": [
@@ -2451,6 +2509,7 @@ const rawProducts: Product[] = [
   },
   {
     "id": "epoca-mascara-absolut-repair-gold-quinoa---protein-500g---l-oreal-76096",
+    "ean": "3474636975440",
     "name": "Máscara Absolut Repair Gold Quinoa + Protein 500g - L'oréal",
     "image": "/products/17272913620389_498b7bcd.jpg",
     "images": [
@@ -2487,6 +2546,7 @@ const rawProducts: Product[] = [
   },
   {
     "id": "epoca-kit-wella-professionals-invigo-nutri-enrich-shampoo-e-condicionador-litro--2-produtos--71719",
+    "ean": "1010428206570",
     "name": "Kit Shampoo 1L + Condicionador 1L - Wella Professionals Invigo Nutri-Enrich",
     "image": "/products/07582162024691_9060537c.jpg",
     "images": [
@@ -2502,6 +2562,7 @@ const rawProducts: Product[] = [
   },
   {
     "id": "epoca-kit-wella-professionals-invigo-nutri-enrich---shampoo-1000-ml---condicionador-1000-ml-71000",
+    "ean": "1010428206570",
     "name": "Kit Wella Professionals Invigo Nutri Enrich - Shampoo 1000 ml + Condicionador 1000 ml",
     "image": "/products/17253239221552_d85d1386.jpg",
     "images": [
@@ -2519,6 +2580,7 @@ const rawProducts: Product[] = [
   },
   {
     "id": "epoca-kit-wella-professionals-invigo-nutri-enrich-shampoo-1000-ml---2-unidades-70991",
+    "ean": "1006800734823",
     "name": "Kit Wella Professionals Invigo Nutri Enrich Shampoo 1000 ml - 2 Unidades",
     "image": "/products/17253188191527_2f0ca571.jpg",
     "images": [
@@ -2535,6 +2597,7 @@ const rawProducts: Product[] = [
   },
   {
     "id": "epoca-kit-wella-professionals-oil-reflections-shampoo-e-mascara--2-produtos--66780",
+    "ean": "7907093652839",
     "name": "Kit Wella Professionals Oil Reflections Shampoo e Máscara (2 produtos)",
     "image": "/products/17245010821664_cdc89d97.jpg",
     "images": [
@@ -2574,6 +2637,7 @@ const rawProducts: Product[] = [
   },
   {
     "id": "epoca-po-solto-prisme-libre-mini-givenchy-24",
+    "ean": "3274872272736",
     "name": "Mini Pó Solto Givenchy Prisme Libre N1 - Mousseline Pastel",
     "image": "/products/po-solto-prisme-libre-mini-givenchy-24_cb8cd7fb.jpg",
     "images": [
@@ -2597,6 +2661,7 @@ const rawProducts: Product[] = [
   },
   {
     "id": "epoca-blush-oceane-edition-mini-stick",
+    "ean": "7908725500450",
     "name": "Blush Océane Edition - Mini Stick Pink",
     "image": "/products/7908725500856-MINI-BLUSH-STICK-EDITION---PINK.ROSA_cb060da3.jpg",
     "images": [
@@ -2638,6 +2703,7 @@ const rawProducts: Product[] = [
   },
   {
     "id": "epoca-base-matte-mac-studio-fix-fluid-tons-claros",
+    "ean": "7010704097540",
     "name": "Base Líquida M·A·C Soft Matte Studio Fix - Tons Claros FPS15 NC15",
     "image": "/products/base-matte-mac-studio-fix-fluid--1-_69d11eed.jpg",
     "images": [
@@ -2711,6 +2777,7 @@ const rawProducts: Product[] = [
   },
   {
     "id": "epoca-blush-oceane-4-you-fluffy",
+    "ean": "7908725500535",
     "name": "Blush Océane 4 You - Fluffy Rosa",
     "image": "/products/7908725500672-Blush-4you-Tango-Pnk_--3-_29347d63.jpg",
     "images": [
@@ -2759,6 +2826,7 @@ const rawProducts: Product[] = [
   },
   {
     "id": "epoca-base-liquida-catharine-hill-angel-wings-alta-cobertura",
+    "ean": "7908240519050",
     "name": "Base Líquida Alta Cobertura Pri Lessa by Catharine Hill - Angel Wings A1",
     "image": "/products/7898600994132_2_de25df99.jpg",
     "images": [
@@ -2827,6 +2895,7 @@ const rawProducts: Product[] = [
   },
   {
     "id": "epoca-hidratante-facial-neutrogena-refil-hydro-boost-water-gel",
+    "ean": "7891010255725",
     "name": "Hidratante Facial Neutrogena Refil - Hydro Boost Water Gel 50g",
     "image": "/products/7891010255725_01_11914a40.jpg",
     "images": [
@@ -2848,6 +2917,7 @@ const rawProducts: Product[] = [
   },
   {
     "id": "epoca-serum-antirrugas-la-roche-posay-retinol-b-3",
+    "ean": "7908615015637",
     "name": "Sérum Facial Antirrugas com Vitamina B3 e Retinol Puro La Roche-Posay Retinol B3 15ml",
     "image": "/products/serum-antirrugas-la-roche-posay-retinol-b-3_db326f98.jpg",
     "images": [
@@ -2877,6 +2947,7 @@ const rawProducts: Product[] = [
   },
   {
     "id": "epoca-clareador-de-olheiras-eucerin-anti-pigment",
+    "ean": "4005900998385",
     "name": "EUCERIN Creme de Olhos Clareador de Olheiras Anti-Pigment 15ml",
     "image": "/products/4006000101972_1..jpg_9ffc2877.jpg",
     "images": [
@@ -2898,6 +2969,7 @@ const rawProducts: Product[] = [
   },
   {
     "id": "epoca-wella-professionals-oil-reflections-kit-shampoo-condicionador",
+    "ean": "1002886889570",
     "name": "Wella Professionals Oil Reflections Kit – Shampoo + Condicionador",
     "image": "/products/wella-professionals-oil-reflections-kit-shampoo-condicionador_77bcd0e7.jpg",
     "images": [
@@ -2978,6 +3050,7 @@ const rawProducts: Product[] = [
   },
   {
     "id": "epoca-espuma-de-limpeza-facial-cremosa-la-roche-posay-effaclar-reequilibrante",
+    "ean": "5054596073769",
     "name": "Espuma Cremosa de Limpeza Facial Antioleosidade La Roche-Posay Effaclar Reequilibrante 100g",
     "image": "/products/espuma-de-limpeza-facial-cremosa-la-roche-posay-effaclar-reequilibrante_cfa69cb4.jpg",
     "images": [
@@ -2999,6 +3072,7 @@ const rawProducts: Product[] = [
   },
   {
     "id": "epoca-redken-all-soft-moisture-restore-leave-in",
+    "ean": "3474637124823",
     "name": "Leave In para Cabelos Secos Redken All Soft Moisture Restore 150ml",
     "image": "/products/redken-all-soft-moisture-restore-leave-in--1-_4e20a038.jpg",
     "images": [
@@ -3051,6 +3125,7 @@ const rawProducts: Product[] = [
   },
   {
     "id": "epoca-corretivo-liquido-niina-secrets-by-eudora-perfect-match",
+    "ean": "7891033481651",
     "name": "Corretivo Líquido Niina Secrets by Eudora Perfect Match 0",
     "image": "/products/corretivo-liquido-niina-secrets-by-eudora-perfect-match--1-_2fff5a10.jpg",
     "images": [
@@ -3081,6 +3156,7 @@ const rawProducts: Product[] = [
   },
   {
     "id": "epoca-dermage-photoage-water-kit-com-2-unidades-protetor-solar-facial-fps50-40g",
+    "ean": "7895389157857",
     "name": "Dermage Photoage Water Kit com 2 Unidades – Protetor Solar Facial FPS50 – 40g",
     "image": "/products/dermage-photoage-water-kit-com-2-unidades-protetor-solar-facial-fps50-40g_ca073a86.jpg",
     "images": [
@@ -3095,6 +3171,7 @@ const rawProducts: Product[] = [
   },
   {
     "id": "epoca-gloss-labial-niina-secrets-by-eudora-gloss-crystal",
+    "ean": "7891033481767",
     "name": "Gloss Labial Niina Secrets by Eudora Gloss Crystal Topázio",
     "image": "/products/gloss-labial-niina-secrets-by-eudora-gloss-crystal-topazio_a98ad5a4.jpg",
     "images": [
@@ -3120,6 +3197,7 @@ const rawProducts: Product[] = [
   },
   {
     "id": "epoca-wella-professionals-invigo-nutri-enrich-kit-shampoo-e-mascara",
+    "ean": "1006800734823",
     "name": "Wella Professionals Invigo Nutri-Enrich Kit – Shampoo + Máscara Travel Size",
     "image": "/products/wella-professionals-invigo-nutri-enrich-kit-shampoo-e-mascara_5c0a8275.jpg",
     "images": [
@@ -3134,6 +3212,7 @@ const rawProducts: Product[] = [
   },
   {
     "id": "epoca-fluido-vizzela-gotas-fix-blindagem",
+    "ean": "7908517900413",
     "name": "Fluido Vizzela Gotas Fix Blindagem 30ml",
     "image": "/products/fluido-vizzela-gotas-fix-blindagem_-3-_6dcc9838.jpg",
     "images": [
@@ -3152,6 +3231,7 @@ const rawProducts: Product[] = [
   },
   {
     "id": "epoca-protetor-solar-stick-multifuncional-com-cor-pink-cheeks-pro-stick",
+    "ean": "7898593733220",
     "name": "Protetor Solar Stick Multifuncional com Cor Pink Cheeks Pro Stick Pro10",
     "image": "/products/protetor-solar-stick-multifuncional-com-cor-pink-cheeks-pro-stick--4-_98d6f01b.jpg",
     "images": [
@@ -3206,6 +3286,7 @@ const rawProducts: Product[] = [
   },
   {
     "id": "epoca-hidratante-corporal-mantecorp-epidrat-calm",
+    "ean": "7891142200235",
     "name": "Hidratante Corporal Mantecorp Skincare Epidrat Calm 120ml",
     "image": "/products/mantecorp-epidrat-calm_640f4355.jpg",
     "images": [
@@ -3224,6 +3305,7 @@ const rawProducts: Product[] = [
   },
   {
     "id": "epoca-rejuvenescedor-facial-mantecorp-ivy-c-ferulic-serum",
+    "ean": "7891142981240",
     "name": "Rejuvenescedor Facial Mantecorp Ivy C Ferulic Sérum 30g",
     "image": "/products/7891142981240_1_c7cacd6c.jpg",
     "images": [
@@ -3245,6 +3327,7 @@ const rawProducts: Product[] = [
   },
   {
     "id": "epoca-lola-cosmetics-danos-vorazes-mascara-de-reparacao-intensiva",
+    "ean": "7899572812271",
     "name": "Lola Cosmetics Danos Vorazes Máscara de Reparação Intensiva 450g",
     "image": "/products/7899572812271.jpg_39b0b723.jpg",
     "images": [
@@ -3289,6 +3372,7 @@ const rawProducts: Product[] = [
   },
   {
     "id": "epoca-lola-cosmetics-densidade-acidificante-250g",
+    "ean": "7899572812134",
     "name": "Acidificante Lola Cosmetics Densidade 250g",
     "image": "/products/30200100433-7899572812134_c877a23d.jpg",
     "images": [
@@ -3306,6 +3390,7 @@ const rawProducts: Product[] = [
   },
   {
     "id": "epoca-lola-cosmetics-pinga-acai-e-pracaxi-oleo-reparador-pos-quimica-50ml",
+    "ean": "7899572810192",
     "name": "Óleo Capilar Lola Cosmetics Pinga! Açaí e Pracaxi 50ml",
     "image": "/products/lola-cosmetics-pinga-acai-e-pracaxi-oleo-reparador-pos-quimica-50ml_57141162.jpg",
     "images": [
@@ -3345,6 +3430,7 @@ const rawProducts: Product[] = [
   },
   {
     "id": "epoca-lola-cosmetics-danos-vorazes-oleo-50ml",
+    "ean": "7899572812158",
     "name": "Óleo Capilar Lola Cosmetics Danos Vorazes 50ml",
     "image": "/products/7899572812158.jpg_2e8d8a93.jpg",
     "images": [
@@ -3359,6 +3445,7 @@ const rawProducts: Product[] = [
   },
   {
     "id": "epoca-serum-effaclar-ultra-concentrado-la-roche-posay",
+    "ean": "7899706247207",
     "name": "Sérum Ultra Concentrado Antiacne e Antimarcas La Roche-Posay Effaclar 30ml",
     "image": "/products/serum-effaclar-ultra-concentrado-la-roche-posay--2-_e40c84fc.jpg",
     "images": [
@@ -3402,6 +3489,7 @@ const rawProducts: Product[] = [
   },
   {
     "id": "epoca-creme-facial-reparador-avene-cicalfate",
+    "ean": "3282770146172",
     "name": "Avène Cicalfate+ Creme Reparador Facial 20ml",
     "image": "/products/creme-facial-reparador-avene-cicalfate--8-_2969590e.jpg",
     "images": [
@@ -3424,6 +3512,7 @@ const rawProducts: Product[] = [
   },
   {
     "id": "epoca-serum-rejuvenescedor-facial-mantecorp-skincare-reviline-r",
+    "ean": "7891142984005",
     "name": "Rejuvenescedor Facial Mantecorp Skincare Reviline Retinol Sérum 30ml",
     "image": "/products/7891142984005_1_57399694.jpg",
     "images": [
@@ -3443,6 +3532,7 @@ const rawProducts: Product[] = [
   },
   {
     "id": "epoca-shampoo-refil-vichy-dercos-energizante-200-ml",
+    "ean": "7899706254373",
     "name": "Shampoo Estimulante Antiqueda Fortalecedor Dercos Vichy Energy+ Refil 200g",
     "image": "/products/7899706254373--2-.JPG_75a809b9.jpg",
     "images": [
@@ -3464,6 +3554,7 @@ const rawProducts: Product[] = [
   },
   {
     "id": "epoca-widi-care-infusao-acidificante-controle-de-ph-finalizador",
+    "ean": "7898623241657",
     "name": "Widi Care Infusão 2.0 Acidificante Controle de PH - Finalizador 300g",
     "image": "/products/widi-care-infusao-acidificante-controle-de-ph-finalizador_6e579019.jpg",
     "images": [
@@ -3478,6 +3569,7 @@ const rawProducts: Product[] = [
   },
   {
     "id": "epoca-gel-de-limpeza-la-roche-posay-refil-effaclar-concentrado",
+    "ean": "7899706187190",
     "name": "Gel de Limpeza Facial para Pele Oleosa e Acneica Refil La Roche-Posay Effaclar 240g",
     "image": "/products/gel-de-limpeza-la-roche-posay-refil-effaclar-concentrado_1fcb0a8b.jpg",
     "images": [
@@ -3496,6 +3588,7 @@ const rawProducts: Product[] = [
   },
   {
     "id": "epoca-protetor-solar-neutrogena-sun-fresh-derm-care-facial-fps70",
+    "ean": "7891010253196",
     "name": "Protetor Solar Neutrogena Sun Fresh Derm Care Facial FPS70 40g",
     "image": "/products/7891010253196_1_d4799752.jpg",
     "images": [
@@ -3548,6 +3641,7 @@ const rawProducts: Product[] = [
   },
   {
     "id": "epoca-protetor-solar-eucerin-sun-fluido-anti-pigment-fps-60",
+    "ean": "4005900905604",
     "name": "EUCERIN Protetor Solar Facial Antimanchas Pigment Control FPS60 50ml",
     "image": "/products/image_558c34237ea7255ff8698ffebcbae7fb.jpg",
     "images": [
@@ -3569,6 +3663,7 @@ const rawProducts: Product[] = [
   },
   {
     "id": "epoca-loreal-professionnel-pro-longer-mascara-reparadora-250g",
+    "ean": "7899706189576",
     "name": "L’Oreal Professionnel Pro Longer Máscara Reparadora 250g",
     "image": "/products/loreal-professionnel-pro-longer-mascara-reparadora-250g--1-_3962cf70.jpg",
     "images": [
@@ -3589,6 +3684,7 @@ const rawProducts: Product[] = [
   },
   {
     "id": "epoca-protetor-solar-facial-isdin-fotop-fusion-water-5-stars-fps60",
+    "ean": "8429420226241",
     "name": "Protetor Solar Facial Isdin - Foto Fusion Water 5 Stars FPS60 50ml",
     "image": "/products/8429420197985_1_c8fd0555.jpg",
     "images": [
@@ -3609,6 +3705,7 @@ const rawProducts: Product[] = [
   },
   {
     "id": "epoca-sabonete-liquido-facial-biore-marshmallow-whip-moisture-refil",
+    "ean": "4901301250162",
     "name": "Sabonete Facial Bioré - Marshmallow Limpeza Facial Moist Refil 130ml",
     "image": "/products/sabonete-liquido-facial-biore-marshmallow-whip-moisture-refil_e76618b2.jpg",
     "images": [
@@ -3662,6 +3759,7 @@ const rawProducts: Product[] = [
   },
   {
     "id": "epoca-protetor-solar-adcos-stick-fps-80",
+    "ean": "7897975696054",
     "name": "Protetor Solar Com Cor Stick FPS80 Adcos Peach",
     "image": "/products/protetor-solar-adcos-stick-fps-80--1-_eb89a199.jpg",
     "images": [
@@ -3685,6 +3783,7 @@ const rawProducts: Product[] = [
   },
   {
     "id": "epoca-widi-care-modelando-a-juba-geleia-seladora",
+    "ean": "7898623241237",
     "name": "Widi Care Modelando a Juba Geléia Seladora 300g",
     "image": "/products/widi-care-geleia-texturizadora-juba--1-_732c2f05.jpg",
     "images": [
@@ -3699,6 +3798,7 @@ const rawProducts: Product[] = [
   },
   {
     "id": "epoca-sabonete-liquido-nivea-natural-oil",
+    "ean": "4005808808281",
     "name": "NIVEA Sabonete Líquido Óleo de Banho 200ml",
     "image": "/products/4005808808281_1.jpg_be5eec88.jpg",
     "images": [
@@ -3718,6 +3818,7 @@ const rawProducts: Product[] = [
   },
   {
     "id": "epoca-loreal-professionnel-absolut-repair-gold-quinoa-protein-shampoo",
+    "ean": "7899026457904",
     "name": "Shampoo L'Oréal Professionnel Absolut Repair Com Proteína e Ômega 9 300ml",
     "image": "/products/7899706189606_1_6e9dab7d.jpg",
     "images": [
@@ -3742,6 +3843,7 @@ const rawProducts: Product[] = [
   },
   {
     "id": "epoca-loreal-professionnel-absolut-repair-gold-quinoa-protein-mascara-de-tratamento-tamanho-profissional",
+    "ean": "3474636977949",
     "name": "Máscara de Tratamento L'Oréal Professionnel Absolut Repair Com Proteína e Ômega 9 500g",
     "image": "/products/7899706189682_1_640a3198.jpg",
     "images": [
@@ -3763,6 +3865,7 @@ const rawProducts: Product[] = [
   },
   {
     "id": "epoca-loreal-professionnel-absolut-repair-gold-quinoa-protein-mascara-de-tratamento",
+    "ean": "7899706189668",
     "name": "Máscara de Tratamento L'Oréal Professionnel Absolut Repair Máscara Com Proteína e Ômega 9 250g",
     "image": "/products/7899706189668_1_6c132429.jpg",
     "images": [
@@ -3805,6 +3908,7 @@ const rawProducts: Product[] = [
   },
   {
     "id": "epoca-clareador-corporal-bioderma-pigmentbio-sensitive-areas",
+    "ean": "3701129800096",
     "name": "Bioderma Clareador Corporal para Áreas Íntimas e Sensíveis Pigmentbio Sensitive Areas 75ml",
     "image": "/products/clareador-corporal-bioderma-pigmentbio-sensitive-areas--1-_2a5cb401.jpg",
     "images": [
@@ -3825,6 +3929,7 @@ const rawProducts: Product[] = [
   },
   {
     "id": "epoca-serum-concentrado-bioderma-hydrabio-serum",
+    "ean": "3401347869775",
     "name": "Sérum Facial Hidratante e Fortalecedor Bioderma Hydrabio 40ml",
     "image": "/products/serum-concentrado-bioderma-hydrabio-serum--1-_228544d0.jpg",
     "images": [
@@ -3844,6 +3949,7 @@ const rawProducts: Product[] = [
   },
   {
     "id": "epoca-widi-care-higienizando-a-juba-shampoo",
+    "ean": "7898623242661",
     "name": "Widi Care Higienizando a Juba - Shampoo 500ml",
     "image": "/products/widi-care-higienizando-a-juba-shampoo_9a9498e5.jpg",
     "images": [
@@ -4014,6 +4120,7 @@ const rawProducts: Product[] = [
   },
   {
     "id": "epoca-wella-professionals-invigo-nutri-enrich-kit-shampoo-condicionador-mascara-",
+    "ean": "1006800734823",
     "name": "Wella Professionals Invigo Nutri-Enrich Kit - Shampoo + Condicionador + Máscara",
     "image": "/products/Kit-Enrich-SH--CD---MASK_8ee0ed3d.jpg",
     "images": [
@@ -4055,6 +4162,7 @@ const rawProducts: Product[] = [
   },
   {
     "id": "epoca-kit-wella-professionals-fusion-tamanho-profissional-shampoo-condicionador",
+    "ean": "1012017722621",
     "name": "Kit Wella Professionals Fusion - Shampoo + Condicionador - Tamanho Profissional",
     "image": "/products/kit1-3_07d4b278.jpg",
     "images": [
@@ -4100,6 +4208,7 @@ const rawProducts: Product[] = [
   },
   {
     "id": "epoca-wella-professionals-oil-reflections-condicionador-200ml",
+    "ean": "7896235353768",
     "name": "Wella Professionals Oil Reflections - Condicionador 200ml",
     "image": "/products/wella-professionals-oil-reflections-condicionador-200ml_-1-_496bca2c.jpg",
     "images": [
@@ -4122,6 +4231,7 @@ const rawProducts: Product[] = [
   },
   {
     "id": "epoca--l-oreal-professionnel-inforcer-kit-shampoo-mascara-",
+    "ean": "7899706171885",
     "name": "L’Oréal Professionnel Inforcer Kit - Shampoo + Máscara",
     "image": "/products/loreal-professionnel-serie-expert-kit-shampoo-mascara--1-_d1de9d66.jpg",
     "images": [
@@ -4193,6 +4303,7 @@ const rawProducts: Product[] = [
   },
   {
     "id": "epoca-creme-hidratante-corporal-cerave-453g",
+    "ean": "3606000537668",
     "name": "Creme Hidratante para Pele Seca a Extra Seca 48h de Hidratação CeraVe 454g",
     "image": "/products/7899706159197--1-_b3837bd8.jpg",
     "images": [
@@ -4214,6 +4325,7 @@ const rawProducts: Product[] = [
   },
   {
     "id": "epoca-gel-de-limpeza-facial-avene-cleanance-gel",
+    "ean": "3282770148817",
     "name": "Avène Cleanance Gel de Limpeza Facial 150g",
     "image": "/products/gel-de-limpeza-facial-avene-cleanance-gel--2-_493e11f7.jpg",
     "images": [
@@ -4246,6 +4358,7 @@ const rawProducts: Product[] = [
   },
   {
     "id": "epoca-encrespando-a-juba-widi-care-leave-in",
+    "ean": "7898623240834",
     "name": "Creme de Pentear Widi Care Encrespando a Juba 500ml",
     "image": "/products/encrespando-a-juba-widi-care-leave-in_9a28e8b4.jpg",
     "images": [
@@ -4261,6 +4374,7 @@ const rawProducts: Product[] = [
   },
   {
     "id": "epoca-tonico-facial-skinceuticals-blemish-age-solution",
+    "ean": "7899706149297",
     "name": "Tônico Facial Skinceuticals - Blemish + Age Solution 125ml",
     "image": "/products/skinceuticals-blemish-age-solution--1-_78959bb7.jpg",
     "images": [
@@ -4316,6 +4430,7 @@ const rawProducts: Product[] = [
   },
   {
     "id": "epoca-gel-de-limpeza-facial-bioderma-sensibio-gel-moussant",
+    "ean": "3701129800850",
     "name": "Gel de Limpeza Facial Micelar Calmante e Hidratante Bioderma Sensibio Gel Moussant 45ml",
     "image": "/products/gel-de-limpeza-facial-bioderma-sensibio-gel-moussant-45ml_e3bfbb94.jpg",
     "images": [
@@ -4411,6 +4526,7 @@ const rawProducts: Product[] = [
   },
   {
     "id": "epoca-pink-stick-fps-60-pink-cheeks-protetor-solar-facial",
+    "ean": "7898952466240",
     "name": "Protetor Solar Facial Com Cor Pink Stick FPS90 5km",
     "image": "/products/7898952466240_PINKStick_001_5KM_d90ca702.jpg",
     "images": [
@@ -4472,6 +4588,7 @@ const rawProducts: Product[] = [
   },
   {
     "id": "epoca-rapunzel-tonico-do-crescimento-lola-cosmetics-tratamento-antiqueda",
+    "ean": "7899572802289",
     "name": "Tônico do Crescimento Lola Cosmetics Rapunzel 250ml",
     "image": "/products/7899572802289_5954fcd9.jpg",
     "images": [
@@ -4489,6 +4606,7 @@ const rawProducts: Product[] = [
   },
   {
     "id": "epoca-morte-subita-super-hidratante-lola-cosmetics-mascara-recostrutora",
+    "ean": "7899572803200",
     "name": "Máscara de Tratamento Lola Cosmetics Morte Súbita 450g",
     "image": "/products/7899572803200_38f7ceb7.jpg",
     "images": [
@@ -4554,6 +4672,7 @@ const rawProducts: Product[] = [
   },
   {
     "id": "eucerin-pomada-reparadora-intensiva-aquaphor-duopack-2x10ml",
+    "ean": "4005800220012",
     "name": "Eucerin Pomada Reparadora Intensiva Aquaphor Duopack 2x10ml",
     "image": eucerinAquaphorDuopack,
     "images": [eucerinAquaphorDuopack],
@@ -4566,6 +4685,7 @@ const rawProducts: Product[] = [
   },
   {
     "id": "wella-professionals-invigo-nutri-enrich-shampoo-50ml",
+    "ean": "7896235353683",
     "name": "Wella Professionals Invigo Nutri-enrich Shampoo 50ml",
     "image": wellaInvigoNutriEnrichShampoo50ml,
     "images": [wellaInvigoNutriEnrichShampoo50ml],
