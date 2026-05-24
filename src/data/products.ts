@@ -4265,12 +4265,12 @@ const rawProducts: Product[] = [
     "id": "epoca-discos-de-algodao-ricca",
     "ean": "7897517905705",
     "name": "Discos de Algodão 70un  - Ricca 70 Un",
-    "image": "https://tisvtkymwswqezauylmu.supabase.co/storage/v1/object/public/product-images/b8c2f3bf/discos-de-algodao-ricca_(1).jpg.jpg",
+    "image": "https://lojas-epoca.store/products/discos-de-algodao-ricca-1-5982caac.jpg",
     "images": [
-      "https://tisvtkymwswqezauylmu.supabase.co/storage/v1/object/public/product-images/b8c2f3bf/discos-de-algodao-ricca_(1).jpg.jpg",
-      "https://tisvtkymwswqezauylmu.supabase.co/storage/v1/object/public/product-images/8b521338/discos-de-algodao-ricca_(2).jpg.jpg",
-      "https://tisvtkymwswqezauylmu.supabase.co/storage/v1/object/public/product-images/85784c84/discos-de-algodao-ricca_(3).jpg.jpg",
-      "https://tisvtkymwswqezauylmu.supabase.co/storage/v1/object/public/product-images/5d3ebd04/discos-de-algodao-ricca_(4).jpg.jpg"
+      "https://lojas-epoca.store/products/discos-de-algodao-ricca-1-5982caac.jpg",
+      "https://lojas-epoca.store/products/discos-de-algodao-ricca-2-5d5a6d8b.jpg",
+      "https://lojas-epoca.store/products/discos-de-algodao-ricca-3-6958c916.jpg",
+      "https://lojas-epoca.store/products/discos-de-algodao-ricca-4-65560d74.jpg"
     ],
     "price": 7.85,
     "originalPrice": 13.29,
@@ -5068,12 +5068,12 @@ const rawProducts: Product[] = [
   {
     "id": "epoca-protetor-solar-facial-darrow-actine-aquafluid-fps-60",
     "name": "Darrow Actine Aquafluid Protetor Solar Facial FPS 60",
-    "image": "https://epocacosmeticos.vteximg.com.br/arquivos/ids/1100637/protetor-solar-facial-darrow-actine-aquafluid-fps-60 -2-.jpg",
+    "image": "https://lojas-epoca.store/products/protetor-solar-facial-darrow-actine-aquafluid-fps-60-2-6cc529d4.jpg",
     "images": [
-      "https://epocacosmeticos.vteximg.com.br/arquivos/ids/1100637/protetor-solar-facial-darrow-actine-aquafluid-fps-60 -2-.jpg",
-      "https://epocacosmeticos.vteximg.com.br/arquivos/ids/1100638/protetor-solar-facial-darrow-actine-aquafluid-fps-60 -3-.jpg",
-      "https://epocacosmeticos.vteximg.com.br/arquivos/ids/1100639/protetor-solar-facial-darrow-actine-aquafluid-fps-60 -4-.jpg",
-      "https://epocacosmeticos.vteximg.com.br/arquivos/ids/1100640/protetor-solar-facial-darrow-actine-aquafluid-fps-60 -5-.jpg"
+      "https://lojas-epoca.store/products/protetor-solar-facial-darrow-actine-aquafluid-fps-60-2-6cc529d4.jpg",
+      "https://lojas-epoca.store/products/protetor-solar-facial-darrow-actine-aquafluid-fps-60-3-29b08b8e.jpg",
+      "https://lojas-epoca.store/products/protetor-solar-facial-darrow-actine-aquafluid-fps-60-4-a8f1bf07.jpg",
+      "https://lojas-epoca.store/products/protetor-solar-facial-darrow-actine-aquafluid-fps-60-5-1bac45cd.jpg"
     ],
     "price": 50.12,
     "installment": "R$ 4,18",
@@ -5426,11 +5426,11 @@ const rawProducts: Product[] = [
   {
     "id": "epoca-body-mist-jo-malone-london-english-pear-freesia",
     "name": "Body Mist Jo Malone London English Pear & Freesia",
-    "image": "https://epocacosmeticos.vteximg.com.br/arquivos/ids/1148974/body-mist-jo-malone-london-english-pear--freesia -1-.jpg",
+    "image": "https://lojas-epoca.store/products/body-mist-jo-malone-london-english-pear-freesia-1-d4dc6980.jpg",
     "images": [
-      "https://epocacosmeticos.vteximg.com.br/arquivos/ids/1148974/body-mist-jo-malone-london-english-pear--freesia -1-.jpg",
-      "https://epocacosmeticos.vteximg.com.br/arquivos/ids/1148975/body-mist-jo-malone-london-english-pear--freesia -3-.jpg",
-      "https://epocacosmeticos.vteximg.com.br/arquivos/ids/1148976/body-mist-jo-malone-london-english-pear--freesia -2-.jpg"
+      "https://lojas-epoca.store/products/body-mist-jo-malone-london-english-pear-freesia-1-d4dc6980.jpg",
+      "https://lojas-epoca.store/products/body-mist-jo-malone-london-english-pear-freesia-3-6e4d9e76.jpg",
+      "https://lojas-epoca.store/products/body-mist-jo-malone-london-english-pear-freesia-2-5383fdde.jpg"
     ],
     "price": 254.16,
     "installment": "R$ 21,18",
