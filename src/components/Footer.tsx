@@ -132,10 +132,10 @@ const Footer = () => {
           <div>
             <p className="text-sm font-bold text-foreground mb-3 uppercase">Compre com Segurança</p>
             <div className="flex items-center gap-6">
-              <a href="https://transparencyreport.google.com/safe-browsing/search?url=https:%2F%2Fgcomerciosuplementos.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://transparencyreport.google.com/safe-browsing/search?url=https:%2F%2Ftendenciacosmeticos.com.br" target="_blank" rel="noopener noreferrer">
                 <img src={googleTransparency} alt="Google Transparency Report" className="h-10 object-contain" loading="lazy" />
               </a>
-              <a href="https://www.google.com/search?q=gcomerciosuplementos.com+avalia%C3%A7%C3%B5es" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.google.com/search?q=tendenciacosmeticos.com.br+avalia%C3%A7%C3%B5es" target="_blank" rel="noopener noreferrer">
                 <img src={googleReviews} alt="Avaliações Google 5 estrelas" className="h-10 object-contain" loading="lazy" />
               </a>
             </div>
