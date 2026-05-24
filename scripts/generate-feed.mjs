@@ -381,15 +381,16 @@ const generateDescription = (name, brand, googleCategory) => {
 
 const buildShortProductId = (product) => {
   const brand = detectBrand(product.name);
-  const withoutBrand = product.name.replace(new RegExp(`^${brand.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}\s+`, "i"), "");
+  const withoutBrand = product.name.replace(new RegExp(`^${brand.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}\\s+`, "i"), "");
   const volume = volumeFromName(product.name);
-  const volumeSlug = volume ? slugify(volume) : "";
-  const baseName = withoutBrand
+  const baseName = (withoutBrand || product.name)
     .replace(/\b\d+\s?(?:ml|g|mg|kg|un|unidades?)\b/gi, "")
     .replace(/\b(refil|kit|combo|duo|trio)\b/gi, "")
     .trim();
 
-  return joinIdParts([brand, baseName || product.name, volumeSlug], MAX_ID_LEN);
+  // Combina marca, nome base e volume e aplica as regras agressivas
+  const fullSlug = slugify(`${brand}-${baseName}-${volume || ""}`);
+  return applyGoogleShorteningRules(fullSlug);
 };
 
 const appendSuffix = (base, suffix, max = MAX_ID_LEN) => {
