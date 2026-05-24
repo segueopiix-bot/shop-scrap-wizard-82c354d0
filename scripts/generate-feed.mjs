@@ -320,14 +320,14 @@ const items = unique.map((p) => {
   const brand = detectBrand(p.name);
   let description = generateDescription(p.name, brand, googleCategory);
   const addl = p.additional.map((u) => `      <g:additional_image_link>${esc(safeUrl(u))}</g:additional_image_link>`).join("\n");
-  const groupId = itemGroupId(p.id);
+  const shortPid = shortenId(p.id);
+  const groupId = shortenId(itemGroupId(p.id));
 
   // GTIN handling: Google só aceita 8, 12, 13 ou 14 dígitos.
   const isValidGtin = (gtin) => /^\d{8}$|^\d{12}$|^\d{13}$|^\d{14}$/.test(gtin);
-  
+
   let gtinField = "";
   let identifierExists = "true";
-  let mpnField = `<g:mpn>${esc(p.id)}</g:mpn>`;
   let gtinForDescription = "";
 
   if (p.ean && isValidGtin(p.ean)) {
@@ -351,7 +351,7 @@ const items = unique.map((p) => {
   const gtinTag = gtinField ? `\n      ${gtinField}` : "";
 
   return `    <item>
-      <g:id>${esc(p.id)}</g:id>
+      <g:id>${esc(shortPid)}</g:id>
       <g:title>${esc(p.name.slice(0, 150))}</g:title>
       <g:description>${esc(description.slice(0, 5000))}</g:description>
       <g:link>${esc(link)}</g:link>
@@ -360,7 +360,7 @@ const items = unique.map((p) => {
       <g:price>${p.price.toFixed(2)} BRL</g:price>
       <g:condition>new</g:condition>
       <g:brand>${esc(brand)}</g:brand>${gtinTag}${identifierExistsTag}
-      <g:mpn>${esc(p.id)}</g:mpn>
+      <g:mpn>${esc(shortPid)}</g:mpn>
       <g:google_product_category>${esc(googleCategory)}</g:google_product_category>
       <g:product_type>${esc(productTypeFromCategory(p.category))}</g:product_type>
       <g:item_group_id>${esc(groupId)}</g:item_group_id>
