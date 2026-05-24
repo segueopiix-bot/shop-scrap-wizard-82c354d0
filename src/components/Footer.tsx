@@ -68,7 +68,7 @@ const Footer = () => {
               <p>Tendência Cosméticos</p>
               <p>CNPJ: 22.556.253/0002-60</p>
               <p>Telefone: (11) 99839-7447</p>
-              <p>E-mail: contato@tendenciacosmeticos.com.br</p>
+              <p>E-mail: contato@lojas-epoca.store</p>
               <p>Endereço: Rua Madre Maria Vilac, 1271, Loja Amalia, Canasvieiras, Florianópolis - SC, 88054-000</p>
               <p>Segunda a Sexta das 09h às 18h</p>
             </div>
@@ -132,10 +132,10 @@ const Footer = () => {
           <div>
             <p className="text-sm font-bold text-foreground mb-3 uppercase">Compre com Segurança</p>
             <div className="flex items-center gap-6">
-              <a href="https://transparencyreport.google.com/safe-browsing/search?url=https:%2F%2Ftendenciacosmeticos.com.br" target="_blank" rel="noopener noreferrer">
+              <a href="https://transparencyreport.google.com/safe-browsing/search?url=https:%2F%2Flojas-epoca.store" target="_blank" rel="noopener noreferrer">
                 <img src={googleTransparency} alt="Google Transparency Report" className="h-10 object-contain" loading="lazy" />
               </a>
-              <a href="https://www.google.com/search?q=tendenciacosmeticos.com.br+avalia%C3%A7%C3%B5es" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.google.com/search?q=lojas-epoca.store+avalia%C3%A7%C3%B5es" target="_blank" rel="noopener noreferrer">
                 <img src={googleReviews} alt="Avaliações Google 5 estrelas" className="h-10 object-contain" loading="lazy" />
               </a>
             </div>
@@ -156,7 +156,7 @@ const Footer = () => {
             <p>Tendência Cosméticos</p>
             <p>CNPJ: 22.556.253/0002-60</p>
             <p>Telefone: (11) 99839-7447</p>
-            <p>E-mail: contato@tendenciacosmeticos.com.br</p>
+            <p>E-mail: contato@lojas-epoca.store</p>
             <p>Endereço: Rua Madre Maria Vilac, 1271, Loja Amalia, Canasvieiras, Florianópolis - SC, 88054-000</p>
             <p>Segunda a Sexta das 09h às 18h</p>
           </div>
@@ -216,10 +216,10 @@ const Footer = () => {
         <div className="text-left py-4">
           <p className="text-sm font-bold text-foreground mb-3 uppercase">COMPRE COM SEGURANÇA</p>
           <div className="flex flex-col items-start gap-4">
-            <a href="https://transparencyreport.google.com/safe-browsing/search?url=https:%2F%2Ftendenciacosmeticos.com.br" target="_blank" rel="noopener noreferrer">
+            <a href="https://transparencyreport.google.com/safe-browsing/search?url=https:%2F%2Flojas-epoca.store" target="_blank" rel="noopener noreferrer">
               <img src={googleTransparency} alt="Google Transparency Report" className="h-14 object-contain" loading="lazy" />
             </a>
-            <a href="https://www.google.com/search?q=tendenciacosmeticos.com.br+avalia%C3%A7%C3%B5es" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.google.com/search?q=lojas-epoca.store+avalia%C3%A7%C3%B5es" target="_blank" rel="noopener noreferrer">
               <img src={googleReviews} alt="Avaliações Google 5 estrelas" className="h-14 object-contain" loading="lazy" />
             </a>
           </div>

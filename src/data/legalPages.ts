@@ -17,7 +17,7 @@ export const legalPages: Record<string, { title: string; html: string }> = {
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
           <strong style="font-size:0.95rem">E-mail</strong>
         </div>
-        <p style="margin:0;font-size:0.95rem;color:#333">contato@tendenciacosmeticos.com.br</p>
+        <p style="margin:0;font-size:0.95rem;color:#333">contato@lojas-epoca.store</p>
       </div>
       <div style="background:#fafafa;border:1px solid #eee;border-radius:12px;padding:20px">
         <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px">
@@ -67,7 +67,7 @@ export const legalPages: Record<string, { title: string; html: string }> = {
       <p><strong>Nome Fantasia:</strong> Tendência Cosméticos</p>
       <p><strong>Razão Social:</strong> Tendência Cosméticos LTDA</p>
       <p><strong>CNPJ:</strong> 22.556.253/0002-60</p>
-      <p><strong>E-mail:</strong> contato@tendenciacosmeticos.com.br</p>
+      <p><strong>E-mail:</strong> contato@lojas-epoca.store</p>
       <p><strong>Telefone:</strong> (11) 99839-7447</p>
       <p><strong>Endereço:</strong> Rua Madre Maria Vilac, 1271, Loja Amalia, Canasvieiras, Florianópolis - SC, 88054-000</p>
       <p><strong>Horário de atendimento:</strong> Segunda a Sexta, das 09h às 18h</p>
@@ -119,7 +119,7 @@ export const legalPages: Record<string, { title: string; html: string }> = {
 
     <h3>Procedimento</h3>
     <ol>
-      <li>O cliente deve entrar em contato pelo e-mail: <strong>contato@tendenciacosmeticos.com.br</strong> informando o número do pedido e o motivo da solicitação.</li>
+      <li>O cliente deve entrar em contato pelo e-mail: <strong>contato@lojas-epoca.store</strong> informando o número do pedido e o motivo da solicitação.</li>
       <li>A equipe realizará a análise e encaminhará todas as instruções de postagem ou coleta, sem custos ao cliente.</li>
       <li>Após o recebimento e conferência do produto, o cliente poderá optar por:
         <ul>
@@ -132,7 +132,7 @@ export const legalPages: Record<string, { title: string; html: string }> = {
 
     <div class="contact-info">
       <p><strong>Atendimento ao Cliente</strong></p>
-      <p>E-mail: contato@tendenciacosmeticos.com.br</p>
+      <p>E-mail: contato@lojas-epoca.store</p>
       <p>Telefone: (11) 99839-7447</p>
     </div>
   ` },
@@ -150,7 +150,7 @@ export const legalPages: Record<string, { title: string; html: string }> = {
     <p>Não vendemos ou comercializamos seus dados. Eles são compartilhados apenas com parceiros necessários para a operação (pagamento, transportadoras, etc.).</p>
 
     <div class="contact-info">
-      <p><strong>Dúvidas?</strong> contato@tendenciacosmeticos.com.br</p>
+      <p><strong>Dúvidas?</strong> contato@lojas-epoca.store</p>
     </div>
   ` },
   "terms": { title: "Termos e Condições", html: `<h1>Termos e Condições</h1>
@@ -167,7 +167,7 @@ export const legalPages: Record<string, { title: string; html: string }> = {
     <p>Todos os produtos possuem garantia contra defeitos de fabricação, conforme prazos legais e do fabricante.</p>
 
     <div class="info">
-      <p><strong>Dúvidas?</strong> contato@tendenciacosmeticos.com.br</p>
+      <p><strong>Dúvidas?</strong> contato@lojas-epoca.store</p>
     </div>
   ` },
   "payment": { title: "Formas de Pagamento", html: `<h1>Formas de Pagamento</h1>
