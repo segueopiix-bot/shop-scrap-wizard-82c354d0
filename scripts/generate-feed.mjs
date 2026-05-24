@@ -388,8 +388,12 @@ const buildShortProductId = (product) => {
     .replace(/\b(refil|kit|combo|duo|trio)\b/gi, "")
     .trim();
 
+  // Preserva sufixo numérico do ID original se existir (ex: -12345)
+  const numericSuffixMatch = product.id.match(/-(\d+)$/);
+  const numericSuffix = numericSuffixMatch ? numericSuffixMatch[0] : "";
+
   // Combina marca, nome base e volume e aplica as regras agressivas
-  const fullSlug = slugify(`${brand}-${baseName}-${volume || ""}`);
+  const fullSlug = slugify(`${brand}-${baseName}-${volume || ""}${numericSuffix}`);
   return applyGoogleShorteningRules(fullSlug);
 };
 
