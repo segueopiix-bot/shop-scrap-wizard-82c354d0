@@ -12,12 +12,88 @@ const ROOT = path.resolve(__dirname, "..");
 const SITE = "https://lojas-epoca.store";
 const STORE_NAME = "Tendência Cosméticos";
 const DEFAULT_BRAND = "Tendência Cosméticos";
+// Order matters: longer/more specific first
 const KNOWN_BRANDS = [
-  "Wella", "L'Oréal", "L'Oreal", "Loreal", "Maybelline", "Vichy", "La Roche-Posay",
-  "Eucerin", "Bioré", "Biore", "Neostrata", "SkinCeuticals", "Dior", "M·A·C", "MAC",
-  "Ruby Kisses", "Catharine Hill", "Océane", "Oceane", "Vizzela", "Ricca", "Latika",
-  "Essence", "Principia", "Contém 1g", "Boca Rosa", "Real Techniques", "Época",
+  "L'Oréal Professionnel", "L'Oréal Paris", "L'Oréal", "L'Oreal", "Loreal", "Elseve",
+  "Wella Professionals", "Wella SP", "Wella",
+  "La Roche-Posay", "La Roche Posay",
+  "Mantecorp Skincare", "Mantecorp", "Epidrat",
+  "Lola Cosmetics", "Lola",
+  "Widi Care",
+  "Real Techniques",
+  "Ruby Kisses",
+  "Boca Rosa",
+  "Catharine Hill",
+  "Jo Malone London", "Jo Malone",
+  "Garnier Skin", "Garnier",
+  "Bepantol", "Bepantriz",
+  "Bio-Oil",
+  "O Boticário", "Boticário",
+  "Kérastase", "Kerastase",
+  "Redken",
+  "Sebastian",
+  "SkinCeuticals",
+  "Cadiveu",
+  "Dailus",
+  "Dermage",
+  "Avène", "Avene",
+  "Neostrata",
+  "Maybelline",
+  "Vichy",
+  "Eucerin",
+  "Bioderma",
+  "Bioré", "Biore",
+  "CeraVe",
+  "Cetaphil",
+  "Neutrogena",
+  "Nivea",
+  "Dove",
+  "Creamy",
+  "Principia",
+  "Sallve",
+  "Darrow",
+  "Theraskin",
+  "Umbrella",
+  "Cimed",
+  "Farmax",
+  "Lansinoh",
+  "Mustela",
+  "Granado",
+  "Medicube",
+  "SKIN1004",
+  "Celimax",
+  "Biolab",
+  "Natuflora",
+  "Phytoderm",
+  "Dior",
+  "Givenchy",
+  "Shiseido",
+  "Revlon Professional", "Revlon",
+  "Niina Secrets",
+  "Eudora",
+  "Bruna Tavares", "BT ",
+  "Pink Cheeks",
+  "Isdin",
+  "Hada Labo",
+  "Adcos",
+  "5km",
+  "Fino Premium", "Fino",
+  "Zella",
+  "Coréga", "Corega",
+  "Carmed",
+  "Actine",
+  "Acnase",
+  "Lancôme", "Lancome",
+  "M·A·C", "MAC",
+  "Océane", "Oceane",
+  "Vizzela", "Ricca", "Latika", "Essence",
+  "Contém 1g",
+  "Acnezil", "Ollie", "Impala",
+  "Época",
 ];
+
+// Normalize curly apostrophes to straight for matching
+const normalize = (s) => s.replace(/[’‘`]/g, "'").toLowerCase();
 
 const CATEGORY_MAP = {
   "cosmeticos-cabelos-oleo":                         "Health & Beauty > Personal Care > Hair Care > Hair Treatment & Conditioning Products > Hair Serums & Hair Oils",
@@ -78,7 +154,10 @@ const CATEGORY_MAP = {
 const DEFAULT_CATEGORY = "Health & Beauty > Personal Care > Cosmetics";
 
 const getCategory = (cat) => CATEGORY_MAP[cat] || DEFAULT_CATEGORY;
-const detectBrand = (name) => KNOWN_BRANDS.find((b) => name.toLowerCase().includes(b.toLowerCase())) || DEFAULT_BRAND;
+const detectBrand = (name) => {
+  const n = normalize(name);
+  return KNOWN_BRANDS.find((b) => n.includes(normalize(b))) || DEFAULT_BRAND;
+};
 
 const src = fs.readFileSync(path.join(ROOT, "src/data/products.ts"), "utf8");
 
@@ -184,7 +263,7 @@ const items = unique.map((p) => {
       <g:image_link>${esc(p.image)}</g:image_link>
 ${addl}
       <g:availability>in stock</g:availability>
-      <g:price>${basePrice.toFixed(2)} BRL</g:price>${salePrice ? `\n      <g:sale_price>${salePrice.toFixed(2)} BRL</g:sale_price>` : ""}
+      <g:price>${basePrice.toFixed(2)} BRL</g:price>${salePrice ? `\n      <g:sale_price>${salePrice.toFixed(2)} BRL</g:sale_price>\n      <g:sale_price_effective_date>2026-05-24T00:00-03:00/2027-05-24T23:59-03:00</g:sale_price_effective_date>` : ""}
       <g:condition>new</g:condition>
       <g:brand>${esc(detectBrand(p.name))}</g:brand>
       ${p.ean ? `<g:gtin>${esc(p.ean)}</g:gtin>` : `<g:identifier_exists>false</g:identifier_exists>`}
