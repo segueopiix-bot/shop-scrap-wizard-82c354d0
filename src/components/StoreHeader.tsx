@@ -119,7 +119,7 @@ const StoreHeader = ({ onToggleMobileMenu, mobileMenuOpen }: StoreHeaderProps) =
         <div className="container-page">
           <div className="relative flex items-center justify-between">
             <Link to="/" className="no-underline flex-shrink-0">
-              <img src={logo} alt="Gago Suplementos" className="h-[52px] w-auto"  loading="lazy"/>
+              <img src={logo} alt="Tendencia Cosmeticos" className="h-[52px] w-auto"  loading="lazy"/>
             </Link>
 
             <div className="mx-8 max-w-xl flex-1">
