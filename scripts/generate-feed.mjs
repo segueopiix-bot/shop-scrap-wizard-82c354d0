@@ -518,7 +518,7 @@ const items = unique.map((p) => {
   const link = `${SITE}/produtos/${p.id}`;
   const googleCategory = getCategory(p.id, p.category);
   const brand = detectBrand(p.name);
-  let description = generateDescription(p.name, brand, googleCategory);
+  let description = generateDescription(p.name, brand, googleCategory, p.id);
   const addl = p.additional.map((u) => `      <g:additional_image_link>${esc(safeUrl(u))}</g:additional_image_link>`).join("\n");
   const shortPid = shortIdByOriginalId.get(p.id) || buildShortProductId(p);
   const groupId = limitSlug(itemGroupId(p.id));
