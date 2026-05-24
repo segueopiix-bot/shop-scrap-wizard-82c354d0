@@ -37,7 +37,7 @@ const categoryRoutes = categorySlugs.map((slug) => ({
 const productsSrc = fs.readFileSync(path.join(ROOT, "src/data/products.ts"), "utf8");
 const productIds = [...new Set([...productsSrc.matchAll(/id:\s*"([^"]+)"/g)].map((m) => m[1]))];
 const productRoutes = productIds.map((id) => ({
-  path: `/products/${id}`,
+  path: `/produtos/${id}`,
   changefreq: "weekly",
   priority: "0.9",
 }));

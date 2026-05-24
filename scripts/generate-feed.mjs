@@ -77,7 +77,7 @@ const esc = (s) =>
 // 5) Gera XML
 const items = unique
   .map((p) => {
-    const link = `${SITE}/products/${p.id}`;
+    const link = `${SITE}/produtos/${p.id}`;
     const desc = p.name; // descrição curta = nome (descrição completa fica na página)
     return `    <item>
       <g:id>${esc(p.id)}</g:id>
