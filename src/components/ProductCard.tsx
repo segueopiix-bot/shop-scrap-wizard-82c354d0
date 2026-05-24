@@ -37,7 +37,7 @@ const ProductCard = ({ product, fullWidth = false }: ProductCardProps) => {
 
       {/* Image */}
       <Link
-        to={`/products/${product.id}`}
+        to={`/produtos/${product.id}`}
         className="flex aspect-square items-center justify-center overflow-hidden bg-white p-4 no-underline"
       >
         <img
@@ -51,7 +51,7 @@ const ProductCard = ({ product, fullWidth = false }: ProductCardProps) => {
       {/* Info */}
       <div className="flex flex-1 flex-col p-3 text-center">
         <Link
-          to={`/products/${product.id}`}
+          to={`/produtos/${product.id}`}
           className="mb-2 line-clamp-2 text-xs font-semibold leading-tight text-card-foreground no-underline hover:underline"
         >
           {product.name}

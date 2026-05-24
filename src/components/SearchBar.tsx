@@ -97,7 +97,7 @@ const SearchBar = ({ placeholder = "O que você está procurando?", className = 
                 {results.map((p) => (
                   <li key={p.id}>
                     <Link
-                      to={`/products/${p.id}`}
+                      to={`/produtos/${p.id}`}
                       onClick={() => setOpen(false)}
                       className="flex items-center gap-3 px-4 py-2 hover:bg-gray-50"
                     >
