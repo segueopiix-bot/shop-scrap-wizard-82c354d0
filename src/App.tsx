@@ -2,7 +2,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route, Navigate, useLocation } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate, useLocation, useParams } from "react-router-dom";
 import { lazy, Suspense, useEffect } from "react";
 import Index from "./pages/Index";
 import { CartProvider } from "./contexts/CartContext";
@@ -72,6 +72,17 @@ const LegacySearchRedirect = () => {
   return <Navigate to={`/busca${search}`} replace />;
 };
 
+const LegacyProductRedirect = () => {
+  const { slug } = useParams();
+  const { search } = useLocation();
+
+  if (!slug) {
+    return <Navigate to="/" replace />;
+  }
+
+  return <Navigate to={`/produtos/${slug}${search}`} replace />;
+};
+
 const RouteFallback = () => (
   <div className="flex min-h-[50vh] items-center justify-center">
     <div className="h-8 w-8 animate-spin rounded-full border-4 border-[#29ABE2] border-t-transparent" />
@@ -92,7 +103,7 @@ const App = () => (
                 <Route path="/" element={<Index />} />
                 <Route path="/collections/:category" element={<CategoryPage />} />
                 <Route path="/produtos/:slug" element={<ProductPage />} />
-                <Route path="/produtos/:slug" element={<ProductPage />} />
+                <Route path="/products/:slug" element={<LegacyProductRedirect />} />
                 <Route path="/carrinho" element={<Navigate to="/checkout" replace />} />
                 <Route path="/checkout" element={<CheckoutPage />} />
                 <Route path="/busca" element={<SearchPage />} />
