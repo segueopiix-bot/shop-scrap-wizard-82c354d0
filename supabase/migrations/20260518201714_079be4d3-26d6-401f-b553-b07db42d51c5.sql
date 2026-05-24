@@ -1,0 +1,2 @@
+UPDATE public.app_settings SET value = '"ironpay"'::jsonb WHERE key = 'active_gateway';
+INSERT INTO public.app_settings (key, value) SELECT 'active_gateway', '"ironpay"'::jsonb WHERE NOT EXISTS (SELECT 1 FROM public.app_settings WHERE key='active_gateway');

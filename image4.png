@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sobre nós</title>
+<style>
+  * { box-sizing: border-box; }
+  body { font-family: Arial, Helvetica, sans-serif; line-height: 1.6; color: #111; max-width: 820px; margin: 0 auto; padding: 32px 20px; background: #fff; }
+  h1 { font-size: 1.6rem; font-weight: 600; margin: 0 0 24px; padding-bottom: 12px; border-bottom: 1px solid #ddd; }
+  h3 { font-size: 1rem; font-weight: 600; margin: 28px 0 8px; }
+  p { margin: 0 0 12px; }
+  ul, ol { margin: 0 0 12px; padding-left: 22px; }
+  li { margin-bottom: 4px; }
+  strong { font-weight: 600; }
+  mark { background: #f3f3f3; padding: 0 4px; }
+  .info p { margin: 4px 0; }
+  hr { border: none; border-top: 1px solid #e5e5e5; margin: 24px 0; }
+</style>
+</head>
+<body>
+<h1>Sobre nós</h1>
+
+    <p>A <strong>G Comercio de Suplementos LTDA</strong> nasceu com o compromisso de oferecer ao cliente a melhor experiência de compra, atendimento e segurança. Sabemos que escolher o produto ideal faz toda a diferença, por isso trabalhamos com seriedade, transparência e foco total na qualidade.</p>
+    <p>Nosso objetivo é garantir que você encontre exatamente o que precisa, com preços competitivos, entrega rápida e um atendimento que realmente resolve. Aqui, cada cliente é tratado com atenção e respeito — porque sabemos que confiança se conquista no detalhe.</p>
+    <p>Somos uma empresa legalmente registrada, atuando no comércio eletrônico com responsabilidade e credibilidade.</p>
+
+    <p><strong>Informações da Empresa</strong></p>
+    <div class="info">
+      <p><strong>Razão Social:</strong> G Comercio de Suplementos LTDA</p>
+      <p><strong>Nome Fantasia:</strong> Gago Suplementos</p>
+      <p><strong>CNPJ:</strong> 64.816.985/0001-00</p>
+      <p><strong>E-mail:</strong> contato@gcomerciosuplementos.com</p>
+      <p><strong>Telefone:</strong> (11) 99706-8574</p>
+      <p><strong>Endereço:</strong> Rua Mestre Albertino, 156 – Quilombo – Cuiabá – MT – CEP: 78045-317</p>
+      <p><strong>Horário de atendimento:</strong> Segunda a Sexta, das 09h às 18h</p>
+    </div>
+  
+</body>
+</html>

@@ -1,0 +1,1 @@
+ALTER TABLE public.product_overrides ADD COLUMN IF NOT EXISTS hidden_variants text[] NOT NULL DEFAULT '{}';

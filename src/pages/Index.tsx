@@ -1,0 +1,62 @@
+import { useEffect } from "react";
+import { Link } from "react-router-dom";
+import StoreLayout from "@/components/StoreLayout";
+import HeroBanner from "@/components/HeroBanner";
+import ProductSection from "@/components/ProductSection";
+import BenefitsBar from "@/components/BenefitsBar";
+import { products, getProductsByCategory } from "@/data/products";
+import { trackPageView } from "@/utils/tracking";
+import bannerPrincipiaDesktop from "@/assets/banner-principia-desktop.webp";
+import bannerPrincipiaMobile from "@/assets/banner-principia-mobile.webp";
+import MobileBannerCarousel from "@/components/MobileBannerCarousel";
+import DesktopBannerCarousel from "@/components/DesktopBannerCarousel";
+
+const Index = () => {
+  useEffect(() => {
+    trackPageView();
+  }, []);
+
+  const queima = getProductsByCategory("whey");
+
+  const cosmeticosMaisVendidos = products
+    .filter((p) => p.category.startsWith("cosmeticos"))
+    .slice(0, 12);
+
+  return (
+    <StoreLayout>
+      <HeroBanner />
+
+      <MobileBannerCarousel />
+      <DesktopBannerCarousel />
+
+      <ProductSection title="Queima de Estoque" products={queima} categorySlug="queima-de-estoque" />
+
+      <section className="py-4">
+        <div className="container-page">
+          <Link to="/busca?q=principia" className="block overflow-hidden rounded-xl">
+            <img
+              src={bannerPrincipiaMobile}
+              alt="Principia"
+              className="block w-full h-auto md:hidden"
+             loading="lazy"/>
+            <img
+              src={bannerPrincipiaDesktop}
+              alt="Principia"
+              className="hidden w-full h-auto md:block"
+             loading="lazy"/>
+          </Link>
+        </div>
+      </section>
+
+      <ProductSection
+        title="Cosméticos Mais Vendidos"
+        products={cosmeticosMaisVendidos}
+        categorySlug="cosmeticos"
+      />
+
+      <BenefitsBar />
+    </StoreLayout>
+  );
+};
+
+export default Index;
