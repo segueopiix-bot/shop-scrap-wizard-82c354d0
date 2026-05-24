@@ -248,12 +248,14 @@ const productTypeFromCategory = (cat) => {
 
 // item_group_id: agrupa variantes pelo tronco do slug (sem sufixos de tamanho/volume).
 const itemGroupId = (id) => {
-  return id
+  if (id === "epoca") return "epoca";
+  const base = id
     .replace(/-\d+\s*(ml|g|mg|kg|un|unidades?|cm)?(?:-\d+)?$/i, "")
     .replace(/-\d{4,}$/g, "") // remove sufixo numérico longo (id legado)
     .replace(/-kit(-.*)?$/i, "")
-    .replace(/-com-\d+(-unidades?)?$/i, "")
-    .slice(0, 80);
+    .replace(/-com-\d+(-unidades?)?$/i, "");
+  
+  return applyGoogleShorteningRules(base);
 };
 
 // Heurística para detectar "kit/duo/multi-unidade" — usado para escolher
