@@ -90,7 +90,7 @@ const categoryMap: Record<string, { title: string; slug: string; prefix?: boolea
   "cosmeticos-tratamentos-protetor-solar-com-cor": { title: "Protetor Solar com Cor", slug: "cosmeticos-tratamentos-protetor-solar-com-cor", parents: [{ slug: "cosmeticos", title: "Cosméticos" }, { slug: "cosmeticos-tratamentos", title: "Tratamentos" }] },
 };
 
-type SortOption = "featured" | "price-asc" | "price-desc" | "name-asc" | "name-desc" | "discount";
+type SortOption = "featured" | "price-asc" | "price-desc" | "name-asc" | "name-desc";
 
 const KNOWN_BRANDS = [
   "Growth Supplements",
@@ -225,8 +225,6 @@ const CategoryPage = () => {
         return sorted.sort((a, b) => a.name.localeCompare(b.name));
       case "name-desc":
         return sorted.sort((a, b) => b.name.localeCompare(a.name));
-      case "discount":
-        return sorted.sort((a, b) => (b.discount || 0) - (a.discount || 0));
       default:
         return sorted;
     }
@@ -449,7 +447,7 @@ const CategoryPage = () => {
                     <option value="price-desc">Preço: Maior para Menor</option>
                     <option value="name-asc">A-Z</option>
                     <option value="name-desc">Z-A</option>
-                    <option value="discount">Maior desconto</option>
+                    
                   </select>
                 </div>
 
@@ -540,12 +538,6 @@ const ProductCardGrid = ({
       >
         {/* Discount badge */}
         <div className="relative flex w-[180px] flex-shrink-0 items-center justify-center bg-white p-4">
-          {product.discount && product.discount > 0 && (
-            <span className="absolute left-2 top-2 z-10 flex items-center gap-0.5 rounded-md bg-discount-badge px-2 py-1 text-xs font-bold text-discount-badge-foreground">
-              <ArrowDown className="h-3 w-3" />
-              {product.discount}%
-            </span>
-          )}
           <img
             src={product.image}
             alt={product.name}
@@ -579,12 +571,6 @@ const ProductCardGrid = ({
       to={`/products/${product.id}`}
       className="product-card-hover group relative flex flex-col overflow-hidden rounded-lg border border-border bg-card transition-all duration-300 no-underline"
     >
-      {product.discount && product.discount > 0 && (
-        <span className="absolute left-2 top-2 z-10 flex items-center gap-0.5 rounded-md bg-discount-badge px-2 py-1 text-xs font-bold text-discount-badge-foreground">
-          <ArrowDown className="h-3 w-3" />
-          {product.discount}%
-        </span>
-      )}
       <div className="flex aspect-square items-center justify-center overflow-hidden bg-white p-4">
         <img
           src={product.image}

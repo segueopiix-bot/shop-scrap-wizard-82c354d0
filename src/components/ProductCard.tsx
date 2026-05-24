@@ -27,13 +27,6 @@ const ProductCard = ({ product, fullWidth = false }: ProductCardProps) => {
     <div
       className={`product-card-hover group relative flex flex-shrink-0 flex-col overflow-hidden rounded-lg border border-border bg-card transition-all duration-300 ${fullWidth ? "w-full" : "w-[200px] md:w-[220px]"}`}
     >
-      {/* Discount badge */}
-      {product.discount && product.discount > 0 && (
-        <span className="absolute left-2 top-2 z-10 flex items-center gap-0.5 rounded-md bg-discount-badge px-2 py-1 text-xs font-bold text-discount-badge-foreground">
-          <ArrowDown className="h-3 w-3" />
-          {product.discount}%
-        </span>
-      )}
 
       {/* Image */}
       <Link
