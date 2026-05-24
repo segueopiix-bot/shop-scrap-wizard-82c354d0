@@ -330,22 +330,20 @@ const items = unique.map((p) => {
     gtinField = "";
   }
 
-  const identifierExistsTag = identifierExists === "false" ? `<g:identifier_exists>false</g:identifier_exists>` : "";
+  const identifierExistsTag = identifierExists === "false" ? `\n      <g:identifier_exists>false</g:identifier_exists>` : "";
+  const gtinTag = gtinField ? `\n      ${gtinField}` : "";
 
   return `    <item>
       <g:id>${esc(p.id)}</g:id>
       <g:title>${esc(p.name.slice(0, 150))}</g:title>
       <g:description>${esc(description.slice(0, 5000))}</g:description>
       <g:link>${esc(link)}</g:link>
-      <g:image_link>${esc(safeUrl(p.image))}</g:image_link>
-${addl}
+      <g:image_link>${esc(safeUrl(p.image))}</g:image_link>${addl ? "\n" + addl : ""}
       <g:availability>in stock</g:availability>
       <g:price>${p.price.toFixed(2)} BRL</g:price>
       <g:condition>new</g:condition>
-      <g:brand>${esc(brand)}</g:brand>
-      ${gtinField}
-      ${identifierExistsTag}
-      ${mpnField}
+      <g:brand>${esc(brand)}</g:brand>${gtinTag}${identifierExistsTag}
+      <g:mpn>${esc(p.id)}</g:mpn>
       <g:google_product_category>${esc(googleCategory)}</g:google_product_category>
       <g:product_type>${esc(productTypeFromCategory(p.category))}</g:product_type>
       <g:item_group_id>${esc(groupId)}</g:item_group_id>
