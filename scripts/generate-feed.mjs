@@ -13,18 +13,53 @@
  */
 import fs from "node:fs";
 import path from "node:path";
-import crypto from "node:crypto";
 import { fileURLToPath } from "node:url";
 
-// Google Merchant exige g:id <= 50 chars. Mantém o id original quando couber;
-// caso contrário, gera um id curto e estável baseado em hash do slug.
 const MAX_ID_LEN = 50;
-const shortenId = (id) => {
-  if (id.length <= MAX_ID_LEN) return id;
-  const hash = crypto.createHash("sha1").update(id).digest("hex").slice(0, 10);
-  // Mantém prefixo "epoca-" quando existir, para legibilidade.
-  const prefix = id.startsWith("epoca-") ? "epoca-" : "p-";
-  return `${prefix}${hash}`;
+const slugify = (value) => String(value ?? "")
+  .normalize("NFD")
+  .replace(/[\u0300-\u036f]/g, "")
+  .replace(/&/g, " e ")
+  .replace(/[’'`´]/g, "")
+  .toLowerCase()
+  .replace(/[^a-z0-9]+/g, "-")
+  .replace(/^-+|-+$/g, "")
+  .replace(/-+/g, "-");
+
+const limitSlug = (value, max = MAX_ID_LEN) => {
+  const clean = slugify(value);
+  if (clean.length <= max) return clean;
+
+  const parts = clean.split("-").filter(Boolean);
+  let out = "";
+
+  for (const part of parts) {
+    const candidate = out ? `${out}-${part}` : part;
+    if (candidate.length > max) break;
+    out = candidate;
+  }
+
+  return (out || clean.slice(0, max)).replace(/-+$/g, "");
+};
+
+const joinIdParts = (parts, max = MAX_ID_LEN) => {
+  const cleaned = parts.map((part) => slugify(part)).filter(Boolean);
+  if (!cleaned.length) return "produto";
+  if (cleaned.length === 1) return limitSlug(cleaned[0], max);
+
+  const first = cleaned[0];
+  const tail = cleaned.at(-1);
+  const middle = cleaned.slice(1, -1);
+  let used = first;
+
+  for (const token of middle) {
+    const candidate = [used, token, tail].filter(Boolean).join("-");
+    if (candidate.length > max) break;
+    used = `${used}-${token}`;
+  }
+
+  const withTail = [used, tail].filter(Boolean).join("-");
+  return withTail.length <= max ? withTail : limitSlug(used, max);
 };
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -314,14 +349,87 @@ const generateDescription = (name, brand, googleCategory) => {
   return `${name}.${sizeBit} ${brandBit}${hint} Compre na ${STORE_NAME} com entrega rápida para todo o Brasil e pagamento via Pix com desconto.`;
 };
 
+const buildShortProductId = (product) => {
+  const brand = detectBrand(product.name);
+  const withoutBrand = product.name.replace(new RegExp(`^${brand.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}\s+`, "i"), "");
+  const volume = volumeFromName(product.name);
+  const volumeSlug = volume ? slugify(volume) : "";
+  const baseName = withoutBrand
+    .replace(/\b\d+\s?(?:ml|g|mg|kg|un|unidades?)\b/gi, "")
+    .replace(/\b(refil|kit|combo|duo|trio)\b/gi, "")
+    .trim();
+
+  return joinIdParts([brand, baseName || product.name, volumeSlug], MAX_ID_LEN);
+};
+
+const appendSuffix = (base, suffix, max = MAX_ID_LEN) => {
+  const cleanSuffix = slugify(suffix);
+  if (!cleanSuffix) return limitSlug(base, max);
+  const baseMax = Math.max(1, max - cleanSuffix.length - 1);
+  const trimmedBase = limitSlug(base, baseMax);
+  return `${trimmedBase}-${cleanSuffix}`.replace(/-+/g, "-").replace(/^-+|-+$/g, "");
+};
+
+const buildStableShortIds = (products) => {
+  const groups = new Map();
+  const globalUsed = new Set();
+  const ids = new Map();
+
+  for (const product of products) {
+    const base = buildShortProductId(product);
+    const list = groups.get(base) || [];
+    list.push(product);
+    groups.set(base, list);
+  }
+
+  for (const [base, group] of [...groups.entries()].sort(([a], [b]) => a.localeCompare(b))) {
+    const sortedGroup = [...group].sort((a, b) => a.id.localeCompare(b.id));
+
+    for (let index = 0; index < sortedGroup.length; index += 1) {
+      const product = sortedGroup[index];
+      const baseTokens = new Set(base.split("-").filter(Boolean));
+      const extraTokens = slugify(product.id)
+        .split("-")
+        .filter((token) => token && !baseTokens.has(token));
+
+      let candidate = base;
+
+      for (let i = extraTokens.length - 1; i >= 0; i -= 1) {
+        const nextCandidate = appendSuffix(base, extraTokens.slice(i).join("-"));
+        if (!globalUsed.has(nextCandidate)) {
+          candidate = nextCandidate;
+          break;
+        }
+      }
+
+      if (globalUsed.has(candidate)) {
+        candidate = appendSuffix(base, String(index + 1));
+      }
+
+      let dedupeIndex = index + 1;
+      while (globalUsed.has(candidate)) {
+        dedupeIndex += 1;
+        candidate = appendSuffix(base, String(dedupeIndex));
+      }
+
+      globalUsed.add(candidate);
+      ids.set(product.id, candidate);
+    }
+  }
+
+  return ids;
+};
+
+const shortIdByOriginalId = buildStableShortIds(unique);
+
 const items = unique.map((p) => {
   const link = `${SITE}/produtos/${p.id}`;
   const googleCategory = getCategory(p.id, p.category);
   const brand = detectBrand(p.name);
   let description = generateDescription(p.name, brand, googleCategory);
   const addl = p.additional.map((u) => `      <g:additional_image_link>${esc(safeUrl(u))}</g:additional_image_link>`).join("\n");
-  const shortPid = shortenId(p.id);
-  const groupId = shortenId(itemGroupId(p.id));
+  const shortPid = shortIdByOriginalId.get(p.id) || buildShortProductId(p);
+  const groupId = limitSlug(itemGroupId(p.id));
 
   // GTIN handling: Google só aceita 8, 12, 13 ou 14 dígitos.
   const isValidGtin = (gtin) => /^\d{8}$|^\d{12}$|^\d{13}$|^\d{14}$/.test(gtin);
@@ -349,6 +457,7 @@ const items = unique.map((p) => {
 
   const identifierExistsTag = identifierExists === "false" ? `\n      <g:identifier_exists>false</g:identifier_exists>` : "";
   const gtinTag = gtinField ? `\n      ${gtinField}` : "";
+  const mpnTag = identifierExists === "false" ? `\n      <g:mpn>${esc(shortPid)}</g:mpn>` : "";
 
   return `    <item>
       <g:id>${esc(shortPid)}</g:id>
@@ -359,8 +468,7 @@ const items = unique.map((p) => {
       <g:availability>in stock</g:availability>
       <g:price>${p.price.toFixed(2)} BRL</g:price>
       <g:condition>new</g:condition>
-      <g:brand>${esc(brand)}</g:brand>${gtinTag}${identifierExistsTag}
-      <g:mpn>${esc(shortPid)}</g:mpn>
+      <g:brand>${esc(brand)}</g:brand>${gtinTag}${identifierExistsTag}${mpnTag}
       <g:google_product_category>${esc(googleCategory)}</g:google_product_category>
       <g:product_type>${esc(productTypeFromCategory(p.category))}</g:product_type>
       <g:item_group_id>${esc(groupId)}</g:item_group_id>
