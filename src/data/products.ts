@@ -26,6 +26,7 @@ import dailyWheyBaunilha from "@/assets/products/daily-whey-baunilha.png";
 import dailyWheyMorango from "@/assets/products/daily-whey-morango.png";
 import multivitaminico120 from "@/assets/products/multivitaminico-120.png";
 import kitElseveCollagenLifter from "@/assets/products/kit-elseve-collagen-lifter.png";
+import eucerinAquaphorDuopack from "@/assets/products/eucerin-aquaphor-duopack.png";
 
 export interface Product {
   id: string;
@@ -4549,6 +4550,18 @@ const rawProducts: Product[] = [
     "installment": "R$ 13,32",
     "hasVariants": false,
     "category": "cosmeticos-cabelos-normal-ou-todos-os-tipos"
+  },
+  {
+    "id": "eucerin-pomada-reparadora-intensiva-aquaphor-duopack-2x10ml",
+    "name": "Eucerin Pomada Reparadora Intensiva Aquaphor Duopack 2x10ml",
+    "image": eucerinAquaphorDuopack,
+    "images": [eucerinAquaphorDuopack],
+    "price": 49.90,
+    "originalPrice": 89.90,
+    "discount": 44,
+    "installment": "R$ 4,16",
+    "hasVariants": false,
+    "category": "cosmeticos-dermocosmeticos-cuidados-corporais-especificos"
   }
 ];
 
