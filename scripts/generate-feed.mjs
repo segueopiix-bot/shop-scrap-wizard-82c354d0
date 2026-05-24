@@ -240,11 +240,39 @@ const CATEGORY_OVERRIDES = {
 const getCategory = (id, cat) =>
   CATEGORY_OVERRIDES[id] || CATEGORY_MAP[cat] || DEFAULT_CATEGORY;
 
-// product_type derivado do slug interno da categoria
+// product_type derivado do slug interno da categoria.
+// Os 2 primeiros segmentos são níveis hierárquicos; o restante forma o nome
+// do sub-nível, com conectores (de, e, a, o, com, para, em, ou, da, do) em minúscula.
+const PT_ACCENTS = {
+  cosmeticos: "Cosméticos", dermocosmeticos: "Dermocosméticos", maquiagem: "Maquiagem",
+  cabelos: "Cabelos", cuidados: "Cuidados", pessoais: "Pessoais", tratamentos: "Tratamentos",
+  mascara: "Máscara", mascaras: "Máscaras", cilios: "Cílios", sobrancelhas: "Sobrancelhas",
+  especificos: "Específicos", tonicos: "Tônicos", oleo: "Óleo", oleos: "Óleos",
+  cacheado: "Cacheado", crespo: "Crespo", acessorios: "Acessórios", remocao: "Remoção",
+  balsamo: "Bálsamo", agua: "Água", po: "Pó", estojo: "Estojo", termico: "Térmico",
+  protetor: "Protetor", rejuvenescedores: "Rejuvenescedores", hidratantes: "Hidratantes",
+  faciais: "Faciais", corporais: "Corporais", limpadores: "Limpadores", ativador: "Ativador",
+  cachos: "Cachos", fixador: "Fixador", contorno: "Contorno", labial: "Labial",
+  demaquilante: "Demaquilante", sabonetes: "Sabonetes", micelar: "Micelar",
+  marcas: "Marcas", loiros: "Loiros", descoloridos: "Descoloridos", coloridos: "Coloridos",
+  mechas: "Mechas", danificados: "Danificados", seco: "Seco", ressecados: "Ressecados",
+  normal: "Normal", todos: "Todos", tipos: "Tipos", base: "Base", blush: "Blush",
+  esponja: "Esponja", corretivo: "Corretivo", compacto: "Compacto", facial: "Facial",
+  sombra: "Sombra", lapis: "Lápis", kajal: "Kajal", batom: "Batom", gloss: "Gloss",
+  gel: "Gel", limpeza: "Limpeza", anti: "Anti", fino: "Fino", kit: "Kit", kits: "Kits",
+  shampoo: "Shampoo", solar: "Solar", cor: "Cor",
+};
+const PT_CONNECTORS = new Set(["de", "da", "do", "e", "a", "o", "com", "para", "em", "ou"]);
+
 const productTypeFromCategory = (cat) => {
   if (!cat) return "Cosméticos";
   const parts = cat.split("-").filter(Boolean);
-  return parts.map((w) => w[0].toUpperCase() + w.slice(1)).join(" > ");
+  const cap = (w) => PT_ACCENTS[w] || (w[0].toUpperCase() + w.slice(1));
+  const joinWords = (arr) => arr
+    .map((w, i) => (i > 0 && PT_CONNECTORS.has(w)) ? w : cap(w))
+    .join(" ");
+  if (parts.length <= 2) return parts.map(cap).join(" > ");
+  return [cap(parts[0]), cap(parts[1]), joinWords(parts.slice(2))].join(" > ");
 };
 
 // item_group_id: agrupa variantes pelo tronco do slug (sem sufixos de tamanho/volume).
