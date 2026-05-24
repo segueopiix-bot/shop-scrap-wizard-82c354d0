@@ -232,7 +232,8 @@ const CATEGORY_OVERRIDES = {
   "epoca-esmalte-impala-cremoso-jane-75ml-170147": "Health & Beauty > Personal Care > Cosmetics > Nail Care > Nail Polish",
   "epoca-iluminador-liquido-dior-forever-glow-maximizer": "Health & Beauty > Personal Care > Cosmetics > Face Makeup > Highlighters & Luminizers",
   "epoca-creme-de-olhos-creamy-eye-cream": "Health & Beauty > Personal Care > Skin Care > Eye Creams & Treatments",
-  "epoca-acnezil-gel-5-com-20g-145487": "Health & Beauty > Health Care > Medicine & Drugs",
+  "epoca-acnezil-gel-5-com-20g-145487": "Health & Beauty > Personal Care > Skin Care > Facial Treatments & Masks",
+  "epoca-acnase-creme-25g-145781": "Health & Beauty > Personal Care > Skin Care > Facial Treatments & Masks",
   "epoca-gel-facial-zella-150mg-acido-azelaico-30g-169655": "Health & Beauty > Personal Care > Skin Care > Facial Treatments & Masks",
 };
 
