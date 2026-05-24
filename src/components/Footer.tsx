@@ -146,18 +146,18 @@ const Footer = () => {
       {/* Mobile */}
       <div className="md:hidden container-page py-6">
         <div className="flex justify-start pb-4">
-          <img src={logo} alt="Gago Suplementos" className="h-8 w-auto" loading="lazy" />
+          <img src={logo} alt="Tendencia Cosmeticos" className="h-8 w-auto" loading="lazy" />
         </div>
 
         {/* Sobre */}
         <div className="border-b border-border py-4 text-left">
           <h3 className="font-bold text-foreground text-sm mb-3">INFORMAÇÕES DA EMPRESA</h3>
           <div className="text-sm text-muted-foreground leading-relaxed space-y-1">
-            <p>Gago Suplementos</p>
-            <p>CNPJ: 64.816.985/0001-00</p>
-            <p>Telefone: (47) 99650-3232</p>
-            <p>E-mail: contato@gagosuplementos.com.br</p>
-            <p>Endereço: AV CORONEL MARCOS KONDER, 805 - Bairro Centro - CEP 88301-303 - Itajaí/SC</p>
+            <p>Tendencia Cosmeticos</p>
+            <p>CNPJ: 22.556.253/0002-60</p>
+            <p>Telefone: (48) 98400-0000</p>
+            <p>E-mail: contato@tendenciacosmeticos.com.br</p>
+            <p>Endereço: Rua Madre Maria Vilac, 1271, Loja Amalia, Canasvieiras, Florianópolis - SC, 88054-000</p>
             <p>Segunda a Sexta das 09h às 18h</p>
           </div>
         </div>
