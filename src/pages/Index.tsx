@@ -16,8 +16,6 @@ const Index = () => {
     trackPageView();
   }, []);
 
-  const queima = getProductsByCategory("whey");
-
   const cosmeticosMaisVendidos = products
     .filter((p) => p.category.startsWith("cosmeticos"))
     .slice(0, 12);
@@ -29,7 +27,6 @@ const Index = () => {
       <MobileBannerCarousel />
       <DesktopBannerCarousel />
 
-      <ProductSection title="Queima de Estoque" products={queima} categorySlug="queima-de-estoque" />
 
       <section className="py-4">
         <div className="container-page">
