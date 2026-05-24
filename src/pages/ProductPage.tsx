@@ -23,7 +23,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
-const SITE_URL = "https://tendenciacosmeticos.com.br";
+const SITE_URL = "https://lojas-epoca.store";
 const SITE_NAME = "Tendência Cosméticos";
 
 const stripHtml = (html: string) =>
