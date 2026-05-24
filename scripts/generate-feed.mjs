@@ -127,7 +127,7 @@ for (const m of src.matchAll(blockRe)) {
 
 function generateDescription(name, brand, googleCategory) {
   const catHint = inferCategoryHint(googleCategory);
-  return `${name}. ${catHint}Compre ${brand !== "Época Cosméticos" ? `${brand} ` : ""}com desconto na Lojas Época — entrega rápida para todo o Brasil.`;
+  return `${name}. ${catHint}Compre ${brand !== STORE_NAME ? `${brand} ` : ""}com desconto na ${STORE_NAME} — entrega rápida para todo o Brasil.`;
 }
 
 function inferCategoryHint(cat) {
