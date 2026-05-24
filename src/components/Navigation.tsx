@@ -139,7 +139,6 @@ const cosmeticosSubcategories: SubItem[] = [
 
 const navItems: NavItem[] = [
   { label: "Início", path: "/" },
-  { label: "Suplementos", path: "/collections/suplementos", children: supplementSubcategories },
   { label: "Cosméticos", path: "/collections/cosmeticos", children: cosmeticosSubcategories },
   { label: "Blog", path: "/blog" },
 ];
