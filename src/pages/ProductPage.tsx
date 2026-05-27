@@ -157,13 +157,8 @@ const ProductPage = () => {
     );
   }
 
-  const reviewStats = getReviewStats(product.id);
-  const initialReviewsCount = 3;
-  const extraReviewsCount = 17;
-  const visibleReviews = getReviews(
-    product.id,
-    reviewsExpanded ? initialReviewsCount + extraReviewsCount : initialReviewsCount,
-  );
+
+
 
   const variantLabel = desc?.variantLabel || "Sabor";
   const variantImage = selectedVariant ? desc?.variantImages?.[selectedVariant] : undefined;
