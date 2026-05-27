@@ -35,7 +35,7 @@ export function useLogoProtectionSetting(): boolean {
       .maybeSingle()
       .then(({ data }) => {
         if (cancelled) return;
-        const isEnabled = data?.value !== "false";
+        const isEnabled = data?.value === "true";
         try {
           sessionStorage.setItem(CACHE_KEY, isEnabled ? "true" : "false");
         } catch {}
