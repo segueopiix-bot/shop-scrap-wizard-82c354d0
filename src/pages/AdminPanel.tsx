@@ -890,7 +890,48 @@ export default function AdminPanel() {
                 </div>
               </Card>
             )}
+
+            {section === "logo" && (
+              <Card className="p-6 space-y-4 max-w-2xl">
+                <div>
+                  <h2 className="font-semibold text-lg mb-1">Configurações de Logo</h2>
+                  <p className="text-sm text-muted-foreground">
+                    Controle a proteção de logo exibida para visitantes vindos de anúncios.
+                  </p>
+                </div>
+
+                <div className="flex items-center justify-between gap-4 p-4 border rounded-lg">
+                  <div>
+                    <div className="font-medium text-sm">
+                      Proteção de logo ativa para visitantes de anúncios
+                    </div>
+                    <div className="text-xs text-muted-foreground mt-1">
+                      Quando ativada, visitantes mobile vindos de anúncios verão a logo protegida.
+                    </div>
+                  </div>
+                  <Switch
+                    checked={logoProtection}
+                    disabled={savingLogoProtection}
+                    onCheckedChange={toggleLogoProtection}
+                  />
+                </div>
+
+                <div className="text-sm">
+                  Status atual:{" "}
+                  <span className="font-medium">
+                    {logoProtection ? "✅ Proteção ativa" : "⛔ Proteção desativada"}
+                  </span>
+                </div>
+
+                {logoProtectionUpdatedAt && (
+                  <div className="text-xs text-muted-foreground">
+                    Última alteração: {new Date(logoProtectionUpdatedAt).toLocaleString("pt-BR")}
+                  </div>
+                )}
+              </Card>
+            )}
           </main>
+
 
         </div>
       </div>
