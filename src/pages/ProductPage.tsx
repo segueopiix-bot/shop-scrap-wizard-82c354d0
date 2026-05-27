@@ -9,8 +9,6 @@ import ProductCard from "@/components/ProductCard";
 import ProductGallery from "@/components/ProductGallery";
 import { products, type Product } from "@/data/products";
 import { getProductDescription } from "@/data/productDescriptions";
-import { getReviewStats, getReviews, formatReviewCount } from "@/data/reviews";
-import StarRating from "@/components/StarRating";
 import ShippingCalculator from "@/components/ShippingCalculator";
 import { ProductSEO } from "@/components/ProductSEO";
 import correiosLogo from "@/assets/correios-logo.png";
