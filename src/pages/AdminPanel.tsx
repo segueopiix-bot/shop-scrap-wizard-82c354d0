@@ -121,6 +121,41 @@ export default function AdminPanel() {
   const [blockedIps, setBlockedIps] = useState<{ id: string; ip: string; reason: string | null; created_at: string }[]>([]);
   const [newBlockIp, setNewBlockIp] = useState("");
   const [newBlockReason, setNewBlockReason] = useState("");
+  const [logoProtection, setLogoProtection] = useState<boolean>(true);
+  const [logoProtectionUpdatedAt, setLogoProtectionUpdatedAt] = useState<string | null>(null);
+  const [savingLogoProtection, setSavingLogoProtection] = useState(false);
+
+  useEffect(() => {
+    supabase
+      .from("site_settings")
+      .select("value, updated_at")
+      .eq("key", "logo_protection_enabled")
+      .maybeSingle()
+      .then(({ data }) => {
+        if (!data) return;
+        setLogoProtection(data.value !== "false");
+        setLogoProtectionUpdatedAt(data.updated_at);
+      });
+  }, []);
+
+  const toggleLogoProtection = async (next: boolean) => {
+    setSavingLogoProtection(true);
+    const { data, error } = await supabase
+      .from("site_settings")
+      .update({ value: next ? "true" : "false", updated_at: new Date().toISOString() })
+      .eq("key", "logo_protection_enabled")
+      .select("value, updated_at")
+      .maybeSingle();
+    setSavingLogoProtection(false);
+    if (error) {
+      toast.error("Erro ao salvar configuração");
+      return;
+    }
+    setLogoProtection(data?.value !== "false");
+    setLogoProtectionUpdatedAt(data?.updated_at ?? new Date().toISOString());
+    clearLogoProtectionCache();
+    toast.success(next ? "Proteção de logo ativada" : "Proteção de logo desativada");
+  };
 
 
 
