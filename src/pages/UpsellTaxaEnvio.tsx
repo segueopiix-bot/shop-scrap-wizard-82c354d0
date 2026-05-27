@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { AlertTriangle, Gift, Lock, Truck, ShieldCheck, Clock, Check, Loader2 } from "lucide-react";
 import { toast } from "sonner";
-import logo from "@/assets/full-logo.png";
+import LogoSelector from "@/components/LogoSelector";
 import carmedCopa from "@/assets/carmed-copa.webp";
 import UploadProof from "@/components/UploadProof";
 
