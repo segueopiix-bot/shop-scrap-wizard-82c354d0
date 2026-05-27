@@ -104,6 +104,27 @@ export type Database = {
         }
         Relationships: []
       }
+      logo_tokens: {
+        Row: {
+          created_at: string
+          expires_at: string
+          id: string
+          token: string
+        }
+        Insert: {
+          created_at?: string
+          expires_at: string
+          id?: string
+          token: string
+        }
+        Update: {
+          created_at?: string
+          expires_at?: string
+          id?: string
+          token?: string
+        }
+        Relationships: []
+      }
       orders: {
         Row: {
           amount_cents: number
