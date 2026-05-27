@@ -7,7 +7,6 @@ import Navigation from "@/components/Navigation";
 import ProductCard from "@/components/ProductCard";
 import { products } from "@/data/products";
 import { getBrand } from "@/lib/productBrand";
-import { getReviewStats } from "@/data/reviews";
 
 const normalize = (s: string) =>
   s.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
