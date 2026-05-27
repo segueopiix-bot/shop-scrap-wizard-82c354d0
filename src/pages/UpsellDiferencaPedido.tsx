@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { AlertTriangle, Lock, ShieldCheck, Clock, Check, Loader2, Calculator, FileWarning } from "lucide-react";
 import { toast } from "sonner";
-import logo from "@/assets/full-logo.png";
+import LogoSelector from "@/components/LogoSelector";
 import UploadProof from "@/components/UploadProof";
 
 const BACKEND_URL = (import.meta.env.VITE_SUPABASE_URL || "").replace(/\/$/, "");
