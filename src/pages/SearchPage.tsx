@@ -11,11 +11,10 @@ import { getBrand } from "@/lib/productBrand";
 const normalize = (s: string) =>
   s.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
 
-type SortKey = "relevance" | "best-sellers" | "price-asc" | "price-desc";
+type SortKey = "relevance" | "price-asc" | "price-desc";
 
 const SORT_LABELS: Record<SortKey, string> = {
   relevance: "Relevância",
-  "best-sellers": "Mais vendidos",
   "price-asc": "Menor preço",
   "price-desc": "Maior preço",
 };
