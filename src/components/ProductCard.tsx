@@ -2,8 +2,6 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import type { Product } from "@/data/products";
 import { ArrowDown, Minus, Plus, ShoppingCart } from "lucide-react";
-import StarRating from "./StarRating";
-import { getReviewStats, formatReviewCount } from "@/data/reviews";
 import { useCart } from "@/contexts/CartContext";
 
 interface ProductCardProps {
@@ -16,7 +14,6 @@ const ProductCard = ({ product, fullWidth = false }: ProductCardProps) => {
   const [qty, setQty] = useState(1);
   const formatPrice = (value: number) =>
     `R$ ${value.toFixed(2).replace(".", ",")}`;
-  const stats = getReviewStats(product.id);
 
   const handleBuy = () => {
     addItem(product, qty);
@@ -50,12 +47,8 @@ const ProductCard = ({ product, fullWidth = false }: ProductCardProps) => {
           {product.name}
         </Link>
 
-        <div className="mb-2 flex items-center justify-center gap-1">
-          <StarRating rating={stats.rating} size={12} />
-          <span className="text-[11px] text-muted-foreground">({formatReviewCount(stats.count)})</span>
-        </div>
-
         <div className="mt-auto">
+
           <div className="mb-3 flex items-baseline justify-center gap-2">
             <span className="text-lg font-bold text-[#29ABE2]">
               {formatPrice(product.price)}

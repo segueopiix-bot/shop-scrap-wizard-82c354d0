@@ -7,16 +7,14 @@ import Navigation from "@/components/Navigation";
 import ProductCard from "@/components/ProductCard";
 import { products } from "@/data/products";
 import { getBrand } from "@/lib/productBrand";
-import { getReviewStats } from "@/data/reviews";
 
 const normalize = (s: string) =>
   s.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
 
-type SortKey = "relevance" | "best-sellers" | "price-asc" | "price-desc";
+type SortKey = "relevance" | "price-asc" | "price-desc";
 
 const SORT_LABELS: Record<SortKey, string> = {
   relevance: "Relevância",
-  "best-sellers": "Mais vendidos",
   "price-asc": "Menor preço",
   "price-desc": "Maior preço",
 };
@@ -64,12 +62,8 @@ const SearchPage = () => {
       case "price-desc":
         sorted.sort((a, b) => b.price - a.price);
         break;
-      case "best-sellers":
-        sorted.sort(
-          (a, b) => getReviewStats(b.id).count - getReviewStats(a.id).count,
-        );
-        break;
     }
+
     return sorted;
   }, [baseResults, selectedBrands, priceMin, priceMax, sort]);
 

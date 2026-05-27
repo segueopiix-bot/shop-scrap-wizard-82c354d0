@@ -516,8 +516,6 @@ const CategoryPage = () => {
 /* Grid-optimized product card (full width instead of fixed 200px) */
 import { ArrowDown } from "lucide-react";
 import type { Product } from "@/data/products";
-import StarRating from "@/components/StarRating";
-import { getReviewStats, formatReviewCount } from "@/data/reviews";
 
 const ProductCardGrid = ({
   product,
@@ -528,7 +526,7 @@ const ProductCardGrid = ({
 }) => {
   const formatPrice = (value: number) =>
     `R$ ${value.toFixed(2).replace(".", ",")}`;
-  const stats = getReviewStats(product.id);
+
 
   if (listMode) {
     return (
@@ -549,10 +547,7 @@ const ProductCardGrid = ({
           <h3 className="mb-2 text-sm font-semibold text-card-foreground">
             {product.name}
           </h3>
-          <div className="mb-2 flex items-center gap-1">
-            <StarRating rating={stats.rating} size={13} />
-            <span className="text-xs text-muted-foreground">({formatReviewCount(stats.count)})</span>
-          </div>
+
           <div className="flex items-baseline gap-2">
             <span className="text-lg font-bold text-sale">
               {formatPrice(product.price)}
@@ -583,10 +578,6 @@ const ProductCardGrid = ({
         <h3 className="mb-2 line-clamp-2 text-xs font-semibold leading-tight text-card-foreground">
           {product.name}
         </h3>
-        <div className="mb-2 flex items-center gap-1">
-          <StarRating rating={stats.rating} size={12} />
-          <span className="text-[11px] text-muted-foreground">({formatReviewCount(stats.count)})</span>
-        </div>
         <div className="mt-auto">
           <div className="flex items-baseline gap-2">
             <span className="text-base font-bold text-sale">
