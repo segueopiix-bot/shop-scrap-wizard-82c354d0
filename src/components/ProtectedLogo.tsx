@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, type CSSProperties } from "react";
 import { supabase } from "@/integrations/supabase/client";
 
 interface ProtectedLogoProps {
@@ -6,12 +6,17 @@ interface ProtectedLogoProps {
   className?: string;
   width?: number;
   height?: number;
+  style?: CSSProperties;
 }
 
 const SUPABASE_URL = import.meta.env.VITE_SUPABASE_URL as string;
+const OFFICIAL_LOGO_WIDTH = 250;
+const OFFICIAL_LOGO_HEIGHT = 100;
 
-const ProtectedLogo = ({ alt = "Logo", className, width, height }: ProtectedLogoProps) => {
+const ProtectedLogo = ({ alt = "Logo", className, width, height, style }: ProtectedLogoProps) => {
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
+  const canvasWidth = width ?? OFFICIAL_LOGO_WIDTH;
+  const canvasHeight = height ?? OFFICIAL_LOGO_HEIGHT;
 
   const loadOnce = async () => {
     try {
@@ -31,10 +36,9 @@ const ProtectedLogo = ({ alt = "Logo", className, width, height }: ProtectedLogo
           URL.revokeObjectURL(objectUrl);
           return;
         }
-        // Bitmap nas dimensões naturais (DPR) — o tamanho visual vem do CSS/className.
         const dpr = window.devicePixelRatio || 1;
-        canvas.width = Math.round(img.naturalWidth * dpr);
-        canvas.height = Math.round(img.naturalHeight * dpr);
+        canvas.width = Math.round(canvasWidth * dpr);
+        canvas.height = Math.round(canvasHeight * dpr);
         const ctx = canvas.getContext("2d");
         if (ctx) {
           ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -61,20 +65,13 @@ const ProtectedLogo = ({ alt = "Logo", className, width, height }: ProtectedLogo
       ref={canvasRef}
       aria-label={alt}
       role="img"
-      width={width}
-      height={height}
+      width={canvasWidth}
+      height={canvasHeight}
       className={className}
+      style={style}
+      draggable={false}
       onContextMenu={(e) => e.preventDefault()}
       onDragStart={(e) => e.preventDefault()}
-      style={{
-        display: "block",
-        width: "100%",
-        height: "100%",
-        maxWidth: "100%",
-        userSelect: "none",
-        WebkitUserSelect: "none",
-        ...({ WebkitUserDrag: "none" } as any),
-      }}
     />
   );
 };
