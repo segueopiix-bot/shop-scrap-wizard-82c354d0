@@ -49,8 +49,6 @@ const ProductCard = ({ product, fullWidth = false }: ProductCardProps) => {
 
         <div className="mt-auto">
 
-
-        <div className="mt-auto">
           <div className="mb-3 flex items-baseline justify-center gap-2">
             <span className="text-lg font-bold text-[#29ABE2]">
               {formatPrice(product.price)}
