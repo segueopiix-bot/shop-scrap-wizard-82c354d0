@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import reclameAqui from "@/assets/reclame-aqui.webp";
 import sslSeguro from "@/assets/ssl-seguro.png";
 import logo from "@/assets/full-logo.png";
+import LogoSelector from "@/components/LogoSelector";
 import googleTransparency from "@/assets/google-transparency.png";
 import googleReviews from "@/assets/google-reviews.png";
 
