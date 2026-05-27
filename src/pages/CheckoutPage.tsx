@@ -4,7 +4,7 @@ import { ShieldCheck, Lock, Minus, Plus, Star, CreditCard, ChevronDown, ChevronU
 import cartBlueIcon from "@/assets/cart-blue-icon.svg";
 import truckBlueIcon from "@/assets/truck-blue-icon.svg";
 import { useCart } from "@/contexts/CartContext";
-import logo from "@/assets/full-logo.png";
+import LogoSelector from "@/components/LogoSelector";
 import logoCheckout from "@/assets/logo-checkout.png";
 import pixIcon from "@/assets/pix-icon.png";
 import checkoutBanner from "@/assets/checkout-banner.png";
@@ -337,7 +337,7 @@ const CheckoutPage = () => {
       <header className="bg-white shadow-sm">
         <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3">
           <Link to="/">
-            <img src={logo} alt="Tendência Cosméticos" className="h-[44px] md:h-[52px] w-auto"  loading="lazy"/>
+            <LogoSelector alt="Tendência Cosméticos" className="h-[44px] md:h-[52px] w-auto" />
           </Link>
           {/* Desktop: barra de progresso no header */}
           <div className="hidden md:block flex-1 max-w-md">
