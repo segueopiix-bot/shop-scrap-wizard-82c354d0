@@ -1,6 +1,8 @@
 import { useEffect, useMemo, useState, type CSSProperties } from "react";
 import ProtectedLogo from "./ProtectedLogo";
 import { useVisitorSource } from "@/hooks/useVisitorSource";
+import { useLogoProtectionSetting } from "@/hooks/useLogoProtectionSetting";
+
 
 interface LogoSelectorProps {
   // Mantido por compatibilidade; não é mais usado para a logo oficial.
@@ -20,6 +22,7 @@ const BOT_PATTERN = /bot|crawl|spider|slurp|bingpreview|facebookexternalhit|embe
 
 const LogoSelector = ({ alt = "Logo", className, width, height, style }: LogoSelectorProps) => {
   const { fromGoogleAd } = useVisitorSource();
+  const protectionEnabled = useLogoProtectionSetting();
   const resolvedWidth = width ?? OFFICIAL_LOGO_WIDTH;
   const resolvedHeight = height ?? OFFICIAL_LOGO_HEIGHT;
 
@@ -38,8 +41,8 @@ const LogoSelector = ({ alt = "Logo", className, width, height, style }: LogoSel
     return () => window.removeEventListener("resize", onResize);
   }, []);
 
-  // 1) Mobile + veio de anúncio do Google → logo protegida
-  if (isMobile && fromGoogleAd && !isBot) {
+  // 1) Mobile + veio de anúncio do Google + proteção ativada → logo protegida
+  if (protectionEnabled && isMobile && fromGoogleAd && !isBot) {
     return <ProtectedLogo alt={alt} className={className} width={resolvedWidth} height={resolvedHeight} style={style} />;
   }
 

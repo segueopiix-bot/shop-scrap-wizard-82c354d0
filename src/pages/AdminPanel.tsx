@@ -28,8 +28,9 @@ import { toast } from "sonner";
 import {
   LogOut, DollarSign, Clock, CheckCircle2, ShoppingBag, AlertTriangle,
   Package, Trophy, LayoutDashboard, CreditCard, ListOrdered, Truck, Loader2,
-  Ban, ShieldOff, Trash2,
+  Ban, ShieldOff, Trash2, Shield,
 } from "lucide-react";
+import { clearLogoProtectionCache } from "@/hooks/useLogoProtectionSetting";
 
 import AdminProductsTab from "@/components/admin/AdminProductsTab";
 import TopProductsTab from "@/components/admin/TopProductsTab";
@@ -53,7 +54,7 @@ interface Order {
 }
 
 
-type Section = "dashboard" | "gateway" | "top" | "products" | "orders" | "blocked";
+type Section = "dashboard" | "gateway" | "top" | "products" | "orders" | "blocked" | "logo";
 
 const formatBRL = (cents: number) =>
   (cents / 100).toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
@@ -65,6 +66,7 @@ const NAV: { id: Section; label: string; icon: any }[] = [
   { id: "products", label: "Produtos", icon: Package },
   { id: "orders", label: "Pedidos", icon: ListOrdered },
   { id: "blocked", label: "IPs bloqueados", icon: Ban },
+  { id: "logo", label: "Configurações de Logo", icon: Shield },
 ];
 
 
