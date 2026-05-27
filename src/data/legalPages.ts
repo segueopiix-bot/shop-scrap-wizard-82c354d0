@@ -196,12 +196,7 @@ export const legalPages: Record<string, { title: string; html: string }> = {
     <p>Após o recebimento do produto devolvido ou aprovação da solicitação, a <strong>Tendência Cosméticos</strong> tem o prazo de <strong>até 30 dias</strong> para concluir o processo de reembolso.</p>
 
     <h3>Forma de Reembolso</h3>
-    <p>O estorno será realizado conforme o método de pagamento utilizado no pedido:</p>
-    <ul>
-      <li><strong>PIX:</strong> devolução direta para a chave informada pelo cliente.</li>
-      <li><strong>Cartão de crédito:</strong> estorno solicitado à operadora, podendo aparecer na fatura em até 2 ciclos.</li>
-      <li><strong>Boleto bancário:</strong> depósito em conta informada pelo titular do pedido.</li>
-    </ul>
+    <p>Como aceitamos exclusivamente <strong>PIX</strong>, o estorno é feito por devolução direta para a chave PIX informada pelo cliente.</p>
   ` },
   "faq": { title: "Perguntas Frequentes", html: `<h1>Perguntas Frequentes</h1>
     <h3>1. Qual o prazo de entrega?</h3>
