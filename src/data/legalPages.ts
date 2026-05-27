@@ -172,16 +172,10 @@ export const legalPages: Record<string, { title: string; html: string }> = {
   ` },
   "payment": { title: "Formas de Pagamento", html: `<h1>Formas de Pagamento</h1>
   
-    <p>A <strong>Tendência Cosméticos</strong> disponibiliza opções de pagamento seguras e práticas para que você conclua sua compra com total tranquilidade.</p>
+    <p>A <strong>Tendência Cosméticos</strong> aceita exclusivamente pagamento via <strong>PIX</strong>, garantindo agilidade, praticidade e segurança em todas as compras.</p>
 
     <h3>PIX</h3>
-    <p>Pagamento aprovado na hora, garantindo mais agilidade no processamento e na liberação do seu pedido.</p>
-
-    <h3>Cartão de Crédito</h3>
-    <p>Aceitamos as principais bandeiras, com parcelamento facilitado e processamento seguro.</p>
-
-    <h3>Boleto Bancário</h3>
-    <p>Pagamento à vista, com confirmação em até 1 dia útil após a compensação.</p>
+    <p>Pagamento aprovado na hora, com liberação imediata do pedido para separação e envio. Não trabalhamos com cartão de crédito, boleto ou qualquer outra forma de pagamento.</p>
 
     <h3>Segurança</h3>
     <p>Todos os pagamentos são processados em ambiente seguro, seguindo rigorosos padrões de proteção de dados.</p>
