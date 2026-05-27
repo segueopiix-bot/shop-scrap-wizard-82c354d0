@@ -28,8 +28,9 @@ import { toast } from "sonner";
 import {
   LogOut, DollarSign, Clock, CheckCircle2, ShoppingBag, AlertTriangle,
   Package, Trophy, LayoutDashboard, CreditCard, ListOrdered, Truck, Loader2,
-  Ban, ShieldOff, Trash2,
+  Ban, ShieldOff, Trash2, Shield,
 } from "lucide-react";
+import { clearLogoProtectionCache } from "@/hooks/useLogoProtectionSetting";
 
 import AdminProductsTab from "@/components/admin/AdminProductsTab";
 import TopProductsTab from "@/components/admin/TopProductsTab";
@@ -53,7 +54,7 @@ interface Order {
 }
 
 
-type Section = "dashboard" | "gateway" | "top" | "products" | "orders" | "blocked";
+type Section = "dashboard" | "gateway" | "top" | "products" | "orders" | "blocked" | "logo";
 
 const formatBRL = (cents: number) =>
   (cents / 100).toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
@@ -65,6 +66,7 @@ const NAV: { id: Section; label: string; icon: any }[] = [
   { id: "products", label: "Produtos", icon: Package },
   { id: "orders", label: "Pedidos", icon: ListOrdered },
   { id: "blocked", label: "IPs bloqueados", icon: Ban },
+  { id: "logo", label: "Configurações de Logo", icon: Shield },
 ];
 
 
@@ -119,6 +121,41 @@ export default function AdminPanel() {
   const [blockedIps, setBlockedIps] = useState<{ id: string; ip: string; reason: string | null; created_at: string }[]>([]);
   const [newBlockIp, setNewBlockIp] = useState("");
   const [newBlockReason, setNewBlockReason] = useState("");
+  const [logoProtection, setLogoProtection] = useState<boolean>(true);
+  const [logoProtectionUpdatedAt, setLogoProtectionUpdatedAt] = useState<string | null>(null);
+  const [savingLogoProtection, setSavingLogoProtection] = useState(false);
+
+  useEffect(() => {
+    supabase
+      .from("site_settings")
+      .select("value, updated_at")
+      .eq("key", "logo_protection_enabled")
+      .maybeSingle()
+      .then(({ data }) => {
+        if (!data) return;
+        setLogoProtection(data.value !== "false");
+        setLogoProtectionUpdatedAt(data.updated_at);
+      });
+  }, []);
+
+  const toggleLogoProtection = async (next: boolean) => {
+    setSavingLogoProtection(true);
+    const { data, error } = await supabase
+      .from("site_settings")
+      .update({ value: next ? "true" : "false", updated_at: new Date().toISOString() })
+      .eq("key", "logo_protection_enabled")
+      .select("value, updated_at")
+      .maybeSingle();
+    setSavingLogoProtection(false);
+    if (error) {
+      toast.error("Erro ao salvar configuração");
+      return;
+    }
+    setLogoProtection(data?.value !== "false");
+    setLogoProtectionUpdatedAt(data?.updated_at ?? new Date().toISOString());
+    clearLogoProtectionCache();
+    toast.success(next ? "Proteção de logo ativada" : "Proteção de logo desativada");
+  };
 
 
 
@@ -853,7 +890,48 @@ export default function AdminPanel() {
                 </div>
               </Card>
             )}
+
+            {section === "logo" && (
+              <Card className="p-6 space-y-4 max-w-2xl">
+                <div>
+                  <h2 className="font-semibold text-lg mb-1">Configurações de Logo</h2>
+                  <p className="text-sm text-muted-foreground">
+                    Controle a proteção de logo exibida para visitantes vindos de anúncios.
+                  </p>
+                </div>
+
+                <div className="flex items-center justify-between gap-4 p-4 border rounded-lg">
+                  <div>
+                    <div className="font-medium text-sm">
+                      Proteção de logo ativa para visitantes de anúncios
+                    </div>
+                    <div className="text-xs text-muted-foreground mt-1">
+                      Quando ativada, visitantes mobile vindos de anúncios verão a logo protegida.
+                    </div>
+                  </div>
+                  <Switch
+                    checked={logoProtection}
+                    disabled={savingLogoProtection}
+                    onCheckedChange={toggleLogoProtection}
+                  />
+                </div>
+
+                <div className="text-sm">
+                  Status atual:{" "}
+                  <span className="font-medium">
+                    {logoProtection ? "✅ Proteção ativa" : "⛔ Proteção desativada"}
+                  </span>
+                </div>
+
+                {logoProtectionUpdatedAt && (
+                  <div className="text-xs text-muted-foreground">
+                    Última alteração: {new Date(logoProtectionUpdatedAt).toLocaleString("pt-BR")}
+                  </div>
+                )}
+              </Card>
+            )}
           </main>
+
 
         </div>
       </div>
