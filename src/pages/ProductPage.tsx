@@ -144,7 +144,7 @@ const ProductPage = () => {
   const [quantity, setQuantity] = useState(1);
   const [selectedVariant, setSelectedVariant] = useState<string | null>(variants[0] || null);
   const { addItem } = useCart();
-  const [reviewsExpanded, setReviewsExpanded] = useState(false);
+
 
   if (!product) {
     return (
