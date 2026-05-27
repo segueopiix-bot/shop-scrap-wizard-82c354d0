@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import reclameAqui from "@/assets/reclame-aqui.webp";
 import sslSeguro from "@/assets/ssl-seguro.png";
 import logo from "@/assets/full-logo.png";
+import LogoSelector from "@/components/LogoSelector";
 import googleTransparency from "@/assets/google-transparency.png";
 import googleReviews from "@/assets/google-reviews.png";
 
@@ -62,7 +63,7 @@ const Footer = () => {
         <div className="grid grid-cols-3 gap-8">
           {/* Sobre */}
           <div>
-            <img src={logo} alt="Tendência Cosméticos" className="h-10 w-auto mb-4" loading="lazy" />
+            <LogoSelector src={logo} alt="Tendência Cosméticos" className="h-10 w-auto mb-4" />
             <h3 className="font-bold text-foreground text-sm mb-4">INFORMAÇÕES DA EMPRESA</h3>
             <div className="text-sm text-muted-foreground leading-relaxed space-y-1">
               <p>Tendência Cosméticos</p>
@@ -146,7 +147,7 @@ const Footer = () => {
       {/* Mobile */}
       <div className="md:hidden container-page py-6">
         <div className="flex justify-start pb-4">
-          <img src={logo} alt="Tendência Cosméticos" className="h-8 w-auto" loading="lazy" />
+          <LogoSelector src={logo} alt="Tendência Cosméticos" className="h-8 w-auto" />
         </div>
 
         {/* Sobre */}

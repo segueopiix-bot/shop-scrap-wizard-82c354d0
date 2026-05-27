@@ -2,6 +2,7 @@ import { ShoppingCart, Menu } from "lucide-react";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import logo from "@/assets/full-logo.png";
+import LogoSelector from "@/components/LogoSelector";
 
 import { useCart } from "@/contexts/CartContext";
 import SearchBar from "@/components/SearchBar";
@@ -52,7 +53,7 @@ const StoreHeader = ({ onToggleMobileMenu, mobileMenuOpen }: StoreHeaderProps) =
             <Menu className="h-7 w-7" />
           </button>
           <Link to="/" className="no-underline">
-            <img src={logo} alt="Tendência Cosméticos" className="h-[44px] w-auto"  loading="lazy"/>
+            <LogoSelector src={logo} alt="Tendência Cosméticos" className="h-[44px] w-auto" />
           </Link>
           <button
             onClick={() => setIsOpen(true)}
@@ -121,7 +122,7 @@ const StoreHeader = ({ onToggleMobileMenu, mobileMenuOpen }: StoreHeaderProps) =
         <div className="container-page">
           <div className="relative flex items-center justify-between">
             <Link to="/" className="no-underline flex-shrink-0">
-              <img src={logo} alt="Tendência Cosméticos" className="h-[52px] w-auto"  loading="lazy"/>
+              <LogoSelector src={logo} alt="Tendência Cosméticos" className="h-[52px] w-auto" />
             </Link>
 
             <div className="mx-8 max-w-xl flex-1">
