@@ -2,8 +2,6 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import type { Product } from "@/data/products";
 import { ArrowDown, Minus, Plus, ShoppingCart } from "lucide-react";
-import StarRating from "./StarRating";
-import { getReviewStats, formatReviewCount } from "@/data/reviews";
 import { useCart } from "@/contexts/CartContext";
 
 interface ProductCardProps {
