@@ -172,16 +172,10 @@ export const legalPages: Record<string, { title: string; html: string }> = {
   ` },
   "payment": { title: "Formas de Pagamento", html: `<h1>Formas de Pagamento</h1>
   
-    <p>A <strong>Tendência Cosméticos</strong> disponibiliza opções de pagamento seguras e práticas para que você conclua sua compra com total tranquilidade.</p>
+    <p>A <strong>Tendência Cosméticos</strong> aceita exclusivamente pagamento via <strong>PIX</strong>, garantindo agilidade, praticidade e segurança em todas as compras.</p>
 
     <h3>PIX</h3>
-    <p>Pagamento aprovado na hora, garantindo mais agilidade no processamento e na liberação do seu pedido.</p>
-
-    <h3>Cartão de Crédito</h3>
-    <p>Aceitamos as principais bandeiras, com parcelamento facilitado e processamento seguro.</p>
-
-    <h3>Boleto Bancário</h3>
-    <p>Pagamento à vista, com confirmação em até 1 dia útil após a compensação.</p>
+    <p>Pagamento aprovado na hora, com liberação imediata do pedido para separação e envio. Não trabalhamos com cartão de crédito, boleto ou qualquer outra forma de pagamento.</p>
 
     <h3>Segurança</h3>
     <p>Todos os pagamentos são processados em ambiente seguro, seguindo rigorosos padrões de proteção de dados.</p>
@@ -202,12 +196,7 @@ export const legalPages: Record<string, { title: string; html: string }> = {
     <p>Após o recebimento do produto devolvido ou aprovação da solicitação, a <strong>Tendência Cosméticos</strong> tem o prazo de <strong>até 30 dias</strong> para concluir o processo de reembolso.</p>
 
     <h3>Forma de Reembolso</h3>
-    <p>O estorno será realizado conforme o método de pagamento utilizado no pedido:</p>
-    <ul>
-      <li><strong>PIX:</strong> devolução direta para a chave informada pelo cliente.</li>
-      <li><strong>Cartão de crédito:</strong> estorno solicitado à operadora, podendo aparecer na fatura em até 2 ciclos.</li>
-      <li><strong>Boleto bancário:</strong> depósito em conta informada pelo titular do pedido.</li>
-    </ul>
+    <p>Como aceitamos exclusivamente <strong>PIX</strong>, o estorno é feito por devolução direta para a chave PIX informada pelo cliente.</p>
   ` },
   "faq": { title: "Perguntas Frequentes", html: `<h1>Perguntas Frequentes</h1>
     <h3>1. Qual o prazo de entrega?</h3>
