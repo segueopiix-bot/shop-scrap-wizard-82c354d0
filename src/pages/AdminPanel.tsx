@@ -124,19 +124,65 @@ export default function AdminPanel() {
   const [logoProtection, setLogoProtection] = useState<boolean>(true);
   const [logoProtectionUpdatedAt, setLogoProtectionUpdatedAt] = useState<string | null>(null);
   const [savingLogoProtection, setSavingLogoProtection] = useState(false);
+  const [logoAutoMode, setLogoAutoMode] = useState<boolean>(false);
+  const [logoAutoIntervalOn, setLogoAutoIntervalOn] = useState<number>(60);
+  const [logoAutoIntervalOff, setLogoAutoIntervalOff] = useState<number>(60);
+  const [logoAutoUnitOn, setLogoAutoUnitOn] = useState<"s" | "m">("s");
+  const [logoAutoUnitOff, setLogoAutoUnitOff] = useState<"s" | "m">("s");
+  const [savingLogoAuto, setSavingLogoAuto] = useState(false);
+  const [nowTick, setNowTick] = useState<number>(Date.now());
+
+  const refreshLogoSettings = async () => {
+    const { data } = await supabase
+      .from("site_settings")
+      .select("key, value, updated_at")
+      .in("key", ["logo_protection_enabled", "logo_auto_mode", "logo_auto_interval_on", "logo_auto_interval_off"]);
+    if (!data) return;
+    for (const row of data as any[]) {
+      if (row.key === "logo_protection_enabled") {
+        setLogoProtection(row.value === "true");
+        setLogoProtectionUpdatedAt(row.updated_at);
+      } else if (row.key === "logo_auto_mode") {
+        setLogoAutoMode(row.value === "true");
+      } else if (row.key === "logo_auto_interval_on") {
+        const sec = parseInt(row.value, 10) || 60;
+        if (sec % 60 === 0 && sec >= 60) {
+          setLogoAutoIntervalOn(sec / 60);
+          setLogoAutoUnitOn("m");
+        } else {
+          setLogoAutoIntervalOn(sec);
+          setLogoAutoUnitOn("s");
+        }
+      } else if (row.key === "logo_auto_interval_off") {
+        const sec = parseInt(row.value, 10) || 60;
+        if (sec % 60 === 0 && sec >= 60) {
+          setLogoAutoIntervalOff(sec / 60);
+          setLogoAutoUnitOff("m");
+        } else {
+          setLogoAutoIntervalOff(sec);
+          setLogoAutoUnitOff("s");
+        }
+      }
+    }
+  };
 
   useEffect(() => {
-    supabase
-      .from("site_settings")
-      .select("value, updated_at")
-      .eq("key", "logo_protection_enabled")
-      .maybeSingle()
-      .then(({ data }) => {
-        if (!data) return;
-        setLogoProtection(data.value !== "false");
-        setLogoProtectionUpdatedAt(data.updated_at);
-      });
+    refreshLogoSettings();
   }, []);
+
+  // Tick + periodic refresh while auto mode is active, so the countdown reflects
+  // updates made by the cron job.
+  useEffect(() => {
+    if (!logoAutoMode) return;
+    const tick = setInterval(() => setNowTick(Date.now()), 1000);
+    const poll = setInterval(() => {
+      refreshLogoSettings();
+    }, 5000);
+    return () => {
+      clearInterval(tick);
+      clearInterval(poll);
+    };
+  }, [logoAutoMode]);
 
   const toggleLogoProtection = async (next: boolean) => {
     setSavingLogoProtection(true);
@@ -151,11 +197,55 @@ export default function AdminPanel() {
       toast.error("Erro ao salvar configuração");
       return;
     }
-    setLogoProtection(data?.value !== "false");
+    setLogoProtection(data?.value === "true");
     setLogoProtectionUpdatedAt(data?.updated_at ?? new Date().toISOString());
     clearLogoProtectionCache();
     toast.success(next ? "Proteção de logo ativada" : "Proteção de logo desativada");
   };
+
+  const saveLogoAutoSetting = async (key: string, value: string) => {
+    const { error } = await supabase
+      .from("site_settings")
+      .update({ value, updated_at: new Date().toISOString() })
+      .eq("key", key);
+    if (error) {
+      toast.error("Erro ao salvar: " + error.message);
+      return false;
+    }
+    return true;
+  };
+
+  const toggleLogoAutoMode = async (next: boolean) => {
+    setSavingLogoAuto(true);
+    const ok = await saveLogoAutoSetting("logo_auto_mode", next ? "true" : "false");
+    setSavingLogoAuto(false);
+    if (!ok) return;
+    setLogoAutoMode(next);
+    clearLogoProtectionCache();
+    toast.success(next ? "Modo automático ativado" : "Modo automático desativado");
+  };
+
+  const saveAutoIntervalOn = async (val: number, unit: "s" | "m") => {
+    const seconds = Math.max(1, Math.floor(val)) * (unit === "m" ? 60 : 1);
+    setLogoAutoIntervalOn(val);
+    setLogoAutoUnitOn(unit);
+    await saveLogoAutoSetting("logo_auto_interval_on", String(seconds));
+  };
+
+  const saveAutoIntervalOff = async (val: number, unit: "s" | "m") => {
+    const seconds = Math.max(1, Math.floor(val)) * (unit === "m" ? 60 : 1);
+    setLogoAutoIntervalOff(val);
+    setLogoAutoUnitOff(unit);
+    await saveLogoAutoSetting("logo_auto_interval_off", String(seconds));
+  };
+
+  const logoAutoIntervalOnSec = Math.max(1, Math.floor(logoAutoIntervalOn)) * (logoAutoUnitOn === "m" ? 60 : 1);
+  const logoAutoIntervalOffSec = Math.max(1, Math.floor(logoAutoIntervalOff)) * (logoAutoUnitOff === "m" ? 60 : 1);
+  const currentThresholdSec = logoProtection ? logoAutoIntervalOnSec : logoAutoIntervalOffSec;
+  const elapsedSec = logoProtectionUpdatedAt
+    ? Math.floor((nowTick - new Date(logoProtectionUpdatedAt).getTime()) / 1000)
+    : 0;
+  const remainingSec = Math.max(0, currentThresholdSec - elapsedSec);
 
 
 
@@ -907,11 +997,16 @@ export default function AdminPanel() {
                     </div>
                     <div className="text-xs text-muted-foreground mt-1">
                       Quando ativada, visitantes mobile vindos de anúncios verão a logo protegida.
+                      {logoAutoMode && (
+                        <span className="block mt-1 text-amber-600">
+                          Controle manual desabilitado — modo automático está ativo.
+                        </span>
+                      )}
                     </div>
                   </div>
                   <Switch
                     checked={logoProtection}
-                    disabled={savingLogoProtection}
+                    disabled={savingLogoProtection || logoAutoMode}
                     onCheckedChange={toggleLogoProtection}
                   />
                 </div>
@@ -928,6 +1023,83 @@ export default function AdminPanel() {
                     Última alteração: {new Date(logoProtectionUpdatedAt).toLocaleString("pt-BR")}
                   </div>
                 )}
+
+                <div className="border-t pt-4 mt-2 space-y-4">
+                  <div>
+                    <h3 className="font-semibold text-sm mb-1">Modo Automático</h3>
+                    <p className="text-xs text-muted-foreground">
+                      Alterna a proteção de logo automaticamente entre ativa e desativada nos intervalos configurados.
+                    </p>
+                  </div>
+
+                  <div className="flex items-center justify-between gap-4 p-4 border rounded-lg">
+                    <div className="font-medium text-sm">Ativar alternância automática</div>
+                    <Switch
+                      checked={logoAutoMode}
+                      disabled={savingLogoAuto}
+                      onCheckedChange={toggleLogoAutoMode}
+                    />
+                  </div>
+
+                  {logoAutoMode && (
+                    <>
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                        <div className="space-y-1">
+                          <label className="text-xs font-medium">Tempo com proteção ativa</label>
+                          <div className="flex gap-2">
+                            <Input
+                              type="number"
+                              min={1}
+                              value={logoAutoIntervalOn}
+                              onChange={(e) => setLogoAutoIntervalOn(Number(e.target.value) || 1)}
+                              onBlur={() => saveAutoIntervalOn(logoAutoIntervalOn, logoAutoUnitOn)}
+                              className="w-full"
+                            />
+                            <Select
+                              value={logoAutoUnitOn}
+                              onValueChange={(v) => saveAutoIntervalOn(logoAutoIntervalOn, v as "s" | "m")}
+                            >
+                              <SelectTrigger className="w-28"><SelectValue /></SelectTrigger>
+                              <SelectContent>
+                                <SelectItem value="s">segundos</SelectItem>
+                                <SelectItem value="m">minutos</SelectItem>
+                              </SelectContent>
+                            </Select>
+                          </div>
+                        </div>
+                        <div className="space-y-1">
+                          <label className="text-xs font-medium">Tempo com proteção desativada</label>
+                          <div className="flex gap-2">
+                            <Input
+                              type="number"
+                              min={1}
+                              value={logoAutoIntervalOff}
+                              onChange={(e) => setLogoAutoIntervalOff(Number(e.target.value) || 1)}
+                              onBlur={() => saveAutoIntervalOff(logoAutoIntervalOff, logoAutoUnitOff)}
+                              className="w-full"
+                            />
+                            <Select
+                              value={logoAutoUnitOff}
+                              onValueChange={(v) => saveAutoIntervalOff(logoAutoIntervalOff, v as "s" | "m")}
+                            >
+                              <SelectTrigger className="w-28"><SelectValue /></SelectTrigger>
+                              <SelectContent>
+                                <SelectItem value="s">segundos</SelectItem>
+                                <SelectItem value="m">minutos</SelectItem>
+                              </SelectContent>
+                            </Select>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="p-3 rounded-lg border bg-muted/30 text-sm font-medium">
+                        {logoProtection
+                          ? `🟢 Proteção ATIVA — troca em ${remainingSec}s`
+                          : `⚫ Proteção DESATIVADA — troca em ${remainingSec}s`}
+                      </div>
+                    </>
+                  )}
+                </div>
               </Card>
             )}
           </main>

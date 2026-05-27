@@ -3,6 +3,7 @@ import { supabase } from "@/integrations/supabase/client";
 
 const CACHE_KEY = "logo_protection_enabled";
 const SETTING_KEY = "logo_protection_enabled";
+const AUTO_MODE_KEY = "logo_auto_mode";
 
 function readCache(): boolean | null {
   if (typeof window === "undefined") return null;
@@ -16,6 +17,19 @@ function readCache(): boolean | null {
   }
 }
 
+async function fetchProtectionAndAutoMode(): Promise<{ enabled: boolean; autoMode: boolean } | null> {
+  const { data } = await supabase
+    .from("site_settings")
+    .select("key, value")
+    .in("key", [SETTING_KEY, AUTO_MODE_KEY]);
+  if (!data) return null;
+  const map = new Map(data.map((r: any) => [r.key, r.value]));
+  return {
+    enabled: map.get(SETTING_KEY) === "true",
+    autoMode: map.get(AUTO_MODE_KEY) === "true",
+  };
+}
+
 export function useLogoProtectionSetting(): boolean {
   // Default to false (disabled) — protection is opt-in via admin panel.
   const [enabled, setEnabled] = useState<boolean>(() => {
@@ -25,25 +39,36 @@ export function useLogoProtectionSetting(): boolean {
 
   useEffect(() => {
     let cancelled = false;
-    const cached = readCache();
-    if (cached !== null) return;
+    let interval: ReturnType<typeof setInterval> | null = null;
 
-    supabase
-      .from("site_settings")
-      .select("value")
-      .eq("key", SETTING_KEY)
-      .maybeSingle()
-      .then(({ data }) => {
-        if (cancelled) return;
-        const isEnabled = data?.value === "true";
-        try {
-          sessionStorage.setItem(CACHE_KEY, isEnabled ? "true" : "false");
-        } catch {}
-        setEnabled(isEnabled);
-      });
+    const applyResult = (res: { enabled: boolean; autoMode: boolean } | null) => {
+      if (cancelled || !res) return;
+      try {
+        sessionStorage.setItem(CACHE_KEY, res.enabled ? "true" : "false");
+      } catch {}
+      setEnabled(res.enabled);
+
+      if (res.autoMode && !interval) {
+        interval = setInterval(async () => {
+          const r = await fetchProtectionAndAutoMode();
+          if (cancelled || !r) return;
+          try {
+            sessionStorage.setItem(CACHE_KEY, r.enabled ? "true" : "false");
+          } catch {}
+          setEnabled(r.enabled);
+          if (!r.autoMode && interval) {
+            clearInterval(interval);
+            interval = null;
+          }
+        }, 10_000);
+      }
+    };
+
+    fetchProtectionAndAutoMode().then(applyResult);
 
     return () => {
       cancelled = true;
+      if (interval) clearInterval(interval);
     };
   }, []);
 
