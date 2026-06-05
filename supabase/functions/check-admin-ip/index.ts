@@ -2,6 +2,7 @@
 // Public (no JWT) — returns { allowed: boolean, ip: string }.
 const ALLOWED_IPS = new Set<string>([
   "187.73.199.177",
+  "187.73.196.224",
 ]);
 
 const corsHeaders = {
