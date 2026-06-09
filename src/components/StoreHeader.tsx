@@ -28,50 +28,54 @@ const StoreHeader = ({ onToggleMobileMenu, mobileMenuOpen }: StoreHeaderProps) =
 
   return (
     <div className="md:contents">
-      <div className="md:hidden h-[180px]"></div> {/* Spacer for fixed mobile header */}
+      <div className="md:hidden h-[160px]"></div> {/* Spacer for fixed mobile header */}
 
 
 
 
       {/* Mobile: compact sticky bar — appears only when scrolled */}
       <div
-        className={`fixed top-0 left-0 right-0 z-50 block w-full md:hidden transition-transform duration-200 ${
-          scrolled ? "translate-y-0 shadow-md" : "translate-y-0"
+        className={`fixed top-0 left-0 right-0 z-50 block w-full md:hidden transition-all duration-200 ${
+          scrolled ? "shadow-md" : ""
         }`}
       >
-        <img src={freteBanner} alt="Frete grátis para todo Brasil" className="w-full h-auto block"  loading="lazy"/>
-        <div className="bg-white px-3 py-2 border-b border-gray-200">
-
-        <div className="flex items-center gap-3">
-          <button
-            onClick={onToggleMobileMenu}
-            className="flex-shrink-0 text-foreground"
-            aria-label="Menu"
-          >
-            <Menu className="h-7 w-7" />
-          </button>
-          
-          <Link to="/" className="no-underline flex-shrink-0">
-            <LogoSelector src={logo} alt="Tendência Cosméticos" className="h-[36px] w-auto" />
-          </Link>
-
-          <div className="flex-1">
-            <SearchBar />
-          </div>
-
-          <button
-            onClick={() => setIsOpen(true)}
-            className="flex-shrink-0 flex items-center text-foreground transition-opacity hover:opacity-80"
-            aria-label="Carrinho"
-          >
-            <div className="relative">
-              <ShoppingCart className="h-6 w-6" />
-              <span className="absolute -right-1.5 -top-1.5 flex h-3.5 w-3.5 items-center justify-center rounded-full bg-orange-500 text-[9px] font-bold text-white leading-none">
-                {totalItems}
-              </span>
-            </div>
-          </button>
+        <div className={`transition-all duration-200 overflow-hidden ${scrolled ? "h-0 opacity-0" : "h-auto opacity-100"}`}>
+          <img src={freteBanner} alt="Frete grátis para todo Brasil" className="w-full h-auto block" loading="lazy"/>
         </div>
+        <div className="bg-white px-3 py-2 border-b border-gray-200">
+          <div className="flex flex-col gap-2">
+            <div className="flex items-center justify-between">
+              <div className="flex items-center gap-3">
+                <button
+                  onClick={onToggleMobileMenu}
+                  className="text-foreground"
+                  aria-label="Menu"
+                >
+                  <Menu className="h-7 w-7" />
+                </button>
+                <Link to="/" className="no-underline">
+                  <LogoSelector src={logo} alt="Tendência Cosméticos" className={`${scrolled ? "h-[32px]" : "h-[40px]"} w-auto transition-all duration-200`} />
+                </Link>
+              </div>
+              
+              <button
+                onClick={() => setIsOpen(true)}
+                className="flex items-center text-foreground transition-opacity hover:opacity-80"
+                aria-label="Carrinho"
+              >
+                <div className="relative">
+                  <ShoppingCart className="h-7 w-7" />
+                  <span className="absolute -right-1.5 -top-1.5 flex h-4 w-4 items-center justify-center rounded-full bg-orange-500 text-[10px] font-bold text-white leading-none">
+                    {totalItems}
+                  </span>
+                </div>
+              </button>
+            </div>
+            
+            <div className="w-full">
+              <SearchBar />
+            </div>
+          </div>
         </div>
       </div>
 
