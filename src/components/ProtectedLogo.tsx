@@ -40,7 +40,19 @@ const ProtectedLogo = ({ alt = "Logo", className, style, logoType = "official" }
         const ctx = canvas.getContext("2d");
         if (ctx) {
           ctx.clearRect(0, 0, CANVAS_WIDTH, CANVAS_HEIGHT);
-          ctx.drawImage(img, 0, 0, CANVAS_WIDTH, CANVAS_HEIGHT);
+          
+          // Calculate scale to maintain aspect ratio without stretching
+          const hRatio = CANVAS_WIDTH / img.width;
+          const vRatio = CANVAS_HEIGHT / img.height;
+          const ratio = Math.min(hRatio, vRatio);
+          const centerShift_x = (CANVAS_WIDTH - img.width * ratio) / 2;
+          const centerShift_y = (CANVAS_HEIGHT - img.height * ratio) / 2;
+          
+          ctx.drawImage(
+            img, 
+            0, 0, img.width, img.height,
+            centerShift_x, centerShift_y, img.width * ratio, img.height * ratio
+          );
         }
         URL.revokeObjectURL(objectUrl);
       };
