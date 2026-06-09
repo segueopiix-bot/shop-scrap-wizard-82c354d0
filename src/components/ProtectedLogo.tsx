@@ -10,8 +10,8 @@ interface ProtectedLogoProps {
 }
 
 const SUPABASE_URL = import.meta.env.VITE_SUPABASE_URL as string;
-const CANVAS_WIDTH = 200;
-const CANVAS_HEIGHT = 60;
+const CANVAS_WIDTH = 250;
+const CANVAS_HEIGHT = 100;
 
 const ProtectedLogo = ({ alt = "Logo", className, style }: ProtectedLogoProps) => {
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
@@ -64,8 +64,8 @@ const ProtectedLogo = ({ alt = "Logo", className, style }: ProtectedLogoProps) =
       height={CANVAS_HEIGHT}
       className={className}
       style={{
-        width: "200px",
-        height: "60px",
+        width: "100%",
+        height: "auto",
         display: "block",
         userSelect: "none",
         WebkitUserSelect: "none",
