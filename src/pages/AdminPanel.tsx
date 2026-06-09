@@ -76,7 +76,7 @@ function AdminSidebar({
   const { state } = useSidebar();
   const collapsed = state === "collapsed";
   return (
-    <Sidebar collapsible="icon">
+    <Sidebar>
       <SidebarContent>
         <SidebarGroup>
           <SidebarGroupLabel>Painel Admin</SidebarGroupLabel>
