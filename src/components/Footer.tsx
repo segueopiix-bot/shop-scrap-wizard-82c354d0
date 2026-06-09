@@ -63,7 +63,7 @@ const Footer = () => {
         <div className="grid grid-cols-3 gap-8">
           {/* Sobre */}
           <div>
-            <LogoSelector src={logo} alt="Tendência Cosméticos" className="h-10 w-auto mb-4" />
+            <LogoSelector src="secondary" alt="Tendência Cosméticos" className="h-10 w-auto mb-4" />
             <h3 className="font-bold text-foreground text-sm mb-4">INFORMAÇÕES DA EMPRESA</h3>
             <div className="text-sm text-muted-foreground leading-relaxed space-y-1">
               <p>Tendência Cosméticos</p>
@@ -147,7 +147,7 @@ const Footer = () => {
       {/* Mobile */}
       <div className="md:hidden container-page py-6">
         <div className="flex justify-start pb-4">
-          <LogoSelector src={logo} alt="Tendência Cosméticos" className="h-8 w-auto" />
+          <LogoSelector src="secondary" alt="Tendência Cosméticos" className="h-8 w-auto" />
         </div>
 
         {/* Sobre */}
