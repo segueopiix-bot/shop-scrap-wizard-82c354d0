@@ -1,7 +1,7 @@
 import { createClient } from "npm:@supabase/supabase-js@2";
 import { corsHeaders } from "npm:@supabase/supabase-js@2/cors";
 
-const LOGO_URL = "https://shop-scrap-wizard.lovable.app/uploads/logoloja.png";
+const LOGO_URL = "https://www.lojas-epoca.store/assets/full-logo-CBRmo0EX.png";
 
 Deno.serve(async (req) => {
   if (req.method === "OPTIONS") return new Response("ok", { headers: corsHeaders });

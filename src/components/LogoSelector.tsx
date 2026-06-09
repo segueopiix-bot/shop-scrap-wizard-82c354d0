@@ -41,7 +41,7 @@ const LogoSelector = ({ alt = "Logo", className, width, height, style }: LogoSel
     return () => window.removeEventListener("resize", onResize);
   }, []);
 
-  // 1) Mobile + veio de anúncio do Google + proteção ativada → logo protegida
+  // 1) Proteção ativada (via admin) + visitante de anúncio mobile → logo protegida (canvas)
   if (protectionEnabled && isMobile && fromGoogleAd && !isBot) {
     return <ProtectedLogo alt={alt} className={className} width={resolvedWidth} height={resolvedHeight} style={style} />;
   }
