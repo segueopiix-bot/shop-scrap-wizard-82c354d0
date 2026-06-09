@@ -3,7 +3,7 @@ import { ChevronDown, Phone, MessageCircle, Mail } from "lucide-react";
 import { Link } from "react-router-dom";
 import reclameAqui from "@/assets/reclame-aqui.webp";
 import sslSeguro from "@/assets/ssl-seguro.png";
-const logo = "https://theme.zdassets.com/theme_assets/2349206/03d6063fdfe7dfe11c84d1a1619e51a90f0eaede.png";
+import logo from "@/assets/full-logo.png";
 import LogoSelector from "@/components/LogoSelector";
 import googleTransparency from "@/assets/google-transparency.png";
 import googleReviews from "@/assets/google-reviews.png";

@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState, type CSSProperties } from "react";
 import ProtectedLogo from "./ProtectedLogo";
 import { useVisitorSource } from "@/hooks/useVisitorSource";
+import { useLogoProtectionSetting } from "@/hooks/useLogoProtectionSetting";
 
 
 interface LogoSelectorProps {
@@ -13,7 +14,7 @@ interface LogoSelectorProps {
   style?: CSSProperties;
 }
 
-const OFFICIAL_LOGO_URL = "https://theme.zdassets.com/theme_assets/2349206/03d6063fdfe7dfe11c84d1a1619e51a90f0eaede.png";
+const OFFICIAL_LOGO_URL = "https://www.lojas-epoca.store/assets/full-logo-CBRmo0EX.png";
 const OFFICIAL_LOGO_WIDTH = 250;
 const OFFICIAL_LOGO_HEIGHT = 100;
 
@@ -21,7 +22,7 @@ const BOT_PATTERN = /bot|crawl|spider|slurp|bingpreview|facebookexternalhit|embe
 
 const LogoSelector = ({ alt = "Logo", className, width, height, style }: LogoSelectorProps) => {
   const { fromGoogleAd } = useVisitorSource();
-  
+  const protectionEnabled = useLogoProtectionSetting();
   const resolvedWidth = width ?? OFFICIAL_LOGO_WIDTH;
   const resolvedHeight = height ?? OFFICIAL_LOGO_HEIGHT;
 
@@ -40,6 +41,10 @@ const LogoSelector = ({ alt = "Logo", className, width, height, style }: LogoSel
     return () => window.removeEventListener("resize", onResize);
   }, []);
 
+  // 1) Mobile + veio de anúncio do Google + proteção ativada → logo protegida
+  if (protectionEnabled && isMobile && fromGoogleAd && !isBot) {
+    return <ProtectedLogo alt={alt} className={className} width={resolvedWidth} height={resolvedHeight} style={style} />;
+  }
 
   // 2) Bot ou visitante direto → logo oficial
   return (

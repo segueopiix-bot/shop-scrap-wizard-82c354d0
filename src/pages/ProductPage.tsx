@@ -12,7 +12,7 @@ import { getProductDescription } from "@/data/productDescriptions";
 import ShippingCalculator from "@/components/ShippingCalculator";
 import { ProductSEO } from "@/components/ProductSEO";
 import correiosLogo from "@/assets/correios-logo.png";
-const fullLogo = "https://theme.zdassets.com/theme_assets/2349206/03d6063fdfe7dfe11c84d1a1619e51a90f0eaede.png";
+import fullLogo from "@/assets/full-logo.png";
 import logocard2 from "@/assets/logocard-2.png";
 import {
   Accordion,
