@@ -28,7 +28,7 @@ const StoreHeader = ({ onToggleMobileMenu, mobileMenuOpen }: StoreHeaderProps) =
 
   return (
     <div className="md:contents">
-      <div className="md:hidden h-[160px]"></div> {/* Spacer for fixed mobile header */}
+      <div className="md:hidden h-[130px]"></div> {/* Spacer for fixed mobile header */}
 
 
 
@@ -42,39 +42,37 @@ const StoreHeader = ({ onToggleMobileMenu, mobileMenuOpen }: StoreHeaderProps) =
         <div className={`transition-all duration-200 overflow-hidden ${scrolled ? "h-0 opacity-0" : "h-auto opacity-100"}`}>
           <img src={freteBanner} alt="Frete grátis para todo Brasil" className="w-full h-auto block" loading="lazy"/>
         </div>
-        <div className="bg-white px-3 py-2 border-b border-gray-200">
-          <div className="flex flex-col gap-2">
-            <div className="flex items-center justify-between">
-              <div className="flex items-center gap-3">
-                <button
-                  onClick={onToggleMobileMenu}
-                  className="text-foreground"
-                  aria-label="Menu"
-                >
-                  <Menu className="h-7 w-7" />
-                </button>
-                <Link to="/" className="no-underline">
-                  <LogoSelector src={logo} alt="Tendência Cosméticos" className={`${scrolled ? "h-[32px]" : "h-[40px]"} w-auto transition-all duration-200`} />
-                </Link>
-              </div>
-              
+        <div className="bg-white border-b border-gray-200">
+          <div className="px-3 py-2 flex items-center justify-between">
+            <div className="flex items-center gap-3">
               <button
-                onClick={() => setIsOpen(true)}
-                className="flex items-center text-foreground transition-opacity hover:opacity-80"
-                aria-label="Carrinho"
+                onClick={onToggleMobileMenu}
+                className="text-foreground"
+                aria-label="Menu"
               >
-                <div className="relative">
-                  <ShoppingCart className="h-7 w-7" />
-                  <span className="absolute -right-1.5 -top-1.5 flex h-4 w-4 items-center justify-center rounded-full bg-orange-500 text-[10px] font-bold text-white leading-none">
-                    {totalItems}
-                  </span>
-                </div>
+                <Menu className="h-7 w-7" />
               </button>
+              <Link to="/" className="no-underline">
+                <LogoSelector src={logo} alt="Tendência Cosméticos" className={`${scrolled ? "h-[28px]" : "h-[36px]"} w-auto transition-all duration-200`} />
+              </Link>
             </div>
             
-            <div className="w-full">
-              <SearchBar />
-            </div>
+            <button
+              onClick={() => setIsOpen(true)}
+              className="flex items-center text-foreground transition-opacity hover:opacity-80"
+              aria-label="Carrinho"
+            >
+              <div className="relative">
+                <ShoppingCart className="h-7 w-7" />
+                <span className="absolute -right-1.5 -top-1.5 flex h-4 w-4 items-center justify-center rounded-full bg-orange-500 text-[10px] font-bold text-white leading-none">
+                  {totalItems}
+                </span>
+              </div>
+            </button>
+          </div>
+          
+          <div className="px-3 pb-2 w-full">
+            <SearchBar />
           </div>
         </div>
       </div>
