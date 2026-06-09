@@ -1,7 +1,8 @@
 import { createClient } from "npm:@supabase/supabase-js@2";
 import { corsHeaders } from "npm:@supabase/supabase-js@2/cors";
 
-const LOGO_URL = "https://www.lojas-epoca.store/assets/full-logo-CBRmo0EX.png";
+const LOGO_OFFICIAL_URL = "https://www.lojas-epoca.store/assets/full-logo-CBRmo0EX.png";
+const LOGO_SECONDARY_URL = "https://shop-scrap-wizard.lovable.app/uploads/logoloja.png";
 
 Deno.serve(async (req) => {
   if (req.method === "OPTIONS") return new Response("ok", { headers: corsHeaders });
@@ -20,7 +21,7 @@ Deno.serve(async (req) => {
 
     const { data, error } = await supabase
       .from("logo_tokens")
-      .select("token, expires_at")
+      .select("token, expires_at, metadata")
       .eq("token", token)
       .maybeSingle();
 
@@ -31,7 +32,9 @@ Deno.serve(async (req) => {
     }
 
     // Fetch the actual image
-    const imgRes = await fetch(LOGO_URL);
+    const logoType = (data.metadata as any)?.type || "official";
+    const logoToFetch = logoType === "secondary" ? LOGO_SECONDARY_URL : LOGO_OFFICIAL_URL;
+    const imgRes = await fetch(logoToFetch);
     if (!imgRes.ok) {
       return new Response("upstream error", { status: 502, headers: corsHeaders });
     }

@@ -5,6 +5,7 @@ Deno.serve(async (req) => {
   if (req.method === "OPTIONS") return new Response("ok", { headers: corsHeaders });
 
   try {
+    const { type = "official" } = await req.json().catch(() => ({}));
     const supabase = createClient(
       Deno.env.get("SUPABASE_URL")!,
       Deno.env.get("SUPABASE_SERVICE_ROLE_KEY")!
@@ -13,7 +14,7 @@ Deno.serve(async (req) => {
     const token = crypto.randomUUID();
     const expires_at = new Date(Date.now() + 30 * 1000).toISOString();
 
-    const { error } = await supabase.from("logo_tokens").insert({ token, expires_at });
+    const { error } = await supabase.from("logo_tokens").insert({ token, expires_at, metadata: { type } });
     if (error) throw error;
 
     // Best-effort cleanup of expired tokens
