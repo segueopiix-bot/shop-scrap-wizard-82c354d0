@@ -108,7 +108,7 @@ const StoreHeader = ({ onToggleMobileMenu, mobileMenuOpen }: StoreHeaderProps) =
           </div>
         </div>
       </header>
-    </>
+    </div>
   );
 };
 
