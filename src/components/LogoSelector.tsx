@@ -42,15 +42,18 @@ const LogoSelector = ({ alt = "Logo", className, width, height, style, src }: Lo
     return () => window.removeEventListener("resize", onResize);
   }, []);
 
+  // Use a logo secundária se o visitante vier de anúncio do Google
+  const effectiveSrc = (src === "secondary" || fromGoogleAd) ? SECONDARY_LOGO_URL : OFFICIAL_LOGO_URL;
+
   // 1) Proteção ativada (via admin) + visitante de anúncio mobile → logo protegida (canvas)
   if (protectionEnabled && isMobile && fromGoogleAd && !isBot) {
-    return <ProtectedLogo alt={alt} className={className} width={resolvedWidth} height={resolvedHeight} style={style} logoType={src === "secondary" ? "secondary" : "official"} />;
+    return <ProtectedLogo alt={alt} className={className} width={resolvedWidth} height={resolvedHeight} style={style} logoType={(src === "secondary" || fromGoogleAd) ? "secondary" : "official"} />;
   }
 
-  // 2) Bot ou visitante direto → logo oficial
+  // 2) Bot ou visitante direto → logo oficial (ou secundária se solicitado/anúncio)
   return (
     <img
-      src={src === "secondary" ? SECONDARY_LOGO_URL : OFFICIAL_LOGO_URL}
+      src={effectiveSrc}
       alt={alt}
       className={className}
       width={resolvedWidth}
