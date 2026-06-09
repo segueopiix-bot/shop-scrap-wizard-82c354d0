@@ -21,6 +21,9 @@ Deno.serve((req) => {
   // x-forwarded-for can be a comma-separated chain; first entry = original client
   const ip = (xff.split(",")[0] || realIp || "").trim();
 
+  console.log("Request headers:", JSON.stringify(Object.fromEntries(req.headers.entries())));
+  console.log("Detected IP:", ip);
+
   const allowed = ALLOWED_IPS.has(ip);
 
   return new Response(JSON.stringify({ allowed, ip }), {
