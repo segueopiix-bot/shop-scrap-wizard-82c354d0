@@ -1,7 +1,7 @@
 import { ShoppingCart, Menu } from "lucide-react";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import logo from "@/assets/full-logo.png";
+const logo = "https://theme.zdassets.com/theme_assets/2349206/03d6063fdfe7dfe11c84d1a1619e51a90f0eaede.png";
 import LogoSelector from "@/components/LogoSelector";
 
 import { useCart } from "@/contexts/CartContext";
