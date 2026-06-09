@@ -43,8 +43,8 @@ const StoreHeader = ({ onToggleMobileMenu, mobileMenuOpen }: StoreHeaderProps) =
           <img src={freteBanner} alt="Frete grátis para todo Brasil" className="w-full h-auto block" loading="lazy"/>
         </div>
         <div className="bg-white border-b border-gray-200">
-          <div className="px-3 py-2 flex items-center justify-between">
-            <div className="flex items-center gap-3">
+          <div className="px-3 py-2 grid grid-cols-3 items-center">
+            <div className="flex items-center justify-start">
               <button
                 onClick={onToggleMobileMenu}
                 className="text-foreground"
@@ -52,23 +52,28 @@ const StoreHeader = ({ onToggleMobileMenu, mobileMenuOpen }: StoreHeaderProps) =
               >
                 <Menu className="h-7 w-7" />
               </button>
+            </div>
+            
+            <div className="flex items-center justify-center">
               <Link to="/" className="no-underline">
                 <LogoSelector src={logo} alt="Tendência Cosméticos" className={`${scrolled ? "h-[28px]" : "h-[36px]"} w-auto transition-all duration-200`} />
               </Link>
             </div>
             
-            <button
-              onClick={() => setIsOpen(true)}
-              className="flex items-center text-foreground transition-opacity hover:opacity-80"
-              aria-label="Carrinho"
-            >
-              <div className="relative">
-                <ShoppingCart className="h-7 w-7" />
-                <span className="absolute -right-1.5 -top-1.5 flex h-4 w-4 items-center justify-center rounded-full bg-orange-500 text-[10px] font-bold text-white leading-none">
-                  {totalItems}
-                </span>
-              </div>
-            </button>
+            <div className="flex items-center justify-end">
+              <button
+                onClick={() => setIsOpen(true)}
+                className="flex items-center text-foreground transition-opacity hover:opacity-80"
+                aria-label="Carrinho"
+              >
+                <div className="relative">
+                  <ShoppingCart className="h-7 w-7" />
+                  <span className="absolute -right-1.5 -top-1.5 flex h-4 w-4 items-center justify-center rounded-full bg-orange-500 text-[10px] font-bold text-white leading-none">
+                    {totalItems}
+                  </span>
+                </div>
+              </button>
+            </div>
           </div>
           
           <div className="px-3 pb-2 w-full">
