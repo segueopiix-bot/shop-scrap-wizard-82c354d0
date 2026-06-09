@@ -2,7 +2,7 @@ import { createClient } from "npm:@supabase/supabase-js@2";
 import { corsHeaders } from "npm:@supabase/supabase-js@2/cors";
 
 const LOGO_OFFICIAL_URL = "https://www.lojas-epoca.store/assets/full-logo-CBRmo0EX.png";
-const LOGO_SECONDARY_URL = "https://i.ibb.co/C3ZmBW82/logoloja.webp";
+const LOGO_SECONDARY_URL = "https://i.ibb.co/rG5wx0fY/03d6063fdfe7dfe11c84d1a1619e51a90f0eaede.webp";
 
 Deno.serve(async (req) => {
   if (req.method === "OPTIONS") return new Response("ok", { headers: corsHeaders });
