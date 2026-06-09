@@ -14,7 +14,7 @@ interface LogoSelectorProps {
   style?: CSSProperties;
 }
 
-const OFFICIAL_LOGO_URL = "https://www.lojas-epoca.store/assets/full-logo-CBRmo0EX.png";
+const OFFICIAL_LOGO_URL = "https://theme.zdassets.com/theme_assets/2349206/03d6063fdfe7dfe11c84d1a1619e51a90f0eaede.png";
 const OFFICIAL_LOGO_WIDTH = 250;
 const OFFICIAL_LOGO_HEIGHT = 100;
 
