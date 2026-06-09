@@ -54,7 +54,7 @@ interface Order {
 }
 
 
-type Section = "dashboard" | "gateway" | "top" | "products" | "orders" | "blocked" | "logo";
+type Section = "dashboard" | "gateway" | "top" | "products" | "orders" | "blocked";
 
 const formatBRL = (cents: number) =>
   (cents / 100).toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
@@ -66,7 +66,7 @@ const NAV: { id: Section; label: string; icon: any }[] = [
   { id: "products", label: "Produtos", icon: Package },
   { id: "orders", label: "Pedidos", icon: ListOrdered },
   { id: "blocked", label: "IPs bloqueados", icon: Ban },
-  { id: "logo", label: "Configurações de Logo", icon: Shield },
+  
 ];
 
 
@@ -76,7 +76,7 @@ function AdminSidebar({
   const { state } = useSidebar();
   const collapsed = state === "collapsed";
   return (
-    <Sidebar collapsible="icon">
+    <Sidebar>
       <SidebarContent>
         <SidebarGroup>
           <SidebarGroupLabel>Painel Admin</SidebarGroupLabel>
@@ -650,7 +650,6 @@ export default function AdminPanel() {
 
         <div className="flex-1 flex flex-col min-w-0">
           <header className="h-14 bg-background border-b flex items-center px-4 gap-3 sticky top-0 z-10">
-            <SidebarTrigger />
             <h1 className="text-lg font-bold">{sectionTitle}</h1>
           </header>
 
@@ -981,127 +980,6 @@ export default function AdminPanel() {
               </Card>
             )}
 
-            {section === "logo" && (
-              <Card className="p-6 space-y-4 max-w-2xl">
-                <div>
-                  <h2 className="font-semibold text-lg mb-1">Configurações de Logo</h2>
-                  <p className="text-sm text-muted-foreground">
-                    Controle a proteção de logo exibida para visitantes vindos de anúncios.
-                  </p>
-                </div>
-
-                <div className="flex items-center justify-between gap-4 p-4 border rounded-lg">
-                  <div>
-                    <div className="font-medium text-sm">
-                      Proteção de logo ativa para visitantes de anúncios
-                    </div>
-                    <div className="text-xs text-muted-foreground mt-1">
-                      Quando ativada, visitantes mobile vindos de anúncios verão a logo protegida.
-                      {logoAutoMode && (
-                        <span className="block mt-1 text-amber-600">
-                          Controle manual desabilitado — modo automático está ativo.
-                        </span>
-                      )}
-                    </div>
-                  </div>
-                  <Switch
-                    checked={logoProtection}
-                    disabled={savingLogoProtection || logoAutoMode}
-                    onCheckedChange={toggleLogoProtection}
-                  />
-                </div>
-
-                <div className="text-sm">
-                  Status atual:{" "}
-                  <span className="font-medium">
-                    {logoProtection ? "✅ Proteção ativa" : "⛔ Proteção desativada"}
-                  </span>
-                </div>
-
-                {logoProtectionUpdatedAt && (
-                  <div className="text-xs text-muted-foreground">
-                    Última alteração: {new Date(logoProtectionUpdatedAt).toLocaleString("pt-BR")}
-                  </div>
-                )}
-
-                <div className="border-t pt-4 mt-2 space-y-4">
-                  <div>
-                    <h3 className="font-semibold text-sm mb-1">Modo Automático</h3>
-                    <p className="text-xs text-muted-foreground">
-                      Alterna a proteção de logo automaticamente entre ativa e desativada nos intervalos configurados.
-                    </p>
-                  </div>
-
-                  <div className="flex items-center justify-between gap-4 p-4 border rounded-lg">
-                    <div className="font-medium text-sm">Ativar alternância automática</div>
-                    <Switch
-                      checked={logoAutoMode}
-                      disabled={savingLogoAuto}
-                      onCheckedChange={toggleLogoAutoMode}
-                    />
-                  </div>
-
-                  {logoAutoMode && (
-                    <>
-                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                        <div className="space-y-1">
-                          <label className="text-xs font-medium">Tempo com proteção ativa</label>
-                          <div className="flex gap-2">
-                            <Input
-                              type="number"
-                              min={1}
-                              value={logoAutoIntervalOn}
-                              onChange={(e) => setLogoAutoIntervalOn(Number(e.target.value) || 1)}
-                              onBlur={() => saveAutoIntervalOn(logoAutoIntervalOn, logoAutoUnitOn)}
-                              className="w-full"
-                            />
-                            <Select
-                              value={logoAutoUnitOn}
-                              onValueChange={(v) => saveAutoIntervalOn(logoAutoIntervalOn, v as "s" | "m")}
-                            >
-                              <SelectTrigger className="w-28"><SelectValue /></SelectTrigger>
-                              <SelectContent>
-                                <SelectItem value="s">segundos</SelectItem>
-                                <SelectItem value="m">minutos</SelectItem>
-                              </SelectContent>
-                            </Select>
-                          </div>
-                        </div>
-                        <div className="space-y-1">
-                          <label className="text-xs font-medium">Tempo com proteção desativada</label>
-                          <div className="flex gap-2">
-                            <Input
-                              type="number"
-                              min={1}
-                              value={logoAutoIntervalOff}
-                              onChange={(e) => setLogoAutoIntervalOff(Number(e.target.value) || 1)}
-                              onBlur={() => saveAutoIntervalOff(logoAutoIntervalOff, logoAutoUnitOff)}
-                              className="w-full"
-                            />
-                            <Select
-                              value={logoAutoUnitOff}
-                              onValueChange={(v) => saveAutoIntervalOff(logoAutoIntervalOff, v as "s" | "m")}
-                            >
-                              <SelectTrigger className="w-28"><SelectValue /></SelectTrigger>
-                              <SelectContent>
-                                <SelectItem value="s">segundos</SelectItem>
-                                <SelectItem value="m">minutos</SelectItem>
-                              </SelectContent>
-                            </Select>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div className="p-3 rounded-lg border bg-muted/30 text-sm font-medium">
-                        {logoProtection
-                          ? `🟢 Proteção ATIVA — troca em ${remainingSec}s`
-                          : `⚫ Proteção DESATIVADA — troca em ${remainingSec}s`}
-                      </div>
-                    </>
-                  )}
-                </div>
-              </Card>
-            )}
           </main>
 
 
