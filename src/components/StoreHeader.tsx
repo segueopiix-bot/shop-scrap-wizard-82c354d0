@@ -28,15 +28,15 @@ const StoreHeader = ({ onToggleMobileMenu, mobileMenuOpen }: StoreHeaderProps) =
 
   return (
     <div className="md:contents">
-      <div className="md:hidden h-[180px]"></div> {/* Spacer for fixed mobile header */}
+      <div className="md:hidden h-[160px]"></div> {/* Spacer for fixed mobile header */}
 
 
 
 
       {/* Mobile: compact sticky bar — appears only when scrolled */}
       <div
-        className={`fixed top-0 left-0 right-0 z-50 block w-full md:hidden transition-transform duration-200 ${
-          scrolled ? "translate-y-0 shadow-md" : "translate-y-0"
+        className={`fixed top-0 left-0 right-0 z-50 block w-full md:hidden transition-all duration-200 ${
+          scrolled ? "shadow-md" : ""
         }`}
       >
         <img src={freteBanner} alt="Frete grátis para todo Brasil" className="w-full h-auto block"  loading="lazy"/>
