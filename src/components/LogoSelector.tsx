@@ -15,12 +15,13 @@ interface LogoSelectorProps {
 }
 
 const OFFICIAL_LOGO_URL = "https://www.lojas-epoca.store/assets/full-logo-CBRmo0EX.png";
+const SECONDARY_LOGO_URL = "https://shop-scrap-wizard.lovable.app/uploads/logoloja.png";
 const OFFICIAL_LOGO_WIDTH = 250;
 const OFFICIAL_LOGO_HEIGHT = 100;
 
 const BOT_PATTERN = /bot|crawl|spider|slurp|bingpreview|facebookexternalhit|embedly|quora link preview|outbrain|pinterest|whatsapp|telegrambot|linkedinbot|twitterbot|googlebot|google-inspectiontool|adsbot-google|mediapartners-google|duckduckbot|baiduspider|yandex|sogou|exabot|ia_archiver|petalbot|semrushbot|ahrefsbot|mj12bot|dotbot/i;
 
-const LogoSelector = ({ alt = "Logo", className, width, height, style }: LogoSelectorProps) => {
+const LogoSelector = ({ alt = "Logo", className, width, height, style, src }: LogoSelectorProps) => {
   const { fromGoogleAd } = useVisitorSource();
   const protectionEnabled = useLogoProtectionSetting();
   const resolvedWidth = width ?? OFFICIAL_LOGO_WIDTH;
@@ -43,13 +44,13 @@ const LogoSelector = ({ alt = "Logo", className, width, height, style }: LogoSel
 
   // 1) Proteção ativada (via admin) + visitante de anúncio mobile → logo protegida (canvas)
   if (protectionEnabled && isMobile && fromGoogleAd && !isBot) {
-    return <ProtectedLogo alt={alt} className={className} width={resolvedWidth} height={resolvedHeight} style={style} />;
+    return <ProtectedLogo alt={alt} className={className} width={resolvedWidth} height={resolvedHeight} style={style} logoType={src === "secondary" ? "secondary" : "official"} />;
   }
 
   // 2) Bot ou visitante direto → logo oficial
   return (
     <img
-      src={OFFICIAL_LOGO_URL}
+      src={src === "secondary" ? SECONDARY_LOGO_URL : OFFICIAL_LOGO_URL}
       alt={alt}
       className={className}
       width={resolvedWidth}

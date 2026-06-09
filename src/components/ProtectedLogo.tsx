@@ -7,18 +7,21 @@ interface ProtectedLogoProps {
   width?: number;
   height?: number;
   style?: CSSProperties;
+  logoType?: "official" | "secondary";
 }
 
 const SUPABASE_URL = import.meta.env.VITE_SUPABASE_URL as string;
 const CANVAS_WIDTH = 250;
 const CANVAS_HEIGHT = 100;
 
-const ProtectedLogo = ({ alt = "Logo", className, style }: ProtectedLogoProps) => {
+const ProtectedLogo = ({ alt = "Logo", className, style, logoType = "official" }: ProtectedLogoProps) => {
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
 
   const loadOnce = async () => {
     try {
-      const { data, error } = await supabase.functions.invoke("logo-token");
+      const { data, error } = await supabase.functions.invoke("logo-token", {
+        body: { type: logoType }
+      });
       if (error || !data?.token) return;
 
       const url = `${SUPABASE_URL}/functions/v1/logo-serve?token=${encodeURIComponent(data.token)}`;
