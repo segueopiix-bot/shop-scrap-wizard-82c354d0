@@ -28,7 +28,7 @@ const StoreHeader = ({ onToggleMobileMenu, mobileMenuOpen }: StoreHeaderProps) =
 
   return (
     <div className="md:contents">
-      <div className="md:hidden h-[130px]"></div> {/* Spacer for fixed mobile header */}
+      <div className="md:hidden h-[60px]"></div> {/* Spacer for fixed mobile search bar */}
 
 
 
