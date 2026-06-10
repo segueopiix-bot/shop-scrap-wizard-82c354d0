@@ -276,6 +276,7 @@ const CheckoutPage = () => {
       setCepLoading(true);
       const result = await fetchAddressByCEP(masked);
       setCepLoading(false);
+      
       if (result) {
         setStreet(result.logradouro);
         setNeighborhood(result.bairro);
@@ -288,10 +289,15 @@ const CheckoutPage = () => {
         setCartShippingMethod(drogal ? "retira" : "correios");
         setFormErrors(prev => ({ ...prev, street: false, neighborhood: false, city: false, state: false }));
       } else {
+        // Even if CEP is not found, allow manual entry
+        setCepValid(true); 
+        setAddressEditing(true);
         setCartShippingOptions(null);
-        setCepError("CEP não encontrado");
+        // Default shipping method for unknown CEPs
+        setCartShippingMethod("correios");
       }
     }
+
   }, [formErrors]);
 
 
@@ -744,7 +750,7 @@ const CheckoutPage = () => {
 
 
                   {(() => {
-                    const addressValid = isValidCEP(cep) && cepValid && street.trim() !== "" && number.trim() !== "" && neighborhood.trim() !== "" && city.trim() !== "" && state.trim() !== "" && !!cartShippingMethod;
+                    const addressValid = isValidCEP(cep) && street.trim() !== "" && number.trim() !== "" && neighborhood.trim() !== "" && city.trim() !== "" && state.trim() !== "" && !!cartShippingMethod;
                     return (
                       <button
                         onClick={handleAddressContinue}
