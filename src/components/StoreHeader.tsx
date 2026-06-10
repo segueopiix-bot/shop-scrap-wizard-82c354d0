@@ -35,15 +35,15 @@ const StoreHeader = ({ onToggleMobileMenu, mobileMenuOpen }: StoreHeaderProps) =
 
       {/* Mobile: fixed sticky bar with search and banner */}
       <div className="fixed top-0 left-0 right-0 z-50 block w-full md:hidden shadow-md">
-        <div className="bg-white">
+        <div className="bg-header">
           <img src={freteBanner} alt="Frete grátis para todo Brasil" className="w-full h-auto block" loading="lazy"/>
         </div>
-        <div className="bg-white border-b border-gray-200">
+        <div className="bg-header border-b border-gray-200">
           <div className="px-3 py-2 grid grid-cols-3 items-center">
             <div className="flex items-center justify-start">
               <button
                 onClick={onToggleMobileMenu}
-                className="text-foreground"
+                className="text-header-foreground"
                 aria-label="Menu"
               >
                 <Menu className="h-7 w-7" />
@@ -59,7 +59,7 @@ const StoreHeader = ({ onToggleMobileMenu, mobileMenuOpen }: StoreHeaderProps) =
             <div className="flex items-center justify-end">
               <button
                 onClick={() => setIsOpen(true)}
-                className="flex items-center text-foreground transition-opacity hover:opacity-80"
+                className="flex items-center text-header-foreground transition-opacity hover:opacity-80"
                 aria-label="Carrinho"
               >
                 <div className="relative">
