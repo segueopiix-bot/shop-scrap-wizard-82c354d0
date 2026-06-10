@@ -66,11 +66,13 @@ const PixPaymentPage = () => {
   const minutes = String(Math.floor(timeLeft / 60)).padStart(2, "0");
   const seconds = String(timeLeft % 60).padStart(2, "0");
 
-  const rawCopyPasteCode = paymentData?.copyPasteCode || paymentData?.pix?.copia_e_cola || paymentData?.paymentData?.copyPaste || "";
-  // Sanitização: remove APENAS quebras de linha e espaços nas pontas.
-  // NUNCA remover espaços internos — o padrão Pix EMV tem campos de tamanho fixo
-  // (ex.: nome do recebedor "PAGFACIL MEIOS DE PAGAMEN") e remover espaços
-  // corrompe o parser do banco causando "Parâmetros inválidos".
+  const rawCopyPasteCode = 
+    paymentData?.copyPasteCode || 
+    paymentData?.pix?.copia_e_cola || 
+    paymentData?.pix?.copy_paste ||
+    paymentData?.pix?.copyPaste ||
+    paymentData?.paymentData?.copyPaste || 
+    "";
   const copyPasteCode = String(rawCopyPasteCode).replace(/[\r\n\t]+/g, "").trim();
   const transactionId = paymentData?.transactionId || paymentData?.id || paymentData?.transaction_id || paymentData?.paymentData?.transactionId;
   const qrCodeImage = paymentData?.qrCode || paymentData?.pix?.qr_code || paymentData?.qrCodeBase64 
