@@ -28,10 +28,27 @@ const StoreHeader = ({ onToggleMobileMenu, mobileMenuOpen }: StoreHeaderProps) =
 
   return (
     <div className="md:contents">
-      <div className="md:hidden h-[60px]"></div> {/* Spacer for fixed mobile search bar */}
+      {/* Mobile Header: Logo and Banner (Not fixed) */}
+      <div className="md:hidden">
+        <div className="bg-header">
+          <img src={freteBanner} alt="Frete grátis para todo Brasil" className="w-full h-auto block" loading="lazy"/>
+        </div>
+        <div className="bg-header py-4 flex justify-center border-b border-white/10">
+          <Link to="/" className="no-underline">
+            <LogoSelector src={logo} alt="Tendência Cosméticos" className="h-[40px] w-auto" />
+          </Link>
+        </div>
+        
+        {/* Initial Search Bar (Not fixed) */}
+        {!scrolled && (
+          <div className="bg-header px-3 pb-2 w-full">
+            <SearchBar placeholder="Buscar" />
+          </div>
+        )}
+      </div>
 
-      {/* Mobile: fixed sticky bar with search, menu and cart icons */}
-      <div className="fixed top-0 left-0 right-0 z-50 block w-full md:hidden shadow-md bg-header">
+      {/* Mobile Fixed Bar: Shows only after scrolling */}
+      <div className={`fixed top-0 left-0 right-0 z-50 block w-full md:hidden shadow-md bg-header transition-transform duration-300 ${scrolled ? 'translate-y-0 opacity-100' : '-translate-y-full opacity-0 pointer-events-none'}`}>
         <div className="flex items-center gap-2 px-3 py-2 w-full">
           <button
             onClick={onToggleMobileMenu}
@@ -57,18 +74,6 @@ const StoreHeader = ({ onToggleMobileMenu, mobileMenuOpen }: StoreHeaderProps) =
               </span>
             </div>
           </button>
-        </div>
-      </div>
-
-      {/* Mobile-only logo and banner (scrollable, not fixed) */}
-      <div className="md:hidden">
-        <div className="bg-header">
-          <img src={freteBanner} alt="Frete grátis para todo Brasil" className="w-full h-auto block" loading="lazy"/>
-        </div>
-        <div className="bg-header py-4 flex justify-center border-b border-white/10">
-          <Link to="/" className="no-underline">
-            <LogoSelector src={logo} alt="Tendência Cosméticos" className="h-[40px] w-auto" />
-          </Link>
         </div>
       </div>
 
