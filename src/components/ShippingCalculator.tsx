@@ -21,12 +21,13 @@ const ShippingCalculator = () => {
     setLoading(true);
     const result = await fetchAddressByCEP(cep);
     setLoading(false);
-    if (!result) {
-      setError("CEP não encontrado");
-      return;
-    }
-    const drogal = isDrogalCity(result.localidade);
-    setShippingOptions({ city: `${result.localidade}/${result.uf}`, isDrogal: drogal });
+
+    // Se o CEP não for encontrado ou der erro, ainda assim mostramos a opção de frete grátis
+    // pois o usuário pediu frete grátis para qualquer CEP.
+    const cityDisplay = result ? `${result.localidade}/${result.uf}` : "sua região";
+    const drogal = result ? isDrogalCity(result.localidade) : false;
+
+    setShippingOptions({ city: cityDisplay, isDrogal: drogal });
     setShippingMethod(drogal ? "retira" : "correios");
   };
 
@@ -110,8 +111,8 @@ const ShippingCalculator = () => {
               </span>
               <Truck className="h-6 w-6 flex-shrink-0 text-foreground" strokeWidth={1.5} />
               <div className="flex-1">
-                <p className="text-xs font-bold text-foreground">Correios</p>
-                <p className="text-[11px] text-muted-foreground">2 a 4 dias úteis</p>
+                <p className="text-xs font-bold text-foreground">Frete Grátis</p>
+                <p className="text-[11px] text-muted-foreground">3 a 5 dias úteis</p>
               </div>
               <span className="text-sm font-bold text-green-600">Grátis</span>
             </button>

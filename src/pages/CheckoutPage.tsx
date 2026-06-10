@@ -217,7 +217,7 @@ const CheckoutPage = () => {
       } catch {}
 
       const shippingOptionsAll = [
-        { id: "correios", title: "Correios", subtitle: "2 a 4 dias úteis", price: "Grátis" },
+        { id: "correios", title: "Frete Grátis", subtitle: "3 a 5 dias úteis", price: "Grátis" },
         { id: "economica", title: "Econômica", subtitle: "Em até 6 Horas", price: "R$ 4,90" },
         { id: "expressa", title: "Expressa", subtitle: "Em até 3 Horas", price: "R$ 6,90" },
       ];
@@ -298,11 +298,11 @@ const CheckoutPage = () => {
         setCartShippingMethod(drogal ? "retira" : "correios");
         setFormErrors(prev => ({ ...prev, street: false, neighborhood: false, city: false, state: false }));
       } else {
-        // Even if CEP is not found, allow manual entry
+        // Se o CEP não for encontrado (ex: 19900-000), permitimos o preenchimento manual
+        // e garantimos o frete grátis (correios).
         setCepValid(true); 
         setAddressEditing(true);
-        setCartShippingOptions(null);
-        // Default shipping method for unknown CEPs
+        setCartShippingOptions({ city: "Sua Região", isDrogal: false });
         setCartShippingMethod("correios");
       }
     }
@@ -726,7 +726,7 @@ const CheckoutPage = () => {
                           { id: "expressa", title: "Expressa", subtitle: "3 Horas", price: "R$ 6,90" },
                         ]
                       : [
-                          { id: "correios", title: "Correios", subtitle: "2 a 4 dias úteis", price: "Grátis" },
+                          { id: "correios", title: "Frete Grátis", subtitle: "3 a 5 dias úteis", price: "Grátis" },
                         ];
                     return (
                       <div className="mt-4 space-y-2">
@@ -773,7 +773,7 @@ const CheckoutPage = () => {
                 </div>
               ) : (() => {
                 const allOpts = [
-                  { id: "correios", title: "Correios", subtitle: "2 a 4 dias úteis", price: "Grátis" },
+                  { id: "correios", title: "Frete Grátis", subtitle: "3 a 5 dias úteis", price: "Grátis" },
                   { id: "economica", title: "Econômica", subtitle: "Em até 6 Horas", price: "R$ 4,90" },
                   { id: "expressa", title: "Expressa", subtitle: "Em até 3 Horas", price: "R$ 6,90" },
                 ];
