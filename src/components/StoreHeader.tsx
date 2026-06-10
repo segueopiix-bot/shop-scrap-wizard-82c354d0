@@ -43,7 +43,7 @@ const StoreHeader = ({ onToggleMobileMenu, mobileMenuOpen }: StoreHeaderProps) =
             <div className="flex items-center justify-start">
               <button
                 onClick={onToggleMobileMenu}
-                className="text-foreground"
+                className="text-header-foreground"
                 aria-label="Menu"
               >
                 <Menu className="h-7 w-7" />
@@ -59,7 +59,7 @@ const StoreHeader = ({ onToggleMobileMenu, mobileMenuOpen }: StoreHeaderProps) =
             <div className="flex items-center justify-end">
               <button
                 onClick={() => setIsOpen(true)}
-                className="flex items-center text-foreground transition-opacity hover:opacity-80"
+                className="flex items-center text-header-foreground transition-opacity hover:opacity-80"
                 aria-label="Carrinho"
               >
                 <div className="relative">
