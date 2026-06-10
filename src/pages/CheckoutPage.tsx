@@ -189,14 +189,16 @@ const CheckoutPage = () => {
         quantity: item.quantity,
         category: (item.product as any).category || '',
       }));
-      const data = await createPixPayment({
+      const response = await createPixPayment({
         amount: pixTotal,
         customer: { name, email, cpf, phone },
         items: cartItems,
         shipping: { street, number, complement, neighborhood, city, state, cep },
         trackingParameters: getTrackingParameters(),
       });
-      console.log('PIX payment created:', data);
+      
+      const data = response as any;
+      console.log('PIX payment response:', data);
       // Purchase event só é disparado quando o PIX é confirmado pago (PixPaymentPage)
 
       // Persist customer info for upsell flow after payment
@@ -215,15 +217,17 @@ const CheckoutPage = () => {
         { id: "expressa", title: "Expressa", subtitle: "Em até 3 Horas", price: "R$ 6,90" },
       ];
       const selShip = shippingOptionsAll.find(o => o.id === cartShippingMethod) || shippingOptionsAll[0];
-      navigate('/checkout/pix', { state: {
-        paymentData: data,
-        amount: pixTotal,
-        items: cartItems,
-        pixStage: 'main',
-        email,
-        shipping: { street, number, complement, neighborhood, city, state, cep },
-        shippingOption: selShip,
-      } });
+      navigate('/checkout/pix', { 
+        state: {
+          paymentData: data,
+          amount: pixTotal,
+          items: cartItems,
+          pixStage: 'main',
+          email,
+          shipping: { street, number, complement, neighborhood, city, state, cep },
+          shippingOption: selShip,
+        } 
+      });
     } catch (err) {
       console.error('Error creating PIX:', err);
       toast.error(err instanceof Error ? err.message : "Erro ao finalizar o pedido");
