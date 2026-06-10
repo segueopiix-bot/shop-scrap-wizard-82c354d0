@@ -30,53 +30,48 @@ const StoreHeader = ({ onToggleMobileMenu, mobileMenuOpen }: StoreHeaderProps) =
     <div className="md:contents">
       <div className="md:hidden h-[60px]"></div> {/* Spacer for fixed mobile search bar */}
 
+      {/* Mobile: fixed sticky bar with search, menu and cart icons */}
+      <div className="fixed top-0 left-0 right-0 z-50 block w-full md:hidden shadow-md bg-header">
+        <div className="flex items-center gap-2 px-3 py-2 w-full">
+          <button
+            onClick={onToggleMobileMenu}
+            className="text-header-foreground flex-shrink-0"
+            aria-label="Menu"
+          >
+            <Menu className="h-7 w-7" />
+          </button>
+          
+          <div className="flex-1 min-w-0">
+            <SearchBar placeholder="Buscar" />
+          </div>
+          
+          <button
+            onClick={() => setIsOpen(true)}
+            className="flex items-center text-header-foreground transition-opacity hover:opacity-80 flex-shrink-0"
+            aria-label="Carrinho"
+          >
+            <div className="relative">
+              <ShoppingCart className="h-7 w-7" />
+              <span className="absolute -right-1.5 -top-1.5 flex h-4 w-4 items-center justify-center rounded-full bg-orange-500 text-[10px] font-bold text-white leading-none">
+                {totalItems}
+              </span>
+            </div>
+          </button>
+        </div>
+      </div>
 
-
-
-      {/* Mobile: fixed sticky bar with search and banner */}
-      <div className="fixed top-0 left-0 right-0 z-50 block w-full md:hidden shadow-md">
+      {/* Mobile-only logo and banner (scrollable, not fixed) */}
+      <div className="md:hidden">
         <div className="bg-header">
           <img src={freteBanner} alt="Frete grátis para todo Brasil" className="w-full h-auto block" loading="lazy"/>
         </div>
-        <div className="bg-header border-b border-gray-200">
-          <div className="px-3 py-2 grid grid-cols-3 items-center">
-            <div className="flex items-center justify-start">
-              <button
-                onClick={onToggleMobileMenu}
-                className="text-header-foreground"
-                aria-label="Menu"
-              >
-                <Menu className="h-7 w-7" />
-              </button>
-            </div>
-            
-            <div className="flex items-center justify-center">
-              <Link to="/" className="no-underline">
-                <LogoSelector src={logo} alt="Tendência Cosméticos" className="h-[36px] w-auto transition-all duration-200" />
-              </Link>
-            </div>
-            
-            <div className="flex items-center justify-end">
-              <button
-                onClick={() => setIsOpen(true)}
-                className="flex items-center text-header-foreground transition-opacity hover:opacity-80"
-                aria-label="Carrinho"
-              >
-                <div className="relative">
-                  <ShoppingCart className="h-7 w-7" />
-                  <span className="absolute -right-1.5 -top-1.5 flex h-4 w-4 items-center justify-center rounded-full bg-orange-500 text-[10px] font-bold text-white leading-none">
-                    {totalItems}
-                  </span>
-                </div>
-              </button>
-            </div>
-          </div>
-          
-          <div className="px-3 pb-2 w-full">
-            <SearchBar />
-          </div>
+        <div className="bg-header py-4 flex justify-center border-b border-white/10">
+          <Link to="/" className="no-underline">
+            <LogoSelector src={logo} alt="Tendência Cosméticos" className="h-[40px] w-auto" />
+          </Link>
         </div>
       </div>
+
 
 
 
