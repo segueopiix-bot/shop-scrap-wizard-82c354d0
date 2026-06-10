@@ -750,7 +750,7 @@ const CheckoutPage = () => {
 
 
                   {(() => {
-                    const addressValid = isValidCEP(cep) && cepValid && street.trim() !== "" && number.trim() !== "" && neighborhood.trim() !== "" && city.trim() !== "" && state.trim() !== "" && !!cartShippingMethod;
+                    const addressValid = isValidCEP(cep) && street.trim() !== "" && number.trim() !== "" && neighborhood.trim() !== "" && city.trim() !== "" && state.trim() !== "" && !!cartShippingMethod;
                     return (
                       <button
                         onClick={handleAddressContinue}
