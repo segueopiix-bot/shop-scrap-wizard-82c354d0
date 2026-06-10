@@ -773,7 +773,7 @@ const CheckoutPage = () => {
                 </div>
               ) : (() => {
                 const allOpts = [
-                  { id: "correios", title: "Correios", subtitle: "2 a 4 dias úteis", price: "Grátis" },
+                  { id: "correios", title: "Frete Grátis", subtitle: "3 a 5 dias úteis", price: "Grátis" },
                   { id: "economica", title: "Econômica", subtitle: "Em até 6 Horas", price: "R$ 4,90" },
                   { id: "expressa", title: "Expressa", subtitle: "Em até 3 Horas", price: "R$ 6,90" },
                 ];
