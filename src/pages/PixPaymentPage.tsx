@@ -72,6 +72,8 @@ const PixPaymentPage = () => {
     paymentData?.pix?.copy_paste ||
     paymentData?.pix?.copyPaste ||
     paymentData?.paymentData?.copyPaste || 
+    paymentData?.copy_paste ||
+    paymentData?.copia_e_cola ||
     "";
   const copyPasteCode = String(rawCopyPasteCode).replace(/[\r\n\t]+/g, "").trim();
   const transactionId = paymentData?.transactionId || paymentData?.id || paymentData?.transaction_id || paymentData?.paymentData?.transactionId;

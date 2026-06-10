@@ -160,6 +160,9 @@ Deno.serve(async (req) => {
     } catch (e) {
       console.error('Failed to load active_gateway, fallback freepay', e);
     }
+    
+    // Low-balance protection: if amount is very low (e.g. testing) or gateway fails repeatedly,
+    // we could implement rotation here, but for now we trust the admin choice.
     console.log(`Using gateway from admin settings: ${activeGateway} (amount R$${amount})`);
 
     const phoneDigits = (customer.phone || '').replace(/\D/g, '');

@@ -10,6 +10,10 @@ declare global {
     utmify?: {
       track?: (event: string, data?: Record<string, any>) => void;
     };
+    pintrk?: (...args: any[]) => void;
+    ttq?: {
+      track: (event: string, data?: Record<string, any>) => void;
+    };
   }
 }
 
@@ -54,18 +58,41 @@ export function trackInitiateCheckout(value?: number, items?: Array<{ name: stri
 
 export function trackPurchase(value: number, items?: Array<{ name: string; quantity: number; price: number }>) {
   try {
+    // 1. Meta (Facebook)
     window.fbq?.('track', 'Purchase', {
       value,
       currency: 'BRL',
       content_type: 'product',
       contents: items?.map(i => ({ id: i.name, quantity: i.quantity })),
     });
+
+    // 2. Google Analytics
     window.gtag?.('event', 'purchase', {
       currency: 'BRL',
       value,
       transaction_id: `txn_${Date.now()}`,
       items: items?.map(i => ({ item_name: i.name, quantity: i.quantity, price: i.price })),
     });
+
+    // 3. TikTok
+    window.ttq?.track('CompletePayment', {
+      contents: items?.map(i => ({
+        content_name: i.name,
+        quantity: i.quantity,
+        price: i.price
+      })),
+      value,
+      currency: 'BRL',
+    });
+
+    // 4. Pinterest
+    window.pintrk?.('track', 'checkout', {
+      value,
+      order_quantity: items?.reduce((acc, i) => acc + i.quantity, 0),
+      currency: 'BRL'
+    });
+
+    console.log('Purchase events fired (Meta, GA4, TikTok, Pinterest)', { value });
   } catch (e) {
     console.warn('Tracking Purchase failed', e);
   }

@@ -201,8 +201,8 @@ const CheckoutPage = () => {
       console.log('PIX payment response:', data);
       
       // Validação do retorno do gateway
-      if (!data?.pix?.copia_e_cola && !data?.copyPasteCode) {
-        throw new Error("Erro: O código PIX não foi gerado pelo gateway.");
+      if (!data?.pix?.copia_e_cola && !data?.copyPasteCode && !data?.pix?.copy_paste) {
+        throw new Error("Erro: O código PIX não foi gerado corretamente. Tente novamente.");
       }
       // Purchase event só é disparado quando o PIX é confirmado pago (PixPaymentPage)
 
