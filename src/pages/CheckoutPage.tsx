@@ -726,7 +726,7 @@ const CheckoutPage = () => {
                           { id: "expressa", title: "Expressa", subtitle: "3 Horas", price: "R$ 6,90" },
                         ]
                       : [
-                          { id: "correios", title: "Correios", subtitle: "2 a 4 dias úteis", price: "Grátis" },
+                          { id: "correios", title: "Frete Grátis", subtitle: "3 a 5 dias úteis", price: "Grátis" },
                         ];
                     return (
                       <div className="mt-4 space-y-2">
