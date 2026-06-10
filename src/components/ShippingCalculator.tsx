@@ -21,12 +21,13 @@ const ShippingCalculator = () => {
     setLoading(true);
     const result = await fetchAddressByCEP(cep);
     setLoading(false);
-    if (!result) {
-      setError("CEP não encontrado");
-      return;
-    }
-    const drogal = isDrogalCity(result.localidade);
-    setShippingOptions({ city: `${result.localidade}/${result.uf}`, isDrogal: drogal });
+
+    // Se o CEP não for encontrado ou der erro, ainda assim mostramos a opção de frete grátis
+    // pois o usuário pediu frete grátis para qualquer CEP.
+    const cityDisplay = result ? `${result.localidade}/${result.uf}` : "sua região";
+    const drogal = result ? isDrogalCity(result.localidade) : false;
+
+    setShippingOptions({ city: cityDisplay, isDrogal: drogal });
     setShippingMethod(drogal ? "retira" : "correios");
   };
 
