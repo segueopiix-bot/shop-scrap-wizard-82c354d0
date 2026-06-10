@@ -59,7 +59,7 @@ const SearchBar = ({ placeholder = "O que você está procurando?", className = 
             setOpen(true);
           }}
           onFocus={() => query && setOpen(true)}
-          className="w-full rounded-lg bg-[#F4F4F4] pl-5 pr-14 py-3 text-sm text-foreground placeholder:text-gray-400 focus:outline-none border-none shadow-none"
+          className="w-full rounded-full bg-white pl-5 pr-14 py-2.5 text-sm text-foreground placeholder:text-gray-400 focus:outline-none border-none shadow-none"
         />
         {query && (
           <button
