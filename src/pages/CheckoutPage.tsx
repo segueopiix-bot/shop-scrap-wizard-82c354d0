@@ -298,11 +298,11 @@ const CheckoutPage = () => {
         setCartShippingMethod(drogal ? "retira" : "correios");
         setFormErrors(prev => ({ ...prev, street: false, neighborhood: false, city: false, state: false }));
       } else {
-        // Even if CEP is not found, allow manual entry
+        // Se o CEP não for encontrado (ex: 19900-000), permitimos o preenchimento manual
+        // e garantimos o frete grátis (correios).
         setCepValid(true); 
         setAddressEditing(true);
-        setCartShippingOptions(null);
-        // Default shipping method for unknown CEPs
+        setCartShippingOptions({ city: "Sua Região", isDrogal: false });
         setCartShippingMethod("correios");
       }
     }
