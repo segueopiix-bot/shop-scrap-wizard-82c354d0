@@ -849,15 +849,29 @@ const CheckoutPage = () => {
                       </div>
                     </div>
                   </div>
-                  {/* Mobile: botão fixo no rodapé */}
-                  <div className="lg:hidden fixed bottom-0 left-0 right-0 z-50">
-                    <button
-                      onClick={handleFinalizarPedido}
-                      disabled={isProcessing}
-                      className="w-full bg-[#4ab9a5] py-4 text-lg text-white transition-colors hover:bg-[#3FA8A0] disabled:opacity-50"
-                    >
-                      Finalizar Compra
-                    </button>
+                  {/* Mobile: Finalizar Compra fixo ou inline conforme feedback */}
+                  <div className="lg:hidden">
+                    {/* Botão fixo no rodapé */}
+                    <div className="fixed bottom-0 left-0 right-0 z-50">
+                      <button
+                        onClick={handleFinalizarPedido}
+                        disabled={isProcessing}
+                        className="w-full bg-[#4ab9a5] py-4 text-lg text-white transition-colors hover:bg-[#3FA8A0] disabled:opacity-50"
+                      >
+                        Finalizar Compra
+                      </button>
+                    </div>
+
+                    {/* Botão inline (indicado pela marcação vermelha na imagem) */}
+                    <div className="mt-6 mb-2">
+                      <button
+                        onClick={handleFinalizarPedido}
+                        disabled={isProcessing}
+                        className="w-full rounded-full bg-[#4ab9a5] py-4 text-lg font-bold text-white shadow-lg transition-colors hover:bg-[#3FA8A0] disabled:opacity-50"
+                      >
+                        Finalizar Compra
+                      </button>
+                    </div>
                   </div>
               </div>
             </div>
