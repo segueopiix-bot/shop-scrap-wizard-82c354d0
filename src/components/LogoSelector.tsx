@@ -14,7 +14,7 @@ interface LogoSelectorProps {
   style?: CSSProperties;
 }
 
-const OFFICIAL_LOGO_URL = "https://www.lojas-epoca.store/assets/full-logo-CBRmo0EX.png";
+const OFFICIAL_LOGO_URL = "https://i.ibb.co/4gYxQGFP/C-pia-de-C-pia-de-C-pia-de-C-pia-de-C-pia-de-C-pia-de-C-pia-de-C-pia-de-C-pia-de-Design-sem-nome.png";
 const SECONDARY_LOGO_URL = "https://drogal.vtexassets.com/assets/vtex.file-manager-graphql/images/ac2ef5d9-7037-44eb-a8a2-bd1f153d3ab3___fc190423047aa9e5acabc70415c34c96.webp";
 const OFFICIAL_LOGO_WIDTH = 250;
 const OFFICIAL_LOGO_HEIGHT = 100;
