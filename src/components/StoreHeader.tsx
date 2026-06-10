@@ -33,15 +33,37 @@ const StoreHeader = ({ onToggleMobileMenu, mobileMenuOpen }: StoreHeaderProps) =
         <div className="bg-header">
           <img src={freteBanner} alt="Frete grátis para todo Brasil" className="w-full h-auto block" loading="lazy"/>
         </div>
-        <div className="bg-header py-4 flex justify-center border-b border-white/10">
+        
+        <div className="bg-header px-4 py-3 flex items-center justify-between border-b border-white/10">
+          <button
+            onClick={onToggleMobileMenu}
+            className="text-header-foreground flex-shrink-0"
+            aria-label="Menu"
+          >
+            <Menu className="h-7 w-7" />
+          </button>
+
           <Link to="/" className="no-underline">
-            <LogoSelector src={logo} alt="Tendência Cosméticos" className="h-[40px] w-auto" />
+            <LogoSelector src={logo} alt="Tendência Cosméticos" className="h-[32px] w-auto" />
           </Link>
+
+          <button
+            onClick={() => setIsOpen(true)}
+            className="flex items-center text-header-foreground transition-opacity hover:opacity-80 flex-shrink-0"
+            aria-label="Carrinho"
+          >
+            <div className="relative">
+              <ShoppingCart className="h-7 w-7" />
+              <span className="absolute -right-1.5 -top-1.5 flex h-4 w-4 items-center justify-center rounded-full bg-orange-500 text-[10px] font-bold text-white leading-none">
+                {totalItems}
+              </span>
+            </div>
+          </button>
         </div>
         
         {/* Initial Search Bar (Not fixed) */}
         {!scrolled && (
-          <div className="bg-header px-3 pb-2 w-full">
+          <div className="bg-header px-3 py-2 w-full border-b border-white/10">
             <SearchBar placeholder="Buscar" />
           </div>
         )}
