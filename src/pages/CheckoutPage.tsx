@@ -351,7 +351,7 @@ const CheckoutPage = () => {
         </div>
       )}
       {/* Header simplificado do checkout */}
-      <header className="bg-white shadow-sm">
+      <header className={`shadow-sm ${fromGoogleAd ? "bg-[#252424]" : "bg-white"}`}>
         <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3">
           <Link to="/">
             <LogoSelector alt="Tendência Cosméticos" className="h-[44px] md:h-[52px] w-auto" />
@@ -360,7 +360,7 @@ const CheckoutPage = () => {
           <div className="hidden md:block flex-1 max-w-md">
             <CheckoutSteps currentStep={step >= 4 ? 2 : step === 0 ? 0 : 1} />
           </div>
-          <div className="flex items-center gap-2 text-xs text-gray-600 md:hidden">
+          <div className={`flex items-center gap-2 text-xs md:hidden ${fromGoogleAd ? "text-white" : "text-gray-600"}`}>
             <Lock className="h-4 w-4" />
             <div className="text-right leading-tight">
               <p className="font-bold">PAGAMENTO</p>
