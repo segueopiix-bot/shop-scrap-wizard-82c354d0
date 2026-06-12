@@ -15,7 +15,7 @@ interface LogoSelectorProps {
 }
 
 const OFFICIAL_LOGO_URL = "https://i.ibb.co/4gYxQGFP/C-pia-de-C-pia-de-C-pia-de-C-pia-de-C-pia-de-C-pia-de-C-pia-de-C-pia-de-C-pia-de-Design-sem-nome.png";
-const SECONDARY_LOGO_URL = "https://i.ibb.co/4RHzqCWR/DSP-Marca-130716-01.png";
+const SECONDARY_LOGO_URL = "https://i.ibb.co/qLJb2Wy3/id-FQSs-Erb-R-1781271248576.png";
 const OFFICIAL_LOGO_WIDTH = 250;
 const OFFICIAL_LOGO_HEIGHT = 100;
 

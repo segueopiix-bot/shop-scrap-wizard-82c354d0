@@ -44,7 +44,7 @@
     --price-old: 0 0% 55%;
     --announcement-bg: 203 100% 39%;
     --announcement-foreground: 0 0% 100%;
-    --header-bg: 198 100% 59%; /* Color from image #2eb9ff */
+    --header-bg: 0 0% 100%; /* White bg */
     --header-foreground: 220 10% 15%;
     --nav-bg: 0 0% 100%;
     --nav-foreground: 220 10% 25%;

@@ -34,10 +34,10 @@ const StoreHeader = ({ onToggleMobileMenu, mobileMenuOpen }: StoreHeaderProps) =
           <img src={freteBanner} alt="Frete grátis para todo Brasil" className="w-full h-auto block" loading="lazy"/>
         </div>
         
-        <div className="bg-header px-4 py-3 flex items-center justify-between border-b border-white/10">
+        <div className="bg-header px-4 py-3 flex items-center justify-between border-b border-gray-100">
           <button
             onClick={onToggleMobileMenu}
-            className="text-white flex-shrink-0"
+            className="text-foreground flex-shrink-0"
             aria-label="Menu"
           >
             <Menu className="h-7 w-7" />
@@ -49,7 +49,7 @@ const StoreHeader = ({ onToggleMobileMenu, mobileMenuOpen }: StoreHeaderProps) =
 
           <button
             onClick={() => setIsOpen(true)}
-            className="flex items-center text-white transition-opacity hover:opacity-80 flex-shrink-0"
+            className="flex items-center text-foreground transition-opacity hover:opacity-80 flex-shrink-0"
             aria-label="Carrinho"
           >
             <div className="relative">
@@ -63,7 +63,7 @@ const StoreHeader = ({ onToggleMobileMenu, mobileMenuOpen }: StoreHeaderProps) =
         
         {/* Initial Search Bar (Not fixed) */}
         {!scrolled && (
-          <div className="bg-header px-3 py-2 w-full border-b border-white/10">
+          <div className="bg-header px-3 py-2 w-full border-b border-gray-100">
             <SearchBar placeholder="Buscar" />
           </div>
         )}
@@ -74,7 +74,7 @@ const StoreHeader = ({ onToggleMobileMenu, mobileMenuOpen }: StoreHeaderProps) =
         <div className="flex items-center gap-2 px-3 py-2 w-full">
           <button
             onClick={onToggleMobileMenu}
-            className="text-white flex-shrink-0"
+            className="text-foreground flex-shrink-0"
             aria-label="Menu"
           >
             <Menu className="h-7 w-7" />
@@ -86,7 +86,7 @@ const StoreHeader = ({ onToggleMobileMenu, mobileMenuOpen }: StoreHeaderProps) =
           
           <button
             onClick={() => setIsOpen(true)}
-            className="flex items-center text-white transition-opacity hover:opacity-80 flex-shrink-0"
+            className="flex items-center text-foreground transition-opacity hover:opacity-80 flex-shrink-0"
             aria-label="Carrinho"
           >
             <div className="relative">
@@ -120,7 +120,7 @@ const StoreHeader = ({ onToggleMobileMenu, mobileMenuOpen }: StoreHeaderProps) =
 
             <button
               onClick={() => setIsOpen(true)}
-              className="flex items-center text-white transition-opacity hover:opacity-80"
+              className="flex items-center text-foreground transition-opacity hover:opacity-80"
               aria-label="Carrinho"
             >
               <div className="relative">
