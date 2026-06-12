@@ -21,7 +21,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
-const SITE_URL = "https://lojas-epoca.store";
+const SITE_URL = "https://www.farmadr0gal.co";
 const SITE_NAME = "Tendência Cosméticos";
 
 const stripHtml = (html: string) =>

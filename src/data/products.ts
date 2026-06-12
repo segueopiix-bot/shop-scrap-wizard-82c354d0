@@ -3961,12 +3961,12 @@ const rawProducts: Product[] = [
     "id": "epoca-discos-de-algodao-ricca",
     "ean": "7897517905705",
     "name": "Discos de Algodão 70un  - Ricca 70 Un",
-    "image": "https://lojas-epoca.store/products/discos-de-algodao-ricca-1-5982caac.jpg",
+    "image": "https://www.farmadr0gal.co/products/discos-de-algodao-ricca-1-5982caac.jpg",
     "images": [
-      "https://lojas-epoca.store/products/discos-de-algodao-ricca-1-5982caac.jpg",
-      "https://lojas-epoca.store/products/discos-de-algodao-ricca-2-5d5a6d8b.jpg",
-      "https://lojas-epoca.store/products/discos-de-algodao-ricca-3-6958c916.jpg",
-      "https://lojas-epoca.store/products/discos-de-algodao-ricca-4-65560d74.jpg"
+      "https://www.farmadr0gal.co/products/discos-de-algodao-ricca-1-5982caac.jpg",
+      "https://www.farmadr0gal.co/products/discos-de-algodao-ricca-2-5d5a6d8b.jpg",
+      "https://www.farmadr0gal.co/products/discos-de-algodao-ricca-3-6958c916.jpg",
+      "https://www.farmadr0gal.co/products/discos-de-algodao-ricca-4-65560d74.jpg"
     ],
     "price": 7.85,
     "installment": "R$ 0,65",
@@ -4363,12 +4363,12 @@ const rawProducts: Product[] = [
   {
     "id": "epoca-eucerin-aquaphor-reparador-labial-10ml-153462",
     "name": "Eucerin Aquaphor Reparador Labial 10ml",
-    "image": "https://lojas-epoca.store/products/17608011853626_1a628f84.jpg",
+    "image": "https://www.farmadr0gal.co/products/17608011853626_1a628f84.jpg",
     "images": [
-      "https://lojas-epoca.store/products/17608011853626_1a628f84.jpg",
-      "https://lojas-epoca.store/products/17608011871251_7a90419d.jpg",
-      "https://lojas-epoca.store/products/17608011887248_d5ac58f2.jpg",
-      "https://lojas-epoca.store/products/17608011903527_7f48ae7b.jpg"
+      "https://www.farmadr0gal.co/products/17608011853626_1a628f84.jpg",
+      "https://www.farmadr0gal.co/products/17608011871251_7a90419d.jpg",
+      "https://www.farmadr0gal.co/products/17608011887248_d5ac58f2.jpg",
+      "https://www.farmadr0gal.co/products/17608011903527_7f48ae7b.jpg"
     ],
     "price": 52.21,
     "installment": "R$ 4,35",
@@ -4378,12 +4378,12 @@ const rawProducts: Product[] = [
   {
     "id": "epoca-hidratante-oil-free-bepantol-derma-toque-seco",
     "name": "Bepantol Derma Creme Hidratante Toque Seco Oil Free - Pele Normal a Seca",
-    "image": "https://lojas-epoca.store/products/hidratante-oil-free-bepantol-derma-toque-seco--4-.jpg_6c2705e4.jpg",
+    "image": "https://www.farmadr0gal.co/products/hidratante-oil-free-bepantol-derma-toque-seco--4-.jpg_6c2705e4.jpg",
     "images": [
-      "https://lojas-epoca.store/products/hidratante-oil-free-bepantol-derma-toque-seco--4-.jpg_6c2705e4.jpg",
-      "https://lojas-epoca.store/products/hidratante-oil-free-bepantol-derma-toque-seco--5-.jpg_2452d716.jpg",
-      "https://lojas-epoca.store/products/hidratante-oil-free-bepantol-derma-toque-seco--6-.jpg_8345570a.jpg",
-      "https://lojas-epoca.store/products/hidratante-oil-free-bepantol-derma-toque-seco--1-.jpg_f9aba3ec.jpg"
+      "https://www.farmadr0gal.co/products/hidratante-oil-free-bepantol-derma-toque-seco--4-.jpg_6c2705e4.jpg",
+      "https://www.farmadr0gal.co/products/hidratante-oil-free-bepantol-derma-toque-seco--5-.jpg_2452d716.jpg",
+      "https://www.farmadr0gal.co/products/hidratante-oil-free-bepantol-derma-toque-seco--6-.jpg_8345570a.jpg",
+      "https://www.farmadr0gal.co/products/hidratante-oil-free-bepantol-derma-toque-seco--1-.jpg_f9aba3ec.jpg"
     ],
     "price": 27.27,
     "installment": "R$ 2,27",
@@ -4393,12 +4393,12 @@ const rawProducts: Product[] = [
   {
     "id": "epoca-creme-de-limpeza-clareador-bioderma-pigmentbio-foaming-cream",
     "name": "Bioderma Esfoliante Clareador para Rosto e Corpo Pigmentbio Foaming Cream",
-    "image": "https://lojas-epoca.store/products/creme-de-limpeza-clareador-bioderma-pigmentbio-foaming-cream--1-_22a30e0c.jpg",
+    "image": "https://www.farmadr0gal.co/products/creme-de-limpeza-clareador-bioderma-pigmentbio-foaming-cream--1-_22a30e0c.jpg",
     "images": [
-      "https://lojas-epoca.store/products/creme-de-limpeza-clareador-bioderma-pigmentbio-foaming-cream--1-_22a30e0c.jpg",
-      "https://lojas-epoca.store/products/creme-de-limpeza-clareador-bioderma-pigmentbio-foaming-cream--6-_23dcb3fc.jpg",
-      "https://lojas-epoca.store/products/creme-de-limpeza-clareador-bioderma-pigmentbio-foaming-cream--2-_0336367d.jpg",
-      "https://lojas-epoca.store/products/creme-de-limpeza-clareador-bioderma-pigmentbio-foaming-cream--3-_935d1b9e.jpg"
+      "https://www.farmadr0gal.co/products/creme-de-limpeza-clareador-bioderma-pigmentbio-foaming-cream--1-_22a30e0c.jpg",
+      "https://www.farmadr0gal.co/products/creme-de-limpeza-clareador-bioderma-pigmentbio-foaming-cream--6-_23dcb3fc.jpg",
+      "https://www.farmadr0gal.co/products/creme-de-limpeza-clareador-bioderma-pigmentbio-foaming-cream--2-_0336367d.jpg",
+      "https://www.farmadr0gal.co/products/creme-de-limpeza-clareador-bioderma-pigmentbio-foaming-cream--3-_935d1b9e.jpg"
     ],
     "price": 76.02,
     "installment": "R$ 6,33",
@@ -4408,12 +4408,12 @@ const rawProducts: Product[] = [
   {
     "id": "epoca-acnezil-gel-5-com-20g-145487",
     "name": "Acnezil Gel 5% com 20g",
-    "image": "https://lojas-epoca.store/products/17585623873490_f20da886.jpg",
+    "image": "https://www.farmadr0gal.co/products/17585623873490_f20da886.jpg",
     "images": [
-      "https://lojas-epoca.store/products/17585623873490_f20da886.jpg",
-      "https://lojas-epoca.store/products/17585623879902_414cef32.jpg",
-      "https://lojas-epoca.store/products/17585623884110_9879f030.jpg",
-      "https://lojas-epoca.store/products/17585623885775_ed932438.jpg"
+      "https://www.farmadr0gal.co/products/17585623873490_f20da886.jpg",
+      "https://www.farmadr0gal.co/products/17585623879902_414cef32.jpg",
+      "https://www.farmadr0gal.co/products/17585623884110_9879f030.jpg",
+      "https://www.farmadr0gal.co/products/17585623885775_ed932438.jpg"
     ],
     "price": 8.88,
     "installment": "R$ 0,74",
@@ -4423,11 +4423,11 @@ const rawProducts: Product[] = [
   {
     "id": "epoca-protetor-solar-umbrella-perfect-skin-tom-claro-fps-50-50g-113136",
     "name": "Protetor Solar Umbrella Perfect Skin Tom Claro FPS 50 50g",
-    "image": "https://lojas-epoca.store/products/17490533634704_b85ca700.jpg",
+    "image": "https://www.farmadr0gal.co/products/17490533634704_b85ca700.jpg",
     "images": [
-      "https://lojas-epoca.store/products/17490533634704_b85ca700.jpg",
-      "https://lojas-epoca.store/products/17490533651878_08728b24.jpg",
-      "https://lojas-epoca.store/products/17490533669044_fd1caf54.jpg"
+      "https://www.farmadr0gal.co/products/17490533634704_b85ca700.jpg",
+      "https://www.farmadr0gal.co/products/17490533651878_08728b24.jpg",
+      "https://www.farmadr0gal.co/products/17490533669044_fd1caf54.jpg"
     ],
     "price": 122.3,
     "installment": "R$ 10,19",
@@ -4437,12 +4437,12 @@ const rawProducts: Product[] = [
   {
     "id": "epoca-hidratante-geleia-de-vaselina-farmax-100g-221714",
     "name": "Hidratante Geleia de Vaselina Farmax 100g",
-    "image": "https://lojas-epoca.store/products/17752154675659_a9080d3e.jpg",
+    "image": "https://www.farmadr0gal.co/products/17752154675659_a9080d3e.jpg",
     "images": [
-      "https://lojas-epoca.store/products/17752154675659_a9080d3e.jpg",
-      "https://lojas-epoca.store/products/17752154687556_c638513d.jpg",
-      "https://lojas-epoca.store/products/17752154701226_25f549a1.jpg",
-      "https://lojas-epoca.store/products/17752154720662_0626e74e.jpg"
+      "https://www.farmadr0gal.co/products/17752154675659_a9080d3e.jpg",
+      "https://www.farmadr0gal.co/products/17752154687556_c638513d.jpg",
+      "https://www.farmadr0gal.co/products/17752154701226_25f549a1.jpg",
+      "https://www.farmadr0gal.co/products/17752154720662_0626e74e.jpg"
     ],
     "price": 17.49,
     "installment": "R$ 1,46",
@@ -4452,12 +4452,12 @@ const rawProducts: Product[] = [
   {
     "id": "epoca-lanonina-hpa-lansinoh-pomada-para-fissuras-mamilares",
     "name": "Lanonina HPA Lansinoh - Pomada para Fissuras Mamilares",
-    "image": "https://lojas-epoca.store/products/Lanonina-HPA-Lansinoh---Pomada-para-Fissuras-Mamilares_ac78d1fb.jpg",
+    "image": "https://www.farmadr0gal.co/products/Lanonina-HPA-Lansinoh---Pomada-para-Fissuras-Mamilares_ac78d1fb.jpg",
     "images": [
-      "https://lojas-epoca.store/products/Lanonina-HPA-Lansinoh---Pomada-para-Fissuras-Mamilares_ac78d1fb.jpg",
-      "https://lojas-epoca.store/products/Lanonina-HPA-Lansinoh---Pomada-para-Fissuras-Mamilares3_7c1de0e3.jpg",
-      "https://lojas-epoca.store/products/Lanonina-HPA-Lansinoh---Pomada-para-Fissuras-Mamilares2_64c438d1.jpg",
-      "https://lojas-epoca.store/products/lanciono_ec55701e.jpg"
+      "https://www.farmadr0gal.co/products/Lanonina-HPA-Lansinoh---Pomada-para-Fissuras-Mamilares_ac78d1fb.jpg",
+      "https://www.farmadr0gal.co/products/Lanonina-HPA-Lansinoh---Pomada-para-Fissuras-Mamilares3_7c1de0e3.jpg",
+      "https://www.farmadr0gal.co/products/Lanonina-HPA-Lansinoh---Pomada-para-Fissuras-Mamilares2_64c438d1.jpg",
+      "https://www.farmadr0gal.co/products/lanciono_ec55701e.jpg"
     ],
     "price": 44.03,
     "installment": "R$ 3,67",
@@ -4467,12 +4467,12 @@ const rawProducts: Product[] = [
   {
     "id": "epoca-creme-de-olhos-creamy-eye-cream",
     "name": "Creme para Olhos Creamy - Eye Cream",
-    "image": "https://lojas-epoca.store/products/creme-de-olhos-creamy-eye-cream_56393045.jpg",
+    "image": "https://www.farmadr0gal.co/products/creme-de-olhos-creamy-eye-cream_56393045.jpg",
     "images": [
-      "https://lojas-epoca.store/products/creme-de-olhos-creamy-eye-cream_56393045.jpg",
-      "https://lojas-epoca.store/products/creme-de-olhos-creamy-eye-cream--2-_25169cd5.jpg",
-      "https://lojas-epoca.store/products/creme-de-olhos-creamy-eye-cream--3-_0d6f88ff.jpg",
-      "https://lojas-epoca.store/products/creme-de-olhos-creamy-eye-cream--4-_6ec62819.jpg"
+      "https://www.farmadr0gal.co/products/creme-de-olhos-creamy-eye-cream_56393045.jpg",
+      "https://www.farmadr0gal.co/products/creme-de-olhos-creamy-eye-cream--2-_25169cd5.jpg",
+      "https://www.farmadr0gal.co/products/creme-de-olhos-creamy-eye-cream--3-_0d6f88ff.jpg",
+      "https://www.farmadr0gal.co/products/creme-de-olhos-creamy-eye-cream--4-_6ec62819.jpg"
     ],
     "price": 92.91,
     "installment": "R$ 7,74",
@@ -4482,12 +4482,12 @@ const rawProducts: Product[] = [
   {
     "id": "epoca-protetor-facial-loreal-solar-expertise-efeito-make-up-3-0-fps70-30g-145778",
     "name": "Protetor Facial Loreal Solar Expertise Efeito Make Up 3.0 Fps70 30g",
-    "image": "https://lojas-epoca.store/products/17594168914559_fe2992fc.jpg",
+    "image": "https://www.farmadr0gal.co/products/17594168914559_fe2992fc.jpg",
     "images": [
-      "https://lojas-epoca.store/products/17594168914559_fe2992fc.jpg",
-      "https://lojas-epoca.store/products/17594168922520_72c3f5ad.jpg",
-      "https://lojas-epoca.store/products/17594168930026_cfb81bca.jpg",
-      "https://lojas-epoca.store/products/17594168934772_ef06e9bb.jpg"
+      "https://www.farmadr0gal.co/products/17594168914559_fe2992fc.jpg",
+      "https://www.farmadr0gal.co/products/17594168922520_72c3f5ad.jpg",
+      "https://www.farmadr0gal.co/products/17594168930026_cfb81bca.jpg",
+      "https://www.farmadr0gal.co/products/17594168934772_ef06e9bb.jpg"
     ],
     "price": 42.09,
     "installment": "R$ 3,51",
@@ -4497,12 +4497,12 @@ const rawProducts: Product[] = [
   {
     "id": "epoca-pomada-reparadora-aquaphor-eucerin-49g-151155",
     "name": "Pomada Reparadora Aquaphor Eucerin 49g",
-    "image": "https://lojas-epoca.store/products/17593524839155_d80f3b64.jpg",
+    "image": "https://www.farmadr0gal.co/products/17593524839155_d80f3b64.jpg",
     "images": [
-      "https://lojas-epoca.store/products/17593524839155_d80f3b64.jpg",
-      "https://lojas-epoca.store/products/17593524841491_f60e5dfb.jpg",
-      "https://lojas-epoca.store/products/17593524842896_d0da738e.jpg",
-      "https://lojas-epoca.store/products/17593524844603_a8f3675c.jpg"
+      "https://www.farmadr0gal.co/products/17593524839155_d80f3b64.jpg",
+      "https://www.farmadr0gal.co/products/17593524841491_f60e5dfb.jpg",
+      "https://www.farmadr0gal.co/products/17593524842896_d0da738e.jpg",
+      "https://www.farmadr0gal.co/products/17593524844603_a8f3675c.jpg"
     ],
     "price": 62.41,
     "installment": "R$ 5,20",
@@ -4512,10 +4512,10 @@ const rawProducts: Product[] = [
   {
     "id": "epoca-locao-hidratante-cetaphil-473ml-145825",
     "name": "Loção Hidratante Cetaphil 473ml",
-    "image": "https://lojas-epoca.store/products/17590718578470_7c43dc51.jpg",
+    "image": "https://www.farmadr0gal.co/products/17590718578470_7c43dc51.jpg",
     "images": [
-      "https://lojas-epoca.store/products/17590718578470_7c43dc51.jpg",
-      "https://lojas-epoca.store/products/17590718585202_21c699cb.jpg"
+      "https://www.farmadr0gal.co/products/17590718578470_7c43dc51.jpg",
+      "https://www.farmadr0gal.co/products/17590718585202_21c699cb.jpg"
     ],
     "price": 64.97,
     "installment": "R$ 5,41",
@@ -4525,10 +4525,10 @@ const rawProducts: Product[] = [
   {
     "id": "epoca-gel-facial-zella-150mg-acido-azelaico-30g-169655",
     "name": "Gel Facial Zella 150mg Ácido Azelaico 30g",
-    "image": "https://lojas-epoca.store/products/17589263994714_3ae85c12.jpg",
+    "image": "https://www.farmadr0gal.co/products/17589263994714_3ae85c12.jpg",
     "images": [
-      "https://lojas-epoca.store/products/17589263994714_3ae85c12.jpg",
-      "https://lojas-epoca.store/products/17589263998045_acfa0721.jpg"
+      "https://www.farmadr0gal.co/products/17589263994714_3ae85c12.jpg",
+      "https://www.farmadr0gal.co/products/17589263998045_acfa0721.jpg"
     ],
     "price": 51.58,
     "installment": "R$ 4,30",
@@ -4538,12 +4538,12 @@ const rawProducts: Product[] = [
   {
     "id": "epoca-protetor-solar-sallve-bastao-fps-90-cor-8-antimanchas-15g-186653",
     "name": "Protetor Solar Sallve Bastão Fps 90 Cor 8 Antimanchas 15g",
-    "image": "https://lojas-epoca.store/products/17585513289207_616ed0e7.jpg",
+    "image": "https://www.farmadr0gal.co/products/17585513289207_616ed0e7.jpg",
     "images": [
-      "https://lojas-epoca.store/products/17585513289207_616ed0e7.jpg",
-      "https://lojas-epoca.store/products/17585513294539_d963f5e9.jpg",
-      "https://lojas-epoca.store/products/17585513300728_4cb5ae8a.jpg",
-      "https://lojas-epoca.store/products/17585513305770_1ed6dc48.jpg"
+      "https://www.farmadr0gal.co/products/17585513289207_616ed0e7.jpg",
+      "https://www.farmadr0gal.co/products/17585513294539_d963f5e9.jpg",
+      "https://www.farmadr0gal.co/products/17585513300728_4cb5ae8a.jpg",
+      "https://www.farmadr0gal.co/products/17585513305770_1ed6dc48.jpg"
     ],
     "price": 55.36,
     "installment": "R$ 4,61",
@@ -4553,12 +4553,12 @@ const rawProducts: Product[] = [
   {
     "id": "epoca-refil-hidratante-corporal-o-boticario-nativa-spa-ameixa-400ml-131003",
     "name": "Refil Hidratante Corporal O Boticário Nativa Spa Ameixa 400ml",
-    "image": "https://lojas-epoca.store/products/17570928829706_bed5e063.jpg",
+    "image": "https://www.farmadr0gal.co/products/17570928829706_bed5e063.jpg",
     "images": [
-      "https://lojas-epoca.store/products/17570928829706_bed5e063.jpg",
-      "https://lojas-epoca.store/products/17570957547513_5e47b6ea.jpg",
-      "https://lojas-epoca.store/products/17570957559875_70293d48.jpg",
-      "https://lojas-epoca.store/products/17570957572164_a8b4279c.jpg"
+      "https://www.farmadr0gal.co/products/17570928829706_bed5e063.jpg",
+      "https://www.farmadr0gal.co/products/17570957547513_5e47b6ea.jpg",
+      "https://www.farmadr0gal.co/products/17570957559875_70293d48.jpg",
+      "https://www.farmadr0gal.co/products/17570957572164_a8b4279c.jpg"
     ],
     "price": 39.83,
     "installment": "R$ 3,32",
@@ -4568,11 +4568,11 @@ const rawProducts: Product[] = [
   {
     "id": "epoca-celimax-retinal-shot-tightening-booster-15ml-230612",
     "name": "Celimax Retinal Shot Tightening Booster – 15Ml",
-    "image": "https://lojas-epoca.store/products/17786058976473_980ed2d0.jpg",
+    "image": "https://www.farmadr0gal.co/products/17786058976473_980ed2d0.jpg",
     "images": [
-      "https://lojas-epoca.store/products/17786058976473_980ed2d0.jpg",
-      "https://lojas-epoca.store/products/17786058987849_5c5e1dae.jpg",
-      "https://lojas-epoca.store/products/17786058999964_771d94aa.jpg"
+      "https://www.farmadr0gal.co/products/17786058976473_980ed2d0.jpg",
+      "https://www.farmadr0gal.co/products/17786058987849_5c5e1dae.jpg",
+      "https://www.farmadr0gal.co/products/17786058999964_771d94aa.jpg"
     ],
     "price": 169.33,
     "installment": "R$ 14,11",
@@ -4582,12 +4582,12 @@ const rawProducts: Product[] = [
   {
     "id": "epoca-cetaphil-creme-hidratante-453g-136076",
     "name": "CETAPHIL CREME HIDRATANTE 453G",
-    "image": "https://lojas-epoca.store/products/17583580403168_babc9c47.jpg",
+    "image": "https://www.farmadr0gal.co/products/17583580403168_babc9c47.jpg",
     "images": [
-      "https://lojas-epoca.store/products/17583580403168_babc9c47.jpg",
-      "https://lojas-epoca.store/products/17583580429207_9f607ae9.jpg",
-      "https://lojas-epoca.store/products/17583580454869_e6ae68f4.jpg",
-      "https://lojas-epoca.store/products/17583580480189_eb7d8881.jpg"
+      "https://www.farmadr0gal.co/products/17583580403168_babc9c47.jpg",
+      "https://www.farmadr0gal.co/products/17583580429207_9f607ae9.jpg",
+      "https://www.farmadr0gal.co/products/17583580454869_e6ae68f4.jpg",
+      "https://www.farmadr0gal.co/products/17583580480189_eb7d8881.jpg"
     ],
     "price": 90.01,
     "installment": "R$ 7,50",
@@ -4597,11 +4597,11 @@ const rawProducts: Product[] = [
   {
     "id": "epoca-protetor-solar-facial-principia-fps70-cor-2-0-ps-05-30ml-194986",
     "name": "Protetor Solar Facial Principia Fps70 Cor 2.0 PS-05 30ml",
-    "image": "https://lojas-epoca.store/products/17678427657524_456e8880.jpg",
+    "image": "https://www.farmadr0gal.co/products/17678427657524_456e8880.jpg",
     "images": [
-      "https://lojas-epoca.store/products/17678427657524_456e8880.jpg",
-      "https://lojas-epoca.store/products/17678427663691_4240a577.jpg",
-      "https://lojas-epoca.store/products/17678427669358_8e2f82e6.jpg"
+      "https://www.farmadr0gal.co/products/17678427657524_456e8880.jpg",
+      "https://www.farmadr0gal.co/products/17678427663691_4240a577.jpg",
+      "https://www.farmadr0gal.co/products/17678427669358_8e2f82e6.jpg"
     ],
     "price": 34.3,
     "installment": "R$ 2,86",
@@ -4611,12 +4611,12 @@ const rawProducts: Product[] = [
   {
     "id": "epoca-creamy-serum-facial-anti-aging-retinal-30g-133360",
     "name": "Creamy Sérum Facial Anti-Aging Retinal 30g",
-    "image": "https://lojas-epoca.store/products/17570065263193_4156a472.jpg",
+    "image": "https://www.farmadr0gal.co/products/17570065263193_4156a472.jpg",
     "images": [
-      "https://lojas-epoca.store/products/17570065263193_4156a472.jpg",
-      "https://lojas-epoca.store/products/17570065266447_5421a95c.jpg",
-      "https://lojas-epoca.store/products/17570065269933_4540e978.jpg",
-      "https://lojas-epoca.store/products/17570065273438_db74cb3e.jpg"
+      "https://www.farmadr0gal.co/products/17570065263193_4156a472.jpg",
+      "https://www.farmadr0gal.co/products/17570065266447_5421a95c.jpg",
+      "https://www.farmadr0gal.co/products/17570065269933_4540e978.jpg",
+      "https://www.farmadr0gal.co/products/17570065273438_db74cb3e.jpg"
     ],
     "price": 150.53,
     "installment": "R$ 12,54",
@@ -4626,12 +4626,12 @@ const rawProducts: Product[] = [
   {
     "id": "epoca-gel-de-limpeza-facial-principia-gl-01",
     "name": "Gel de Limpeza Principia - GL-01",
-    "image": "https://lojas-epoca.store/products/gel-de-limpeza-facial-principia-gl-01--6-_26ac59e8.jpg",
+    "image": "https://www.farmadr0gal.co/products/gel-de-limpeza-facial-principia-gl-01--6-_26ac59e8.jpg",
     "images": [
-      "https://lojas-epoca.store/products/gel-de-limpeza-facial-principia-gl-01--6-_26ac59e8.jpg",
-      "https://lojas-epoca.store/products/gel-de-limpeza-facial-principia-gl-01--5-_76bdf51f.jpg",
-      "https://lojas-epoca.store/products/gel-de-limpeza-facial-principia-gl-01--2-_62082a2b.jpg",
-      "https://lojas-epoca.store/products/gel-de-limpeza-facial-principia-gl-01--7-_1d858405.jpg"
+      "https://www.farmadr0gal.co/products/gel-de-limpeza-facial-principia-gl-01--6-_26ac59e8.jpg",
+      "https://www.farmadr0gal.co/products/gel-de-limpeza-facial-principia-gl-01--5-_76bdf51f.jpg",
+      "https://www.farmadr0gal.co/products/gel-de-limpeza-facial-principia-gl-01--2-_62082a2b.jpg",
+      "https://www.farmadr0gal.co/products/gel-de-limpeza-facial-principia-gl-01--7-_1d858405.jpg"
     ],
     "price": 37.8,
     "installment": "R$ 3,15",
@@ -4641,12 +4641,12 @@ const rawProducts: Product[] = [
   {
     "id": "epoca-serum-facial-nivea-luminous-630-skin-glow-30ml-180114",
     "name": "Sérum Facial Nivea Luminous 630 Skin Glow 30ml",
-    "image": "https://lojas-epoca.store/products/17629712717433_22043b2c.jpg",
+    "image": "https://www.farmadr0gal.co/products/17629712717433_22043b2c.jpg",
     "images": [
-      "https://lojas-epoca.store/products/17629712717433_22043b2c.jpg",
-      "https://lojas-epoca.store/products/17629712719351_6a7b42d0.jpg",
-      "https://lojas-epoca.store/products/17629712721069_151b7a7d.jpg",
-      "https://lojas-epoca.store/products/17629712722766_345f5de7.jpg"
+      "https://www.farmadr0gal.co/products/17629712717433_22043b2c.jpg",
+      "https://www.farmadr0gal.co/products/17629712719351_6a7b42d0.jpg",
+      "https://www.farmadr0gal.co/products/17629712721069_151b7a7d.jpg",
+      "https://www.farmadr0gal.co/products/17629712722766_345f5de7.jpg"
     ],
     "price": 62.93,
     "installment": "R$ 5,24",
@@ -4656,10 +4656,10 @@ const rawProducts: Product[] = [
   {
     "id": "epoca-gel-creme-clareador-mantecorp-blancy-tx-30g-30-g-144822",
     "name": "Gel Creme Clareador Mantecorp Blancy Tx 30g 30 g",
-    "image": "https://lojas-epoca.store/products/17585739104630_80f421cb.jpg",
+    "image": "https://www.farmadr0gal.co/products/17585739104630_80f421cb.jpg",
     "images": [
-      "https://lojas-epoca.store/products/17585739104630_80f421cb.jpg",
-      "https://lojas-epoca.store/products/17585739109606_0d47dc72.jpg"
+      "https://www.farmadr0gal.co/products/17585739104630_80f421cb.jpg",
+      "https://www.farmadr0gal.co/products/17585739109606_0d47dc72.jpg"
     ],
     "price": 127.61,
     "installment": "R$ 10,63",
@@ -4669,12 +4669,12 @@ const rawProducts: Product[] = [
   {
     "id": "epoca-oleo-de-banho-glicerinado-dove-sabonete-liquido-240ml-134884",
     "name": "Oleo de Banho Glicerinado Dove Sabonete Líquido 240ml",
-    "image": "https://lojas-epoca.store/products/17448955072506_f6d723bc.jpg",
+    "image": "https://www.farmadr0gal.co/products/17448955072506_f6d723bc.jpg",
     "images": [
-      "https://lojas-epoca.store/products/17448955072506_f6d723bc.jpg",
-      "https://lojas-epoca.store/products/17448955137790_342f1976.jpg",
-      "https://lojas-epoca.store/products/17448955207801_8c46acce.jpg",
-      "https://lojas-epoca.store/products/17448955279612_d3793254.jpg"
+      "https://www.farmadr0gal.co/products/17448955072506_f6d723bc.jpg",
+      "https://www.farmadr0gal.co/products/17448955137790_342f1976.jpg",
+      "https://www.farmadr0gal.co/products/17448955207801_8c46acce.jpg",
+      "https://www.farmadr0gal.co/products/17448955279612_d3793254.jpg"
     ],
     "price": 45.85,
     "installment": "R$ 3,82",
@@ -4684,12 +4684,12 @@ const rawProducts: Product[] = [
   {
     "id": "epoca-creme-hidratante-reparador-corporal-cicaplast-baume-b5-la-roche-posay-40ml-145597",
     "name": "Creme Hidratante Reparador Corporal Cicaplast Baume B5 La Roche-Posay 40ml",
-    "image": "https://lojas-epoca.store/products/17585487720934_b43e3e5e.jpg",
+    "image": "https://www.farmadr0gal.co/products/17585487720934_b43e3e5e.jpg",
     "images": [
-      "https://lojas-epoca.store/products/17585487720934_b43e3e5e.jpg",
-      "https://lojas-epoca.store/products/17585487723517_660c026e.jpg",
-      "https://lojas-epoca.store/products/17585487725823_c5c76f6b.jpg",
-      "https://lojas-epoca.store/products/17585487728230_13778c97.jpg"
+      "https://www.farmadr0gal.co/products/17585487720934_b43e3e5e.jpg",
+      "https://www.farmadr0gal.co/products/17585487723517_660c026e.jpg",
+      "https://www.farmadr0gal.co/products/17585487725823_c5c76f6b.jpg",
+      "https://www.farmadr0gal.co/products/17585487728230_13778c97.jpg"
     ],
     "price": 64.44,
     "installment": "R$ 5,37",
@@ -4699,12 +4699,12 @@ const rawProducts: Product[] = [
   {
     "id": "epoca-cerave-locao-hidratante-pele-seca-e-extra-seca-340ml-185769",
     "name": "Cerave Loção Hidratante Pele Seca e Extra Seca 340ml",
-    "image": "https://lojas-epoca.store/products/17690026405644_7fb7309a.jpg",
+    "image": "https://www.farmadr0gal.co/products/17690026405644_7fb7309a.jpg",
     "images": [
-      "https://lojas-epoca.store/products/17690026405644_7fb7309a.jpg",
-      "https://lojas-epoca.store/products/17690026423761_c0bd615d.jpg",
-      "https://lojas-epoca.store/products/17690026443572_fead7463.jpg",
-      "https://lojas-epoca.store/products/17690026465191_fcd27f98.jpg"
+      "https://www.farmadr0gal.co/products/17690026405644_7fb7309a.jpg",
+      "https://www.farmadr0gal.co/products/17690026423761_c0bd615d.jpg",
+      "https://www.farmadr0gal.co/products/17690026443572_fead7463.jpg",
+      "https://www.farmadr0gal.co/products/17690026465191_fcd27f98.jpg"
     ],
     "price": 74.62,
     "installment": "R$ 6,22",
@@ -4714,12 +4714,12 @@ const rawProducts: Product[] = [
   {
     "id": "epoca-protetor-solar-facial-bioderma-photoderm-antioleosidade-fps-70-40-g-70136",
     "name": "Protetor Solar Facial Bioderma Photoderm Antioleosidade FPS 70 40 g",
-    "image": "https://lojas-epoca.store/products/17253257964620_28f352ce.jpg",
+    "image": "https://www.farmadr0gal.co/products/17253257964620_28f352ce.jpg",
     "images": [
-      "https://lojas-epoca.store/products/17253257964620_28f352ce.jpg",
-      "https://lojas-epoca.store/products/17253257969036_ce10d136.jpg",
-      "https://lojas-epoca.store/products/17253257973446_7efddaf2.jpg",
-      "https://lojas-epoca.store/products/17253257977520_8eed0377.jpg"
+      "https://www.farmadr0gal.co/products/17253257964620_28f352ce.jpg",
+      "https://www.farmadr0gal.co/products/17253257969036_ce10d136.jpg",
+      "https://www.farmadr0gal.co/products/17253257973446_7efddaf2.jpg",
+      "https://www.farmadr0gal.co/products/17253257977520_8eed0377.jpg"
     ],
     "price": 65.73,
     "installment": "R$ 5,48",
@@ -4729,12 +4729,12 @@ const rawProducts: Product[] = [
   {
     "id": "epoca-protetor-solar-facial-darrow-actine-aquafluid-fps-60",
     "name": "Darrow Actine Aquafluid Protetor Solar Facial FPS 60",
-    "image": "https://lojas-epoca.store/products/protetor-solar-facial-darrow-actine-aquafluid-fps-60-2-6cc529d4.jpg",
+    "image": "https://www.farmadr0gal.co/products/protetor-solar-facial-darrow-actine-aquafluid-fps-60-2-6cc529d4.jpg",
     "images": [
-      "https://lojas-epoca.store/products/protetor-solar-facial-darrow-actine-aquafluid-fps-60-2-6cc529d4.jpg",
-      "https://lojas-epoca.store/products/protetor-solar-facial-darrow-actine-aquafluid-fps-60-3-29b08b8e.jpg",
-      "https://lojas-epoca.store/products/protetor-solar-facial-darrow-actine-aquafluid-fps-60-4-a8f1bf07.jpg",
-      "https://lojas-epoca.store/products/protetor-solar-facial-darrow-actine-aquafluid-fps-60-5-1bac45cd.jpg"
+      "https://www.farmadr0gal.co/products/protetor-solar-facial-darrow-actine-aquafluid-fps-60-2-6cc529d4.jpg",
+      "https://www.farmadr0gal.co/products/protetor-solar-facial-darrow-actine-aquafluid-fps-60-3-29b08b8e.jpg",
+      "https://www.farmadr0gal.co/products/protetor-solar-facial-darrow-actine-aquafluid-fps-60-4-a8f1bf07.jpg",
+      "https://www.farmadr0gal.co/products/protetor-solar-facial-darrow-actine-aquafluid-fps-60-5-1bac45cd.jpg"
     ],
     "price": 50.12,
     "installment": "R$ 4,18",
@@ -4744,11 +4744,11 @@ const rawProducts: Product[] = [
   {
     "id": "epoca-serum-centella-ampoule-30ml-skin1004-231954",
     "name": "Serum Centella Ampoule 30Ml Skin1004",
-    "image": "https://lojas-epoca.store/products/17787414435769_da4436b1.jpg",
+    "image": "https://www.farmadr0gal.co/products/17787414435769_da4436b1.jpg",
     "images": [
-      "https://lojas-epoca.store/products/17787414435769_da4436b1.jpg",
-      "https://lojas-epoca.store/products/17787414463541_497d311e.jpg",
-      "https://lojas-epoca.store/products/17787414491904_54dc25b3.jpg"
+      "https://www.farmadr0gal.co/products/17787414435769_da4436b1.jpg",
+      "https://www.farmadr0gal.co/products/17787414463541_497d311e.jpg",
+      "https://www.farmadr0gal.co/products/17787414491904_54dc25b3.jpg"
     ],
     "price": 160.93,
     "installment": "R$ 13,41",
@@ -4758,12 +4758,12 @@ const rawProducts: Product[] = [
   {
     "id": "epoca-hidratante-facial-garnier-skin-hialuronico-toque-seco",
     "name": "Hidratante Facial Garnier Skin Hialurônico Toque Seco",
-    "image": "https://lojas-epoca.store/products/7908966548297--1-_8a165d22.jpg",
+    "image": "https://www.farmadr0gal.co/products/7908966548297--1-_8a165d22.jpg",
     "images": [
-      "https://lojas-epoca.store/products/7908966548297--1-_8a165d22.jpg",
-      "https://lojas-epoca.store/products/7908966548297--2-_75815e2d.jpg",
-      "https://lojas-epoca.store/products/7908966548297--4-_78b260ec.jpg",
-      "https://lojas-epoca.store/products/7908966548297--3-_b56d71b6.jpg"
+      "https://www.farmadr0gal.co/products/7908966548297--1-_8a165d22.jpg",
+      "https://www.farmadr0gal.co/products/7908966548297--2-_75815e2d.jpg",
+      "https://www.farmadr0gal.co/products/7908966548297--4-_78b260ec.jpg",
+      "https://www.farmadr0gal.co/products/7908966548297--3-_b56d71b6.jpg"
     ],
     "price": 28.17,
     "installment": "R$ 2,35",
@@ -4773,9 +4773,9 @@ const rawProducts: Product[] = [
   {
     "id": "epoca-presente-o-boticario-kit-perfume-floratta-red-passion-170833",
     "name": "Presente O Boticário Kit Perfume Floratta Red Passion",
-    "image": "https://lojas-epoca.store/products/17630657155786_c916e252.jpg",
+    "image": "https://www.farmadr0gal.co/products/17630657155786_c916e252.jpg",
     "images": [
-      "https://lojas-epoca.store/products/17630657155786_c916e252.jpg"
+      "https://www.farmadr0gal.co/products/17630657155786_c916e252.jpg"
     ],
     "price": 199.43,
     "installment": "R$ 16,62",
@@ -4785,11 +4785,11 @@ const rawProducts: Product[] = [
   {
     "id": "epoca-principia-creme-hidratante-ch-01-50g-141673",
     "name": "Principia Creme Hidratante CH-01 50g",
-    "image": "https://lojas-epoca.store/products/17593299770245_7712672b.jpg",
+    "image": "https://www.farmadr0gal.co/products/17593299770245_7712672b.jpg",
     "images": [
-      "https://lojas-epoca.store/products/17593299770245_7712672b.jpg",
-      "https://lojas-epoca.store/products/17593299787035_67865ab9.jpg",
-      "https://lojas-epoca.store/products/17593299803793_074a53f8.jpg"
+      "https://www.farmadr0gal.co/products/17593299770245_7712672b.jpg",
+      "https://www.farmadr0gal.co/products/17593299787035_67865ab9.jpg",
+      "https://www.farmadr0gal.co/products/17593299803793_074a53f8.jpg"
     ],
     "price": 38.58,
     "installment": "R$ 3,21",
@@ -4799,12 +4799,12 @@ const rawProducts: Product[] = [
   {
     "id": "epoca-serum-facial-eucerin-dermopure-oil-control-efeito-triplo-40ml-145566",
     "name": "Sérum Facial Eucerin DermoPure Oil Control Efeito Triplo 40ml",
-    "image": "https://lojas-epoca.store/products/17585679776090_497c1e0e.jpg",
+    "image": "https://www.farmadr0gal.co/products/17585679776090_497c1e0e.jpg",
     "images": [
-      "https://lojas-epoca.store/products/17585679776090_497c1e0e.jpg",
-      "https://lojas-epoca.store/products/17585679780839_66cb354e.jpg",
-      "https://lojas-epoca.store/products/17585679785450_e6ea82ec.jpg",
-      "https://lojas-epoca.store/products/17585679789875_72f77f85.jpg"
+      "https://www.farmadr0gal.co/products/17585679776090_497c1e0e.jpg",
+      "https://www.farmadr0gal.co/products/17585679780839_66cb354e.jpg",
+      "https://www.farmadr0gal.co/products/17585679785450_e6ea82ec.jpg",
+      "https://www.farmadr0gal.co/products/17585679789875_72f77f85.jpg"
     ],
     "price": 128.74,
     "installment": "R$ 10,73",
@@ -4814,12 +4814,12 @@ const rawProducts: Product[] = [
   {
     "id": "epoca-hidratante-mustela-hydra-bebe",
     "name": "Hidratante Mustela Hydra Bebê",
-    "image": "https://lojas-epoca.store/products/hidratante-mustela-hydra-bebe_6b4aff2a.jpg",
+    "image": "https://www.farmadr0gal.co/products/hidratante-mustela-hydra-bebe_6b4aff2a.jpg",
     "images": [
-      "https://lojas-epoca.store/products/hidratante-mustela-hydra-bebe_6b4aff2a.jpg",
-      "https://lojas-epoca.store/products/hidratante-mustela-hydra-bebe-2_f834a0e8.jpg",
-      "https://lojas-epoca.store/products/hidratante-mustela-hydra-bebe-3_c96c76d9.jpg",
-      "https://lojas-epoca.store/products/hidratante-mustela-hydra-bebe-4_27c01835.jpg"
+      "https://www.farmadr0gal.co/products/hidratante-mustela-hydra-bebe_6b4aff2a.jpg",
+      "https://www.farmadr0gal.co/products/hidratante-mustela-hydra-bebe-2_f834a0e8.jpg",
+      "https://www.farmadr0gal.co/products/hidratante-mustela-hydra-bebe-3_c96c76d9.jpg",
+      "https://www.farmadr0gal.co/products/hidratante-mustela-hydra-bebe-4_27c01835.jpg"
     ],
     "price": 84.52,
     "installment": "R$ 7,04",
@@ -4829,12 +4829,12 @@ const rawProducts: Product[] = [
   {
     "id": "epoca-creamy-ceramide-skin-repair-40g-230574",
     "name": "Creamy Ceramide Skin Repair 40g",
-    "image": "https://lojas-epoca.store/products/17782632484322_6dca9683.jpg",
+    "image": "https://www.farmadr0gal.co/products/17782632484322_6dca9683.jpg",
     "images": [
-      "https://lojas-epoca.store/products/17782632484322_6dca9683.jpg",
-      "https://lojas-epoca.store/products/17782632511926_9e124749.jpg",
-      "https://lojas-epoca.store/products/17782632533851_f0b1bdcd.jpg",
-      "https://lojas-epoca.store/products/17782632557622_3e5b8a5c.jpg"
+      "https://www.farmadr0gal.co/products/17782632484322_6dca9683.jpg",
+      "https://www.farmadr0gal.co/products/17782632511926_9e124749.jpg",
+      "https://www.farmadr0gal.co/products/17782632533851_f0b1bdcd.jpg",
+      "https://www.farmadr0gal.co/products/17782632557622_3e5b8a5c.jpg"
     ],
     "price": 84.7,
     "installment": "R$ 7,06",
@@ -4844,12 +4844,12 @@ const rawProducts: Product[] = [
   {
     "id": "epoca-creme-hidratante-la-roche-posay-lipkar-baume-ap-m",
     "name": "Creme Hidratante La Roche-Posay Lipkar Baume AP+M",
-    "image": "https://lojas-epoca.store/products/creme-hidratante-la-roche-posay-lipkar-baume-ap---1-_0b1aafcf.jpg",
+    "image": "https://www.farmadr0gal.co/products/creme-hidratante-la-roche-posay-lipkar-baume-ap---1-_0b1aafcf.jpg",
     "images": [
-      "https://lojas-epoca.store/products/creme-hidratante-la-roche-posay-lipkar-baume-ap---1-_0b1aafcf.jpg",
-      "https://lojas-epoca.store/products/creme-hidratante-la-roche-posay-lipkar-baume-ap---2-_36bb1a71.jpg",
-      "https://lojas-epoca.store/products/creme-hidratante-la-roche-posay-lipkar-baume-ap-m-400ml_50b3a89e.jpg",
-      "https://lojas-epoca.store/products/3337875696548_PRINCIPAL_1000px_d22cac5a.jpg"
+      "https://www.farmadr0gal.co/products/creme-hidratante-la-roche-posay-lipkar-baume-ap---1-_0b1aafcf.jpg",
+      "https://www.farmadr0gal.co/products/creme-hidratante-la-roche-posay-lipkar-baume-ap---2-_36bb1a71.jpg",
+      "https://www.farmadr0gal.co/products/creme-hidratante-la-roche-posay-lipkar-baume-ap-m-400ml_50b3a89e.jpg",
+      "https://www.farmadr0gal.co/products/3337875696548_PRINCIPAL_1000px_d22cac5a.jpg"
     ],
     "price": 94.99,
     "installment": "R$ 7,92",
@@ -4859,11 +4859,11 @@ const rawProducts: Product[] = [
   {
     "id": "epoca-protetor-labial-original-care-sem-cor-nivea-48g-194502",
     "name": "Protetor Labial Original Care Sem Cor Nivea 4,8g",
-    "image": "https://lojas-epoca.store/products/17706869397661_e73f0c97.jpg",
+    "image": "https://www.farmadr0gal.co/products/17706869397661_e73f0c97.jpg",
     "images": [
-      "https://lojas-epoca.store/products/17706869397661_e73f0c97.jpg",
-      "https://lojas-epoca.store/products/17706869424597_0ae42e5e.jpg",
-      "https://lojas-epoca.store/products/17706869452474_5a8e07da.jpg"
+      "https://www.farmadr0gal.co/products/17706869397661_e73f0c97.jpg",
+      "https://www.farmadr0gal.co/products/17706869424597_0ae42e5e.jpg",
+      "https://www.farmadr0gal.co/products/17706869452474_5a8e07da.jpg"
     ],
     "price": 18.75,
     "installment": "R$ 1,56",
@@ -4873,12 +4873,12 @@ const rawProducts: Product[] = [
   {
     "id": "epoca-bepantol-derma-toque-seco-30g-113715",
     "name": "Bepantol Derma Toque Seco 30g",
-    "image": "https://lojas-epoca.store/products/17490405398899_442f5ffc.jpg",
+    "image": "https://www.farmadr0gal.co/products/17490405398899_442f5ffc.jpg",
     "images": [
-      "https://lojas-epoca.store/products/17490405398899_442f5ffc.jpg",
-      "https://lojas-epoca.store/products/17490405411705_d30551e9.jpg",
-      "https://lojas-epoca.store/products/17490405423880_b32543d2.jpg",
-      "https://lojas-epoca.store/products/17490405441961_8b3e249b.jpg"
+      "https://www.farmadr0gal.co/products/17490405398899_442f5ffc.jpg",
+      "https://www.farmadr0gal.co/products/17490405411705_d30551e9.jpg",
+      "https://www.farmadr0gal.co/products/17490405423880_b32543d2.jpg",
+      "https://www.farmadr0gal.co/products/17490405441961_8b3e249b.jpg"
     ],
     "price": 38.86,
     "installment": "R$ 3,24",
@@ -4888,12 +4888,12 @@ const rawProducts: Product[] = [
   {
     "id": "epoca-bepantol-derma-regenerador-labial-75ml-96598",
     "name": "Bepantol Derma Regenerador Labial 7,5ml",
-    "image": "https://lojas-epoca.store/products/00117405966131988_34321c52.jpg",
+    "image": "https://www.farmadr0gal.co/products/00117405966131988_34321c52.jpg",
     "images": [
-      "https://lojas-epoca.store/products/00117405966131988_34321c52.jpg",
-      "https://lojas-epoca.store/products/00217405966149397_8349d871.jpg",
-      "https://lojas-epoca.store/products/00317405966184475_47a92f50.jpg",
-      "https://lojas-epoca.store/products/00417405966166605_78e6624c.jpg"
+      "https://www.farmadr0gal.co/products/00117405966131988_34321c52.jpg",
+      "https://www.farmadr0gal.co/products/00217405966149397_8349d871.jpg",
+      "https://www.farmadr0gal.co/products/00317405966184475_47a92f50.jpg",
+      "https://www.farmadr0gal.co/products/00417405966166605_78e6624c.jpg"
     ],
     "price": 38.91,
     "installment": "R$ 3,24",
@@ -4903,9 +4903,9 @@ const rawProducts: Product[] = [
   {
     "id": "epoca-gel-de-limpeza-principia-gl02",
     "name": "Gel de Limpeza Facial Principia GL-02",
-    "image": "https://lojas-epoca.store/products/gel-de-limpeza-principia-gl02_b1231f56.jpg",
+    "image": "https://www.farmadr0gal.co/products/gel-de-limpeza-principia-gl02_b1231f56.jpg",
     "images": [
-      "https://lojas-epoca.store/products/gel-de-limpeza-principia-gl02_b1231f56.jpg"
+      "https://www.farmadr0gal.co/products/gel-de-limpeza-principia-gl02_b1231f56.jpg"
     ],
     "price": 34.3,
     "installment": "R$ 2,86",
@@ -4915,12 +4915,12 @@ const rawProducts: Product[] = [
   {
     "id": "epoca-creme-hidratante-nivea-29g-168141",
     "name": "CREME HIDRATANTE NIVEA 29G",
-    "image": "https://lojas-epoca.store/products/17628167322361_d3954e1e.jpg",
+    "image": "https://www.farmadr0gal.co/products/17628167322361_d3954e1e.jpg",
     "images": [
-      "https://lojas-epoca.store/products/17628167322361_d3954e1e.jpg",
-      "https://lojas-epoca.store/products/17628167349064_d1b7740e.jpg",
-      "https://lojas-epoca.store/products/17628167382332_25820dbe.jpg",
-      "https://lojas-epoca.store/products/17628167416403_1ccd3858.jpg"
+      "https://www.farmadr0gal.co/products/17628167322361_d3954e1e.jpg",
+      "https://www.farmadr0gal.co/products/17628167349064_d1b7740e.jpg",
+      "https://www.farmadr0gal.co/products/17628167382332_25820dbe.jpg",
+      "https://www.farmadr0gal.co/products/17628167416403_1ccd3858.jpg"
     ],
     "price": 14.4,
     "installment": "R$ 1,20",
@@ -4930,10 +4930,10 @@ const rawProducts: Product[] = [
   {
     "id": "epoca-gel-creme-rapida-absorcao-cetaphil-226g-194849",
     "name": "Gel creme rápida absorção cetaphil 226g",
-    "image": "https://lojas-epoca.store/products/17585496032254_ba058b7a.jpg",
+    "image": "https://www.farmadr0gal.co/products/17585496032254_ba058b7a.jpg",
     "images": [
-      "https://lojas-epoca.store/products/17585496032254_ba058b7a.jpg",
-      "https://lojas-epoca.store/products/17585496037269_d2d487b5.jpg"
+      "https://www.farmadr0gal.co/products/17585496032254_ba058b7a.jpg",
+      "https://www.farmadr0gal.co/products/17585496037269_d2d487b5.jpg"
     ],
     "price": 51.32,
     "installment": "R$ 4,28",
@@ -4943,12 +4943,12 @@ const rawProducts: Product[] = [
   {
     "id": "epoca-creme-corporal-eucerin-intensivo-areas-especificas-anti-pigment-200-ml-140035",
     "name": "Creme Corporal Eucerin Intensivo Áreas Específicas Anti-Pigment 200 ml",
-    "image": "https://lojas-epoca.store/products/17590540334870_955401f3.jpg",
+    "image": "https://www.farmadr0gal.co/products/17590540334870_955401f3.jpg",
     "images": [
-      "https://lojas-epoca.store/products/17590540334870_955401f3.jpg",
-      "https://lojas-epoca.store/products/17590540356574_6f878512.jpg",
-      "https://lojas-epoca.store/products/17590540377927_bbee3e79.jpg",
-      "https://lojas-epoca.store/products/17590540395279_68d374cd.jpg"
+      "https://www.farmadr0gal.co/products/17590540334870_955401f3.jpg",
+      "https://www.farmadr0gal.co/products/17590540356574_6f878512.jpg",
+      "https://www.farmadr0gal.co/products/17590540377927_bbee3e79.jpg",
+      "https://www.farmadr0gal.co/products/17590540395279_68d374cd.jpg"
     ],
     "price": 156.3,
     "installment": "R$ 13,03",
@@ -4958,11 +4958,11 @@ const rawProducts: Product[] = [
   {
     "id": "epoca-bepantol-derma-protetor-labial-fps50-45g-189081",
     "name": "Bepantol Derma Protetor Labial FPS50 4,5g",
-    "image": "https://lojas-epoca.store/products/17710846122612_49cf5326.jpg",
+    "image": "https://www.farmadr0gal.co/products/17710846122612_49cf5326.jpg",
     "images": [
-      "https://lojas-epoca.store/products/17710846122612_49cf5326.jpg",
-      "https://lojas-epoca.store/products/17710846132965_8380dc2a.jpg",
-      "https://lojas-epoca.store/products/17710846142856_283435a6.jpg"
+      "https://www.farmadr0gal.co/products/17710846122612_49cf5326.jpg",
+      "https://www.farmadr0gal.co/products/17710846132965_8380dc2a.jpg",
+      "https://www.farmadr0gal.co/products/17710846142856_283435a6.jpg"
     ],
     "price": 40.67,
     "installment": "R$ 3,39",
@@ -4972,12 +4972,12 @@ const rawProducts: Product[] = [
   {
     "id": "epoca-corega-ultra-creme-sem-sabor-20g-145841",
     "name": "Coréga Ultra Creme sem Sabor 20g",
-    "image": "https://lojas-epoca.store/products/17583160975712_621db450.jpg",
+    "image": "https://www.farmadr0gal.co/products/17583160975712_621db450.jpg",
     "images": [
-      "https://lojas-epoca.store/products/17583160975712_621db450.jpg",
-      "https://lojas-epoca.store/products/17583160977513_dcf5fca2.jpg",
-      "https://lojas-epoca.store/products/17583160979210_593662cd.jpg",
-      "https://lojas-epoca.store/products/17583160981119_d5f2ab88.jpg"
+      "https://www.farmadr0gal.co/products/17583160975712_621db450.jpg",
+      "https://www.farmadr0gal.co/products/17583160977513_dcf5fca2.jpg",
+      "https://www.farmadr0gal.co/products/17583160979210_593662cd.jpg",
+      "https://www.farmadr0gal.co/products/17583160981119_d5f2ab88.jpg"
     ],
     "price": 21.41,
     "installment": "R$ 1,78",
@@ -4987,12 +4987,12 @@ const rawProducts: Product[] = [
   {
     "id": "epoca-protetor-solar-facial-em-bastao-com-cor-ollie-fps-95",
     "name": "Protetor Solar Facial em Bastão Com Cor Ollie FPS 95",
-    "image": "https://lojas-epoca.store/products/7898968269477-7.jpg_ea6f0316.jpg",
+    "image": "https://www.farmadr0gal.co/products/7898968269477-7.jpg_ea6f0316.jpg",
     "images": [
-      "https://lojas-epoca.store/products/7898968269477-7.jpg_ea6f0316.jpg",
-      "https://lojas-epoca.store/products/7898968269477-4--1-.jpg_ff4288db.jpg",
-      "https://lojas-epoca.store/products/7898968269477-2.jpg_49a972c3.jpg",
-      "https://lojas-epoca.store/products/7898968269477-3.jpg_2fd92e39.jpg"
+      "https://www.farmadr0gal.co/products/7898968269477-7.jpg_ea6f0316.jpg",
+      "https://www.farmadr0gal.co/products/7898968269477-4--1-.jpg_ff4288db.jpg",
+      "https://www.farmadr0gal.co/products/7898968269477-2.jpg_49a972c3.jpg",
+      "https://www.farmadr0gal.co/products/7898968269477-3.jpg_2fd92e39.jpg"
     ],
     "price": 94.38,
     "installment": "R$ 7,86",
@@ -5002,12 +5002,12 @@ const rawProducts: Product[] = [
   {
     "id": "epoca-oleo-corporal-hidratante-bio-oil-125-ml-125-ml-70153",
     "name": "Óleo Corporal Hidratante Bio-Oil 125 ml 125 ml",
-    "image": "https://lojas-epoca.store/products/17253077762639_4ef869d7.jpg",
+    "image": "https://www.farmadr0gal.co/products/17253077762639_4ef869d7.jpg",
     "images": [
-      "https://lojas-epoca.store/products/17253077762639_4ef869d7.jpg",
-      "https://lojas-epoca.store/products/17253077767522_d047be59.jpg",
-      "https://lojas-epoca.store/products/17253077771467_97cff1fb.jpg",
-      "https://lojas-epoca.store/products/17253077778244_ef6d85e6.jpg"
+      "https://www.farmadr0gal.co/products/17253077762639_4ef869d7.jpg",
+      "https://www.farmadr0gal.co/products/17253077767522_d047be59.jpg",
+      "https://www.farmadr0gal.co/products/17253077771467_97cff1fb.jpg",
+      "https://www.farmadr0gal.co/products/17253077778244_ef6d85e6.jpg"
     ],
     "price": 45.82,
     "installment": "R$ 3,82",
@@ -5017,9 +5017,9 @@ const rawProducts: Product[] = [
   {
     "id": "epoca-esmalte-impala-cremoso-jane-75ml-170147",
     "name": "Esmalte Impala Cremoso Jane 7,5ml",
-    "image": "https://lojas-epoca.store/products/17594392850661_c8fd9cb3.jpg",
+    "image": "https://www.farmadr0gal.co/products/17594392850661_c8fd9cb3.jpg",
     "images": [
-      "https://lojas-epoca.store/products/17594392850661_c8fd9cb3.jpg"
+      "https://www.farmadr0gal.co/products/17594392850661_c8fd9cb3.jpg"
     ],
     "price": 4.19,
     "installment": "R$ 0,35",
@@ -5029,10 +5029,10 @@ const rawProducts: Product[] = [
   {
     "id": "epoca-hidratante-mantecorp-epidrat-calm-b5-fps50-50ml-50-ml-152105",
     "name": "Hidratante Mantecorp Epidrat Calm B5 Fps50 50ml 50 ml",
-    "image": "https://lojas-epoca.store/products/17585739182251_471f6ccf.jpg",
+    "image": "https://www.farmadr0gal.co/products/17585739182251_471f6ccf.jpg",
     "images": [
-      "https://lojas-epoca.store/products/17585739182251_471f6ccf.jpg",
-      "https://lojas-epoca.store/products/17585739187944_5d34a89d.jpg"
+      "https://www.farmadr0gal.co/products/17585739182251_471f6ccf.jpg",
+      "https://www.farmadr0gal.co/products/17585739187944_5d34a89d.jpg"
     ],
     "price": 65.03,
     "installment": "R$ 5,42",
@@ -5042,12 +5042,12 @@ const rawProducts: Product[] = [
   {
     "id": "epoca-iluminador-liquido-dior-forever-glow-maximizer",
     "name": "Iluminador Líquido Multifuncional Dior Forever Glow Maximizer",
-    "image": "https://lojas-epoca.store/products/1.-3348901713573_4bb86c38.jpg",
+    "image": "https://www.farmadr0gal.co/products/1.-3348901713573_4bb86c38.jpg",
     "images": [
-      "https://lojas-epoca.store/products/1.-3348901713573_4bb86c38.jpg",
-      "https://lojas-epoca.store/products/2.-3348901713573-PREENCHER-TODO-ESPACO-TEXTURA-ILUMINADOR-COR.jpg_8dce1dee.jpg",
-      "https://lojas-epoca.store/products/3.-3348901725255_3c855071.jpg",
-      "https://lojas-epoca.store/products/3.-3348901713573_c2a067fb.jpg"
+      "https://www.farmadr0gal.co/products/1.-3348901713573_4bb86c38.jpg",
+      "https://www.farmadr0gal.co/products/2.-3348901713573-PREENCHER-TODO-ESPACO-TEXTURA-ILUMINADOR-COR.jpg_8dce1dee.jpg",
+      "https://www.farmadr0gal.co/products/3.-3348901725255_3c855071.jpg",
+      "https://www.farmadr0gal.co/products/3.-3348901713573_c2a067fb.jpg"
     ],
     "price": 244.3,
     "installment": "R$ 20,36",
@@ -5057,12 +5057,12 @@ const rawProducts: Product[] = [
   {
     "id": "epoca-kit-sos-esfoliante-labial-algodao-doce-ultra-gloss-algodao-carmed-cimed-10g-cada-194811",
     "name": "Kit SOS Esfoliante Labial Algodão Doce + Ultra Gloss Algodão Carmed Cimed 10g Cada",
-    "image": "https://lojas-epoca.store/products/17706812053382_c144215f.jpg",
+    "image": "https://www.farmadr0gal.co/products/17706812053382_c144215f.jpg",
     "images": [
-      "https://lojas-epoca.store/products/17706812053382_c144215f.jpg",
-      "https://lojas-epoca.store/products/17706812088158_3cbc8413.jpg",
-      "https://lojas-epoca.store/products/17706812119553_5d24deed.jpg",
-      "https://lojas-epoca.store/products/17706812147384_eb2fbe17.jpg"
+      "https://www.farmadr0gal.co/products/17706812053382_c144215f.jpg",
+      "https://www.farmadr0gal.co/products/17706812088158_3cbc8413.jpg",
+      "https://www.farmadr0gal.co/products/17706812119553_5d24deed.jpg",
+      "https://www.farmadr0gal.co/products/17706812147384_eb2fbe17.jpg"
     ],
     "price": 30.09,
     "installment": "R$ 2,51",
@@ -5072,12 +5072,12 @@ const rawProducts: Product[] = [
   {
     "id": "epoca-protetor-labial-carmed-selecoes-edicao-surpresa-5g-1-unidade-231050",
     "name": "Protetor Labial Carmed Seleções Edição Surpresa 5g - 1 Unidade",
-    "image": "https://lojas-epoca.store/products/17782553976695_13138fe1.jpg",
+    "image": "https://www.farmadr0gal.co/products/17782553976695_13138fe1.jpg",
     "images": [
-      "https://lojas-epoca.store/products/17782553976695_13138fe1.jpg",
-      "https://lojas-epoca.store/products/17782554004669_987dec26.jpg",
-      "https://lojas-epoca.store/products/17782554038363_fa6e49b2.jpg",
-      "https://lojas-epoca.store/products/17782554105823_f9c50d0c.jpg"
+      "https://www.farmadr0gal.co/products/17782553976695_13138fe1.jpg",
+      "https://www.farmadr0gal.co/products/17782554004669_987dec26.jpg",
+      "https://www.farmadr0gal.co/products/17782554038363_fa6e49b2.jpg",
+      "https://www.farmadr0gal.co/products/17782554105823_f9c50d0c.jpg"
     ],
     "price": 13.52,
     "installment": "R$ 1,13",
@@ -5087,11 +5087,11 @@ const rawProducts: Product[] = [
   {
     "id": "epoca-body-mist-jo-malone-london-english-pear-freesia",
     "name": "Body Mist Jo Malone London English Pear & Freesia",
-    "image": "https://lojas-epoca.store/products/body-mist-jo-malone-london-english-pear-freesia-1-d4dc6980.jpg",
+    "image": "https://www.farmadr0gal.co/products/body-mist-jo-malone-london-english-pear-freesia-1-d4dc6980.jpg",
     "images": [
-      "https://lojas-epoca.store/products/body-mist-jo-malone-london-english-pear-freesia-1-d4dc6980.jpg",
-      "https://lojas-epoca.store/products/body-mist-jo-malone-london-english-pear-freesia-3-6e4d9e76.jpg",
-      "https://lojas-epoca.store/products/body-mist-jo-malone-london-english-pear-freesia-2-5383fdde.jpg"
+      "https://www.farmadr0gal.co/products/body-mist-jo-malone-london-english-pear-freesia-1-d4dc6980.jpg",
+      "https://www.farmadr0gal.co/products/body-mist-jo-malone-london-english-pear-freesia-3-6e4d9e76.jpg",
+      "https://www.farmadr0gal.co/products/body-mist-jo-malone-london-english-pear-freesia-2-5383fdde.jpg"
     ],
     "price": 254.16,
     "installment": "R$ 21,18",
@@ -5101,10 +5101,10 @@ const rawProducts: Product[] = [
   {
     "id": "epoca-gel-antiacne-theraskin-papuless-25g-93282",
     "name": "Gel Antiacne Theraskin - Papuless - 25g",
-    "image": "https://lojas-epoca.store/products/17400017021443_1f1785ac.jpg",
+    "image": "https://www.farmadr0gal.co/products/17400017021443_1f1785ac.jpg",
     "images": [
-      "https://lojas-epoca.store/products/17400017021443_1f1785ac.jpg",
-      "https://lojas-epoca.store/products/17400017043636_89df7a5a.jpg"
+      "https://www.farmadr0gal.co/products/17400017021443_1f1785ac.jpg",
+      "https://www.farmadr0gal.co/products/17400017043636_89df7a5a.jpg"
     ],
     "price": 89.45,
     "installment": "R$ 7,45",
@@ -5114,12 +5114,12 @@ const rawProducts: Product[] = [
   {
     "id": "epoca-dove-serum-hidratante-corporal-niacinamida-uniformizador-380ml-195892",
     "name": "Dove Sérum Hidratante Corporal Niacinamida + Uniformizador 380ml",
-    "image": "https://lojas-epoca.store/products/17720375859824_d46af5ef.jpg",
+    "image": "https://www.farmadr0gal.co/products/17720375859824_d46af5ef.jpg",
     "images": [
-      "https://lojas-epoca.store/products/17720375859824_d46af5ef.jpg",
-      "https://lojas-epoca.store/products/17720375898315_b23e44ce.jpg",
-      "https://lojas-epoca.store/products/17720375924871_eae0f679.jpg",
-      "https://lojas-epoca.store/products/17720375964511_2bb0e1c5.jpg"
+      "https://www.farmadr0gal.co/products/17720375859824_d46af5ef.jpg",
+      "https://www.farmadr0gal.co/products/17720375898315_b23e44ce.jpg",
+      "https://www.farmadr0gal.co/products/17720375924871_eae0f679.jpg",
+      "https://www.farmadr0gal.co/products/17720375964511_2bb0e1c5.jpg"
     ],
     "price": 37.79,
     "installment": "R$ 3,15",
@@ -5129,12 +5129,12 @@ const rawProducts: Product[] = [
   {
     "id": "epoca-reparador-labial-la-roche-posay-cicaplast-labios-75ml-142340",
     "name": "REPARADOR LABIAL LA ROCHE-POSAY CICAPLAST LÁBIOS 7,5ML",
-    "image": "https://lojas-epoca.store/products/17596165374620_dc97ec1c.jpg",
+    "image": "https://www.farmadr0gal.co/products/17596165374620_dc97ec1c.jpg",
     "images": [
-      "https://lojas-epoca.store/products/17596165374620_dc97ec1c.jpg",
-      "https://lojas-epoca.store/products/17596165407486_73a89864.jpg",
-      "https://lojas-epoca.store/products/17596165438248_4435a7d2.jpg",
-      "https://lojas-epoca.store/products/17596165475696_688a7a26.jpg"
+      "https://www.farmadr0gal.co/products/17596165374620_dc97ec1c.jpg",
+      "https://www.farmadr0gal.co/products/17596165407486_73a89864.jpg",
+      "https://www.farmadr0gal.co/products/17596165438248_4435a7d2.jpg",
+      "https://www.farmadr0gal.co/products/17596165475696_688a7a26.jpg"
     ],
     "price": 59.66,
     "installment": "R$ 4,97",
@@ -5144,12 +5144,12 @@ const rawProducts: Product[] = [
   {
     "id": "epoca-kit-locao-facial-hidratante-cerave-52ml-gel-de-limpeza-40g-145755",
     "name": "Kit Loção Facial Hidratante Cerave 52ml + Gel de Limpeza 40g",
-    "image": "https://lojas-epoca.store/products/17594167619132_c1e19aae.jpg",
+    "image": "https://www.farmadr0gal.co/products/17594167619132_c1e19aae.jpg",
     "images": [
-      "https://lojas-epoca.store/products/17594167619132_c1e19aae.jpg",
-      "https://lojas-epoca.store/products/17594167633496_d6958ad1.jpg",
-      "https://lojas-epoca.store/products/17594167642879_66c679fd.jpg",
-      "https://lojas-epoca.store/products/17594167653648_352f2a30.jpg"
+      "https://www.farmadr0gal.co/products/17594167619132_c1e19aae.jpg",
+      "https://www.farmadr0gal.co/products/17594167633496_d6958ad1.jpg",
+      "https://www.farmadr0gal.co/products/17594167642879_66c679fd.jpg",
+      "https://www.farmadr0gal.co/products/17594167653648_352f2a30.jpg"
     ],
     "price": 85.11,
     "installment": "R$ 7,09",
@@ -5159,12 +5159,12 @@ const rawProducts: Product[] = [
   {
     "id": "epoca-serum-facial-creamy-acne-defense-5d-antiacne-30-ml-220388",
     "name": "Sérum Facial - Creamy - Acne Defense 5D - Antiacne 30 Ml",
-    "image": "https://lojas-epoca.store/products/17755926411890_b749e922.jpg",
+    "image": "https://www.farmadr0gal.co/products/17755926411890_b749e922.jpg",
     "images": [
-      "https://lojas-epoca.store/products/17755926411890_b749e922.jpg",
-      "https://lojas-epoca.store/products/17755926443805_5c38284c.jpg",
-      "https://lojas-epoca.store/products/17755926478419_87677b44.jpg",
-      "https://lojas-epoca.store/products/17755926511083_a6c5770d.jpg"
+      "https://www.farmadr0gal.co/products/17755926411890_b749e922.jpg",
+      "https://www.farmadr0gal.co/products/17755926443805_5c38284c.jpg",
+      "https://www.farmadr0gal.co/products/17755926478419_87677b44.jpg",
+      "https://www.farmadr0gal.co/products/17755926511083_a6c5770d.jpg"
     ],
     "price": 61.53,
     "installment": "R$ 5,13",
@@ -5174,9 +5174,9 @@ const rawProducts: Product[] = [
   {
     "id": "epoca-kit-com-3-bepantriz-50mg-pomada-30g-cada-175957",
     "name": "Kit com 3 Bepantriz 50mg Pomada 30g cada",
-    "image": "https://lojas-epoca.store/products/17634833698263_30b9fdb9.jpg",
+    "image": "https://www.farmadr0gal.co/products/17634833698263_30b9fdb9.jpg",
     "images": [
-      "https://lojas-epoca.store/products/17634833698263_30b9fdb9.jpg"
+      "https://www.farmadr0gal.co/products/17634833698263_30b9fdb9.jpg"
     ],
     "price": 57.48,
     "installment": "R$ 4,79",
@@ -5186,12 +5186,12 @@ const rawProducts: Product[] = [
   {
     "id": "epoca-gel-de-limpeza-facial-gentil-eucerin-dermopure-oil-control-400g-136299",
     "name": "Gel de Limpeza Facial Gentil Eucerin DermoPure Oil Control 400g",
-    "image": "https://lojas-epoca.store/products/17583576213514_e7c67f4f.jpg",
+    "image": "https://www.farmadr0gal.co/products/17583576213514_e7c67f4f.jpg",
     "images": [
-      "https://lojas-epoca.store/products/17583576213514_e7c67f4f.jpg",
-      "https://lojas-epoca.store/products/17583576252245_fdf7432b.jpg",
-      "https://lojas-epoca.store/products/17583576288320_1f2ae964.jpg",
-      "https://lojas-epoca.store/products/17583576329062_da03d231.jpg"
+      "https://www.farmadr0gal.co/products/17583576213514_e7c67f4f.jpg",
+      "https://www.farmadr0gal.co/products/17583576252245_fdf7432b.jpg",
+      "https://www.farmadr0gal.co/products/17583576288320_1f2ae964.jpg",
+      "https://www.farmadr0gal.co/products/17583576329062_da03d231.jpg"
     ],
     "price": 106.43,
     "installment": "R$ 8,87",
@@ -5201,12 +5201,12 @@ const rawProducts: Product[] = [
   {
     "id": "epoca-la-vie-est-belle-eau-de-parfum-lancome-perfume-feminino",
     "name": "Perfume La Vie Est Belle Lancôme Eau de Parfum Feminino",
-    "image": "https://lojas-epoca.store/products/la-vie-est-belle-eau-de-parfum-lancome-perfume-feminino--1-_600dec2d.jpg",
+    "image": "https://www.farmadr0gal.co/products/la-vie-est-belle-eau-de-parfum-lancome-perfume-feminino--1-_600dec2d.jpg",
     "images": [
-      "https://lojas-epoca.store/products/la-vie-est-belle-eau-de-parfum-lancome-perfume-feminino--1-_600dec2d.jpg",
-      "https://lojas-epoca.store/products/la-vie-est-belle-eau-de-parfum-lancome-perfume-feminino--8-_9dfe6d63.jpg",
-      "https://lojas-epoca.store/products/la-vie-est-belle-eau-de-parfum-lancome-perfume-feminino--11-_b6b07e5f.jpg",
-      "https://lojas-epoca.store/products/la-vie-est-belle-eau-de-parfum-lancome-perfume-feminino--10-_ecf2fe9e.jpg"
+      "https://www.farmadr0gal.co/products/la-vie-est-belle-eau-de-parfum-lancome-perfume-feminino--1-_600dec2d.jpg",
+      "https://www.farmadr0gal.co/products/la-vie-est-belle-eau-de-parfum-lancome-perfume-feminino--8-_9dfe6d63.jpg",
+      "https://www.farmadr0gal.co/products/la-vie-est-belle-eau-de-parfum-lancome-perfume-feminino--11-_b6b07e5f.jpg",
+      "https://www.farmadr0gal.co/products/la-vie-est-belle-eau-de-parfum-lancome-perfume-feminino--10-_ecf2fe9e.jpg"
     ],
     "price": 238.73,
     "installment": "R$ 19,89",
@@ -5216,9 +5216,9 @@ const rawProducts: Product[] = [
   {
     "id": "epoca-cerave-locao-facial-oil-control-52g-143443",
     "name": "Cerave Loção Facial Oil Control 52g",
-    "image": "https://lojas-epoca.store/products/17585506760998_87a0b17c.jpg",
+    "image": "https://www.farmadr0gal.co/products/17585506760998_87a0b17c.jpg",
     "images": [
-      "https://lojas-epoca.store/products/17585506760998_87a0b17c.jpg"
+      "https://www.farmadr0gal.co/products/17585506760998_87a0b17c.jpg"
     ],
     "price": 88.13,
     "installment": "R$ 7,34",
@@ -5228,12 +5228,12 @@ const rawProducts: Product[] = [
   {
     "id": "epoca-creme-hidratante-principia-ch-02-454gr-195694",
     "name": "creme hidratante principia ch-02 454gr",
-    "image": "https://lojas-epoca.store/products/17722029853895_4daaf5c9.jpg",
+    "image": "https://www.farmadr0gal.co/products/17722029853895_4daaf5c9.jpg",
     "images": [
-      "https://lojas-epoca.store/products/17722029853895_4daaf5c9.jpg",
-      "https://lojas-epoca.store/products/17722029907271_adbb8392.jpg",
-      "https://lojas-epoca.store/products/17722029936493_6d109bb7.jpg",
-      "https://lojas-epoca.store/products/17722029979372_1ad56a0c.jpg"
+      "https://www.farmadr0gal.co/products/17722029853895_4daaf5c9.jpg",
+      "https://www.farmadr0gal.co/products/17722029907271_adbb8392.jpg",
+      "https://www.farmadr0gal.co/products/17722029936493_6d109bb7.jpg",
+      "https://www.farmadr0gal.co/products/17722029979372_1ad56a0c.jpg"
     ],
     "price": 37.62,
     "installment": "R$ 3,13",
@@ -5243,12 +5243,12 @@ const rawProducts: Product[] = [
   {
     "id": "epoca-hidratante-corporal-neutrogena-norwegian-intensivo-sem-fragrancia-400ml-136562",
     "name": "Hidratante Corporal Neutrogena Norwegian Intensivo sem Fragrância 400ml",
-    "image": "https://lojas-epoca.store/products/17583581641279_6f31a82f.jpg",
+    "image": "https://www.farmadr0gal.co/products/17583581641279_6f31a82f.jpg",
     "images": [
-      "https://lojas-epoca.store/products/17583581641279_6f31a82f.jpg",
-      "https://lojas-epoca.store/products/17583581667886_3a689c58.jpg",
-      "https://lojas-epoca.store/products/17583581693127_78142599.jpg",
-      "https://lojas-epoca.store/products/17583581718579_37b125f2.jpg"
+      "https://www.farmadr0gal.co/products/17583581641279_6f31a82f.jpg",
+      "https://www.farmadr0gal.co/products/17583581667886_3a689c58.jpg",
+      "https://www.farmadr0gal.co/products/17583581693127_78142599.jpg",
+      "https://www.farmadr0gal.co/products/17583581718579_37b125f2.jpg"
     ],
     "price": 85.27,
     "installment": "R$ 7,11",
@@ -5258,12 +5258,12 @@ const rawProducts: Product[] = [
   {
     "id": "epoca-desodorante-hidratante-nivea-beleza-radiante-cuidado-intenso-400ml-180331",
     "name": "Desodorante Hidratante NIVEA Beleza Radiante Cuidado Intenso 400ml",
-    "image": "https://lojas-epoca.store/products/17659810048813_f6774f4e.jpg",
+    "image": "https://www.farmadr0gal.co/products/17659810048813_f6774f4e.jpg",
     "images": [
-      "https://lojas-epoca.store/products/17659810048813_f6774f4e.jpg",
-      "https://lojas-epoca.store/products/17659810077471_452f32a9.jpg",
-      "https://lojas-epoca.store/products/17659810105236_3dd87130.jpg",
-      "https://lojas-epoca.store/products/17659810132685_3b04e32d.jpg"
+      "https://www.farmadr0gal.co/products/17659810048813_f6774f4e.jpg",
+      "https://www.farmadr0gal.co/products/17659810077471_452f32a9.jpg",
+      "https://www.farmadr0gal.co/products/17659810105236_3dd87130.jpg",
+      "https://www.farmadr0gal.co/products/17659810132685_3b04e32d.jpg"
     ],
     "price": 18.83,
     "installment": "R$ 1,57",
@@ -5273,11 +5273,11 @@ const rawProducts: Product[] = [
   {
     "id": "epoca-protetor-solar-facial-bioderma-photoderm-antioleosidade-fps-70-40g-161463",
     "name": "Protetor Solar Facial Bioderma Photoderm Antioleosidade Fps 70 40g",
-    "image": "https://lojas-epoca.store/products/17585501435110_80e497d7.jpg",
+    "image": "https://www.farmadr0gal.co/products/17585501435110_80e497d7.jpg",
     "images": [
-      "https://lojas-epoca.store/products/17585501435110_80e497d7.jpg",
-      "https://lojas-epoca.store/products/17585501440973_26d892f4.jpg",
-      "https://lojas-epoca.store/products/17585501447448_e92ad338.jpg"
+      "https://www.farmadr0gal.co/products/17585501435110_80e497d7.jpg",
+      "https://www.farmadr0gal.co/products/17585501440973_26d892f4.jpg",
+      "https://www.farmadr0gal.co/products/17585501447448_e92ad338.jpg"
     ],
     "price": 69.93,
     "installment": "R$ 5,83",
@@ -5287,9 +5287,9 @@ const rawProducts: Product[] = [
   {
     "id": "epoca-sabonete-liquido-de-glicerina-granado-bebe-tradicional-250ml-180611",
     "name": "Sabonete Líquido de Glicerina Granado Bebê Tradicional 250ML",
-    "image": "https://lojas-epoca.store/products/17659151052977_ca1ed34f.jpg",
+    "image": "https://www.farmadr0gal.co/products/17659151052977_ca1ed34f.jpg",
     "images": [
-      "https://lojas-epoca.store/products/17659151052977_ca1ed34f.jpg"
+      "https://www.farmadr0gal.co/products/17659151052977_ca1ed34f.jpg"
     ],
     "price": 18.19,
     "installment": "R$ 1,52",
@@ -5299,12 +5299,12 @@ const rawProducts: Product[] = [
   {
     "id": "epoca-actine-vitamina-c-serum-concentrado-energizante-30g-119895",
     "name": "Actine Vitamina C Sérum Concentrado Energizante 30g",
-    "image": "https://lojas-epoca.store/products/17523415081002_cd903ecd.jpg",
+    "image": "https://www.farmadr0gal.co/products/17523415081002_cd903ecd.jpg",
     "images": [
-      "https://lojas-epoca.store/products/17523415081002_cd903ecd.jpg",
-      "https://lojas-epoca.store/products/17523415098217_349ef039.jpg",
-      "https://lojas-epoca.store/products/17523415119865_fd363d29.jpg",
-      "https://lojas-epoca.store/products/17523415137249_9f1060ba.jpg"
+      "https://www.farmadr0gal.co/products/17523415081002_cd903ecd.jpg",
+      "https://www.farmadr0gal.co/products/17523415098217_349ef039.jpg",
+      "https://www.farmadr0gal.co/products/17523415119865_fd363d29.jpg",
+      "https://www.farmadr0gal.co/products/17523415137249_9f1060ba.jpg"
     ],
     "price": 81.47,
     "installment": "R$ 6,79",
@@ -5314,12 +5314,12 @@ const rawProducts: Product[] = [
   {
     "id": "epoca-hidratante-epidrat-corpo-intensivo",
     "name": "Hidratante Corporal Mantecorp Skincare Epidrat Corpo Intensivo",
-    "image": "https://lojas-epoca.store/products/7891142205865_1_06baa4d4.jpg",
+    "image": "https://www.farmadr0gal.co/products/7891142205865_1_06baa4d4.jpg",
     "images": [
-      "https://lojas-epoca.store/products/7891142205865_1_06baa4d4.jpg",
-      "https://lojas-epoca.store/products/creme-hidratante-corporal-mantecorp-skincare-epidrat-corpo-intensivo7_6f0978bc.jpg",
-      "https://lojas-epoca.store/products/7891142205865_3_892d0968.jpg",
-      "https://lojas-epoca.store/products/creme-hidratante-corporal-mantecorp-skincare-epidrat-corpo-intensivo6_cd64517e.jpg"
+      "https://www.farmadr0gal.co/products/7891142205865_1_06baa4d4.jpg",
+      "https://www.farmadr0gal.co/products/creme-hidratante-corporal-mantecorp-skincare-epidrat-corpo-intensivo7_6f0978bc.jpg",
+      "https://www.farmadr0gal.co/products/7891142205865_3_892d0968.jpg",
+      "https://www.farmadr0gal.co/products/creme-hidratante-corporal-mantecorp-skincare-epidrat-corpo-intensivo6_cd64517e.jpg"
     ],
     "price": 51.89,
     "installment": "R$ 4,32",
@@ -5329,9 +5329,9 @@ const rawProducts: Product[] = [
   {
     "id": "epoca-creamy-limpador-facial-antioleosidade-300ml-190967",
     "name": "Creamy - Limpador Facial Antioleosidade 300Ml",
-    "image": "https://lojas-epoca.store/products/17715937835494_86fed270.jpg",
+    "image": "https://www.farmadr0gal.co/products/17715937835494_86fed270.jpg",
     "images": [
-      "https://lojas-epoca.store/products/17715937835494_86fed270.jpg"
+      "https://www.farmadr0gal.co/products/17715937835494_86fed270.jpg"
     ],
     "price": 41.65,
     "installment": "R$ 3,47",
@@ -5341,12 +5341,12 @@ const rawProducts: Product[] = [
   {
     "id": "epoca-bioderma-sensibio-h2o-agua-micelar-100ml-90174",
     "name": "Bioderma Sensibio H2O Água Micelar 100ml",
-    "image": "https://lojas-epoca.store/products/17389636752528_1adf9cfb.jpg",
+    "image": "https://www.farmadr0gal.co/products/17389636752528_1adf9cfb.jpg",
     "images": [
-      "https://lojas-epoca.store/products/17389636752528_1adf9cfb.jpg",
-      "https://lojas-epoca.store/products/17389636753963_70fbbdb3.jpg",
-      "https://lojas-epoca.store/products/17389636755315_95115e28.jpg",
-      "https://lojas-epoca.store/products/17389636756632_fb5ac3d8.jpg"
+      "https://www.farmadr0gal.co/products/17389636752528_1adf9cfb.jpg",
+      "https://www.farmadr0gal.co/products/17389636753963_70fbbdb3.jpg",
+      "https://www.farmadr0gal.co/products/17389636755315_95115e28.jpg",
+      "https://www.farmadr0gal.co/products/17389636756632_fb5ac3d8.jpg"
     ],
     "price": 64.4,
     "installment": "R$ 5,37",
@@ -5356,12 +5356,12 @@ const rawProducts: Product[] = [
   {
     "id": "epoca-medicube-pdrn-pink-peptide-serum-facial-162569",
     "name": "Medicube Pdrn Pink Peptide - Serum Facial",
-    "image": "https://lojas-epoca.store/products/17610762213183_9d1deb6a.jpg",
+    "image": "https://www.farmadr0gal.co/products/17610762213183_9d1deb6a.jpg",
     "images": [
-      "https://lojas-epoca.store/products/17610762213183_9d1deb6a.jpg",
-      "https://lojas-epoca.store/products/17610762216665_4b53b518.jpg",
-      "https://lojas-epoca.store/products/17610762220403_cb40330c.jpg",
-      "https://lojas-epoca.store/products/17610762224449_d44a55e3.jpg"
+      "https://www.farmadr0gal.co/products/17610762213183_9d1deb6a.jpg",
+      "https://www.farmadr0gal.co/products/17610762216665_4b53b518.jpg",
+      "https://www.farmadr0gal.co/products/17610762220403_cb40330c.jpg",
+      "https://www.farmadr0gal.co/products/17610762224449_d44a55e3.jpg"
     ],
     "price": 251.37,
     "installment": "R$ 20,95",
@@ -5371,11 +5371,11 @@ const rawProducts: Product[] = [
   {
     "id": "epoca-acnase-creme-25g-145781",
     "name": "Acnase Creme 25g",
-    "image": "https://lojas-epoca.store/products/17585412496376_bb53d120.jpg",
+    "image": "https://www.farmadr0gal.co/products/17585412496376_bb53d120.jpg",
     "images": [
-      "https://lojas-epoca.store/products/17585412496376_bb53d120.jpg",
-      "https://lojas-epoca.store/products/17585412502600_cb3ad175.jpg",
-      "https://lojas-epoca.store/products/17585412509274_839b4603.jpg"
+      "https://www.farmadr0gal.co/products/17585412496376_bb53d120.jpg",
+      "https://www.farmadr0gal.co/products/17585412502600_cb3ad175.jpg",
+      "https://www.farmadr0gal.co/products/17585412509274_839b4603.jpg"
     ],
     "price": 31.49,
     "installment": "R$ 2,62",
@@ -5385,12 +5385,12 @@ const rawProducts: Product[] = [
   {
     "id": "epoca-kit-locao-deo-hidratante-nivea-milk-2-unidades-400ml-cada-140710",
     "name": "Kit Loção Deo Hidratante Nivea Milk 2 Unidades 400ml Cada",
-    "image": "https://lojas-epoca.store/products/17585647129429_589d3e94.jpg",
+    "image": "https://www.farmadr0gal.co/products/17585647129429_589d3e94.jpg",
     "images": [
-      "https://lojas-epoca.store/products/17585647129429_589d3e94.jpg",
-      "https://lojas-epoca.store/products/17585647135150_474e52b9.jpg",
-      "https://lojas-epoca.store/products/17585647140635_9c61b703.jpg",
-      "https://lojas-epoca.store/products/17585647145546_6962f69a.jpg"
+      "https://www.farmadr0gal.co/products/17585647129429_589d3e94.jpg",
+      "https://www.farmadr0gal.co/products/17585647135150_474e52b9.jpg",
+      "https://www.farmadr0gal.co/products/17585647140635_9c61b703.jpg",
+      "https://www.farmadr0gal.co/products/17585647145546_6962f69a.jpg"
     ],
     "price": 26.03,
     "installment": "R$ 2,17",
@@ -5400,9 +5400,9 @@ const rawProducts: Product[] = [
   {
     "id": "epoca-creamy-acido-tranexamico-90ml-136315",
     "name": "Creamy Ácido Tranexâmico 90ml",
-    "image": "https://lojas-epoca.store/products/17583582139447_4fea51c1.jpg",
+    "image": "https://www.farmadr0gal.co/products/17583582139447_4fea51c1.jpg",
     "images": [
-      "https://lojas-epoca.store/products/17583582139447_4fea51c1.jpg"
+      "https://www.farmadr0gal.co/products/17583582139447_4fea51c1.jpg"
     ],
     "price": 65.11,
     "installment": "R$ 5,43",
@@ -5412,10 +5412,10 @@ const rawProducts: Product[] = [
   {
     "id": "epoca-oleo-pos-banho-amendoas-doces-natuflora-desodorante-corporal",
     "name": "Óleo Pós Banho Amêndoas Doces Natuflora - Desodorante Corporal",
-    "image": "https://lojas-epoca.store/products/oleo-pos-banho-amendoas-doces-natuflora-desodorante-corporal-125ml_65d35367.jpg",
+    "image": "https://www.farmadr0gal.co/products/oleo-pos-banho-amendoas-doces-natuflora-desodorante-corporal-125ml_65d35367.jpg",
     "images": [
-      "https://lojas-epoca.store/products/oleo-pos-banho-amendoas-doces-natuflora-desodorante-corporal-125ml_65d35367.jpg",
-      "https://lojas-epoca.store/products/oleo-pos-banho-amendoas-doces-natuflora-desodorante-corporal-125ml1_d619b189.jpg"
+      "https://www.farmadr0gal.co/products/oleo-pos-banho-amendoas-doces-natuflora-desodorante-corporal-125ml_65d35367.jpg",
+      "https://www.farmadr0gal.co/products/oleo-pos-banho-amendoas-doces-natuflora-desodorante-corporal-125ml1_d619b189.jpg"
     ],
     "price": 24.43,
     "installment": "R$ 2,04",
@@ -5425,10 +5425,10 @@ const rawProducts: Product[] = [
   {
     "id": "epoca-phytoderm-glamour-kit-deo-colonia-desodorante",
     "name": "Phytoderm Glamour Kit - Deo Colônia + Desodorante",
-    "image": "https://lojas-epoca.store/products/phytoderm-glamour-kit-deo-colonia-desodorante_c4314d75.jpg",
+    "image": "https://www.farmadr0gal.co/products/phytoderm-glamour-kit-deo-colonia-desodorante_c4314d75.jpg",
     "images": [
-      "https://lojas-epoca.store/products/phytoderm-glamour-kit-deo-colonia-desodorante_c4314d75.jpg",
-      "https://lojas-epoca.store/products/phytoderm-glamour-kit-deo-colonia-desodorante1_8a0f7cff.jpg"
+      "https://www.farmadr0gal.co/products/phytoderm-glamour-kit-deo-colonia-desodorante_c4314d75.jpg",
+      "https://www.farmadr0gal.co/products/phytoderm-glamour-kit-deo-colonia-desodorante1_8a0f7cff.jpg"
     ],
     "price": 41.93,
     "installment": "R$ 3,49",
