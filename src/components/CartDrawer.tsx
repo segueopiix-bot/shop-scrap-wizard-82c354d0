@@ -114,7 +114,7 @@ const CartDrawer = () => {
             </div>
 
             {/* Footer */}
-            <div className="border-t border-gray-200 bg-white px-4 py-4">
+            <div className="border-t border-gray-200 bg-white px-4 pt-4 pb-[calc(1rem+env(safe-area-inset-bottom))]">
               <div className="mb-2 flex items-center justify-between">
                 <span className="text-sm text-gray-600">Subtotal</span>
                 <span className="text-sm font-semibold text-gray-700">{formatPrice(totalPrice)}</span>
