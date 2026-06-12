@@ -120,7 +120,7 @@ const StoreHeader = ({ onToggleMobileMenu, mobileMenuOpen }: StoreHeaderProps) =
 
             <button
               onClick={() => setIsOpen(true)}
-              className="flex items-center text-white transition-opacity hover:opacity-80"
+              className="flex items-center text-foreground transition-opacity hover:opacity-80"
               aria-label="Carrinho"
             >
               <div className="relative">
