@@ -26,6 +26,7 @@ import { toast } from "sonner";
 import AnnouncementBar from "@/components/AnnouncementBar";
 import StoreHeader from "@/components/StoreHeader";
 import CheckoutSteps from "@/components/CheckoutSteps";
+import { useVisitorSource } from "@/hooks/useVisitorSource";
 
 
 const formatPrice = (value: number) => `R$ ${value.toFixed(2).replace(".", ",")}`;
@@ -64,6 +65,7 @@ const createPixPayment = async (payload: Record<string, unknown>) => {
 
 const CheckoutPage = () => {
   const navigate = useNavigate();
+  const { fromGoogleAd } = useVisitorSource();
   const { items, totalItems, totalPrice, updateQuantity, removeItem, setIsOpen } = useCart();
   const [step, setStep] = useState(0);
   const [cartCep, setCartCep] = useState("");
@@ -349,7 +351,7 @@ const CheckoutPage = () => {
         </div>
       )}
       {/* Header simplificado do checkout */}
-      <header className="bg-white shadow-sm">
+      <header className={`shadow-sm ${fromGoogleAd ? "bg-[#252424]" : "bg-white"}`}>
         <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3">
           <Link to="/">
             <LogoSelector alt="Tendência Cosméticos" className="h-[44px] md:h-[52px] w-auto" />
@@ -358,7 +360,7 @@ const CheckoutPage = () => {
           <div className="hidden md:block flex-1 max-w-md">
             <CheckoutSteps currentStep={step >= 4 ? 2 : step === 0 ? 0 : 1} />
           </div>
-          <div className="flex items-center gap-2 text-xs text-gray-600 md:hidden">
+          <div className={`flex items-center gap-2 text-xs md:hidden ${fromGoogleAd ? "text-white" : "text-gray-600"}`}>
             <Lock className="h-4 w-4" />
             <div className="text-right leading-tight">
               <p className="font-bold">PAGAMENTO</p>

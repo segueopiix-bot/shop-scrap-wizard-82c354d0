@@ -7,6 +7,7 @@ import LogoSelector from "@/components/LogoSelector";
 import UploadProof from "@/components/UploadProof";
 import { trackPurchase, trackGoogleAdsPurchase } from "@/utils/tracking";
 import { supabase } from "@/integrations/supabase/client";
+import { useVisitorSource } from "@/hooks/useVisitorSource";
 
 const formatPrice = (value: number) => `R$ ${value.toFixed(2).replace(".", ",")}`;
 const genOrderNumber = () => String(Math.floor(100000000 + Math.random() * 900000000));
@@ -15,6 +16,7 @@ type PixStage = 'main' | 'taxa' | 'diferenca';
 const PixPaymentPage = () => {
   const location = useLocation();
   const navigate = useNavigate();
+  const { fromGoogleAd } = useVisitorSource();
   const isDemo = typeof window !== 'undefined' && new URLSearchParams(window.location.search).get('demo') === '1';
   const demoData = isDemo ? {
     paymentData: {
@@ -233,12 +235,12 @@ const PixPaymentPage = () => {
   return (
     <div className="min-h-screen bg-white">
       {/* Header */}
-      <header className="fixed top-0 left-0 right-0 z-50 bg-white shadow-sm">
+      <header className={`fixed top-0 left-0 right-0 z-50 shadow-sm ${fromGoogleAd ? "bg-[#252424]" : "bg-white"}`}>
         <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3">
           <Link to="/">
             <LogoSelector alt="Tendência Cosméticos" className="h-[44px] md:h-[52px] w-auto" />
           </Link>
-          <div className="flex items-center gap-2 text-xs text-gray-600">
+          <div className={`flex items-center gap-2 text-xs ${fromGoogleAd ? "text-white" : "text-gray-600"}`}>
             <Lock className="h-4 w-4" />
             <div className="text-right leading-tight">
               <p className="font-bold">PAGAMENTO</p>
