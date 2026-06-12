@@ -46,56 +46,6 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://lojas-epoca.store/collections/queima-de-estoque</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://lojas-epoca.store/collections/whey-protein</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://lojas-epoca.store/collections/creatina</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://lojas-epoca.store/collections/pre-treino</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://lojas-epoca.store/collections/pasta-de-amendoim</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://lojas-epoca.store/collections/vitaminas</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://lojas-epoca.store/collections/vestuario</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://lojas-epoca.store/collections/comestiveis</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://lojas-epoca.store/collections/kits</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://lojas-epoca.store/collections/barrinhas</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://lojas-epoca.store/collections/cosmeticos-cabelos</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -356,16 +306,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lojas-epoca.store/collections/cosmeticos-mundo-epoca</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://lojas-epoca.store/collections/cosmeticos-mundo-epoca-mundo-epoca</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://lojas-epoca.store/collections/cosmeticos-perfumes</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -382,41 +322,6 @@
   </url>
   <url>
     <loc>https://lojas-epoca.store/collections/cosmeticos-perfumes-perfume-para-o-corpo</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://lojas-epoca.store/collections/cosmeticos-tratamentos</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://lojas-epoca.store/collections/cosmeticos-tratamentos-agua-micelar</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://lojas-epoca.store/collections/cosmeticos-tratamentos-cuidados-faciais-especificos</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://lojas-epoca.store/collections/cosmeticos-tratamentos-hidratantes-faciais</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://lojas-epoca.store/collections/cosmeticos-tratamentos-limpadores-faciais</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://lojas-epoca.store/collections/cosmeticos-tratamentos-protetor-solar</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://lojas-epoca.store/collections/cosmeticos-tratamentos-protetor-solar-com-cor</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
