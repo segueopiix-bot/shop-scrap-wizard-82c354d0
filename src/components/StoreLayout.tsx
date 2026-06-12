@@ -29,7 +29,6 @@ const StoreLayout = ({ children }: StoreLayoutProps) => {
       {children}
       
       <Footer />
-      <WhatsAppButton />
       <CookieConsent />
     </div>
   );
