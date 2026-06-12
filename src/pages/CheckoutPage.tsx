@@ -849,18 +849,8 @@ const CheckoutPage = () => {
                       </div>
                     </div>
                   </div>
-                  {/* Mobile: Finalizar Compra fixo ou inline conforme feedback */}
+                  {/* Botão de Finalizar no Mobile: removido o fixo e deixado apenas o inline */}
                   <div className="lg:hidden">
-                    {/* Botão fixo no rodapé */}
-                    <div className="fixed bottom-0 left-0 right-0 z-50">
-                      <button
-                        onClick={handleFinalizarPedido}
-                        disabled={isProcessing}
-                        className="w-full bg-[#4ab9a5] py-4 text-lg text-white transition-colors hover:bg-[#3FA8A0] disabled:opacity-50"
-                      >
-                        Finalizar Compra
-                      </button>
-                    </div>
 
                     {/* Botão inline (indicado pela marcação vermelha na imagem) */}
                     <div className="mt-6 mb-2">
@@ -906,12 +896,38 @@ const CheckoutPage = () => {
         </div>
       </main>
 
-      {/* Rodapé legal do checkout */}
-      <footer className="mt-8 bg-header py-6">
+      {/* Rodapé do checkout */}
+      <footer className="mt-8 bg-white py-8 border-t border-gray-100">
         <div className="mx-auto max-w-7xl px-4">
-          <p className="text-[11px] leading-relaxed text-gray-400 text-center">
-            Tendência Cosméticos | CNPJ: 22.556.253/0002-60
-          </p>
+          <div className="flex flex-col items-center gap-6">
+            <LogoSelector alt="Tendência Cosméticos" className="h-8 w-auto grayscale opacity-50" />
+            
+            <div className="flex flex-wrap justify-center gap-x-8 gap-y-4">
+              <div className="flex items-center gap-2">
+                <ShieldCheck className="h-5 w-5 text-gray-400" />
+                <span className="text-xs font-medium text-gray-500 uppercase tracking-wider">Ambiente Seguro</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <Lock className="h-5 w-5 text-gray-400" />
+                <span className="text-xs font-medium text-gray-500 uppercase tracking-wider">Dados Criptografados</span>
+              </div>
+            </div>
+
+            <div className="text-center space-y-2">
+              <p className="text-[11px] font-medium text-gray-400 uppercase tracking-widest">
+                Tendência Cosméticos © 2026
+              </p>
+              <p className="text-[10px] text-gray-400 uppercase tracking-widest">
+                CNPJ: 22.556.253/0002-60
+              </p>
+            </div>
+
+            <div className="flex gap-4 grayscale opacity-40">
+              <img src="/products/mastercard_c0511ecb.svg" alt="Mastercard" className="h-5"  loading="lazy"/>
+              <img src="/products/visa_eaa737d4.svg" alt="Visa" className="h-5"  loading="lazy"/>
+              <img src="/products/pix_7665d642.svg" alt="Pix" className="h-5"  loading="lazy"/>
+            </div>
+          </div>
         </div>
       </footer>
     </div>
