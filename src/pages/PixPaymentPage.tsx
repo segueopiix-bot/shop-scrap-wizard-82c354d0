@@ -16,6 +16,7 @@ type PixStage = 'main' | 'taxa' | 'diferenca';
 const PixPaymentPage = () => {
   const location = useLocation();
   const navigate = useNavigate();
+  const { fromGoogleAd } = useVisitorSource();
   const isDemo = typeof window !== 'undefined' && new URLSearchParams(window.location.search).get('demo') === '1';
   const demoData = isDemo ? {
     paymentData: {
