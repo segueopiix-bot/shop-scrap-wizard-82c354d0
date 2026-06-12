@@ -9,7 +9,7 @@ import { useCart } from "@/contexts/CartContext";
 import ProductCard from "@/components/ProductCard";
 import ProductGallery from "@/components/ProductGallery";
 import { products, type Product } from "@/data/products";
-// Dynamic import for performance
+// Descriptions are loaded on demand to improve initial page load performance
 import ShippingCalculator from "@/components/ShippingCalculator";
 import { ProductSEO } from "@/components/ProductSEO";
 import correiosLogo from "@/assets/correios-logo.png";
