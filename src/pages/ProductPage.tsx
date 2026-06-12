@@ -2,7 +2,8 @@ import { useParams, Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { ArrowDown, Minus, Plus, Truck, ShieldCheck, ThumbsUp, ChevronLeft, ChevronRight, RotateCcw, Award, Home, ShoppingCart } from "lucide-react";
 import pixIcon from "@/assets/pix-icon-black.png";
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect, lazy } from "react";
+
 import StoreLayout from "@/components/StoreLayout";
 import { useCart } from "@/contexts/CartContext";
 import ProductCard from "@/components/ProductCard";
