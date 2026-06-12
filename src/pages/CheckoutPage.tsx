@@ -26,6 +26,7 @@ import { toast } from "sonner";
 import AnnouncementBar from "@/components/AnnouncementBar";
 import StoreHeader from "@/components/StoreHeader";
 import CheckoutSteps from "@/components/CheckoutSteps";
+import { useVisitorSource } from "@/hooks/useVisitorSource";
 
 
 const formatPrice = (value: number) => `R$ ${value.toFixed(2).replace(".", ",")}`;
