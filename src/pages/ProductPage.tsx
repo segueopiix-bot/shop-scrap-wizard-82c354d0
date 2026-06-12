@@ -144,7 +144,7 @@ const ProductPage = () => {
   const variants = product?.hasVariants ? desc?.variants || [] : [];
   const [quantity, setQuantity] = useState(1);
   const [selectedVariant, setSelectedVariant] = useState<string | null>(null);
-  const { addItem } = useCart();
+  const { addItem, setIsOpen } = useCart();
 
   useEffect(() => {
     if (product) {
