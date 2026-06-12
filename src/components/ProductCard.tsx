@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import type { Product } from "@/data/products";
-import { ArrowDown, Minus, Plus, ShoppingCart } from "lucide-react";
+import { ArrowDown, Minus, Plus, ShoppingCart, Star } from "lucide-react";
 import { useCart } from "@/contexts/CartContext";
 
 interface ProductCardProps {
@@ -46,6 +46,15 @@ const ProductCard = ({ product, fullWidth = false }: ProductCardProps) => {
         >
           {product.name}
         </Link>
+
+        <div className="mb-2 flex items-center justify-center gap-1">
+          <div className="flex text-orange-400">
+            {[1, 2, 3, 4, 5].map((s) => (
+              <Star key={s} className="h-2.5 w-2.5 fill-current" />
+            ))}
+          </div>
+          <span className="text-[10px] text-muted-foreground">(42)</span>
+        </div>
 
         <div className="mt-auto">
 
