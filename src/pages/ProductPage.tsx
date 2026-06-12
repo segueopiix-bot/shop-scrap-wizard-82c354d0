@@ -9,7 +9,7 @@ import { useCart } from "@/contexts/CartContext";
 import ProductCard from "@/components/ProductCard";
 import ProductGallery from "@/components/ProductGallery";
 import { products, type Product } from "@/data/products";
-const getProductDescription = lazy(() => import("@/data/productDescriptions").then(m => ({ default: m.getProductDescription })));
+// Dynamic import for performance
 import ShippingCalculator from "@/components/ShippingCalculator";
 import { ProductSEO } from "@/components/ProductSEO";
 import correiosLogo from "@/assets/correios-logo.png";
