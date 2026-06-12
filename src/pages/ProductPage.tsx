@@ -2,13 +2,14 @@ import { useParams, Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { ArrowDown, Minus, Plus, Truck, ShieldCheck, ThumbsUp, ChevronLeft, ChevronRight, RotateCcw, Award, Home, ShoppingCart } from "lucide-react";
 import pixIcon from "@/assets/pix-icon-black.png";
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect, lazy } from "react";
+
 import StoreLayout from "@/components/StoreLayout";
 import { useCart } from "@/contexts/CartContext";
 import ProductCard from "@/components/ProductCard";
 import ProductGallery from "@/components/ProductGallery";
 import { products, type Product } from "@/data/products";
-import { getProductDescription } from "@/data/productDescriptions";
+// Descriptions are loaded on demand to improve initial page load performance
 import ShippingCalculator from "@/components/ShippingCalculator";
 import { ProductSEO } from "@/components/ProductSEO";
 import correiosLogo from "@/assets/correios-logo.png";
@@ -139,11 +140,22 @@ const RelatedSlider = ({ products }: { products: Product[] }) => {
 const ProductPage = () => {
   const { slug } = useParams<{ slug: string }>();
   const product = products.find((p) => p.id === slug);
-  const desc = product ? getProductDescription(product.id) : undefined;
+  const [desc, setDesc] = useState<any>(undefined);
   const variants = product?.hasVariants ? desc?.variants || [] : [];
   const [quantity, setQuantity] = useState(1);
-  const [selectedVariant, setSelectedVariant] = useState<string | null>(variants[0] || null);
+  const [selectedVariant, setSelectedVariant] = useState<string | null>(null);
   const { addItem } = useCart();
+
+  useEffect(() => {
+    if (product) {
+      import("@/data/productDescriptions").then(m => {
+        const d = m.getProductDescription(product.id);
+        setDesc(d);
+        if (d?.variants?.[0]) setSelectedVariant(d.variants[0]);
+      });
+    }
+  }, [product]);
+
 
 
   if (!product) {
