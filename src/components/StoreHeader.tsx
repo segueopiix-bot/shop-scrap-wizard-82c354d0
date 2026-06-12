@@ -5,6 +5,7 @@ import logo from "@/assets/full-logo.png";
 import LogoSelector from "@/components/LogoSelector";
 
 import { useCart } from "@/contexts/CartContext";
+import { useVisitorSource } from "@/hooks/useVisitorSource";
 import SearchBar from "@/components/SearchBar";
 import freteBanner from "@/assets/frete-gratis-banner.webp";
 
@@ -17,6 +18,7 @@ interface StoreHeaderProps {
 const StoreHeader = ({ onToggleMobileMenu, mobileMenuOpen }: StoreHeaderProps) => {
   const [scrolled, setScrolled] = useState(false);
   const { totalItems, setIsOpen } = useCart();
+  const { fromGoogleAd } = useVisitorSource();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 80);
@@ -25,19 +27,22 @@ const StoreHeader = ({ onToggleMobileMenu, mobileMenuOpen }: StoreHeaderProps) =
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  const headerBgClass = fromGoogleAd ? "bg-header" : "bg-white";
+  const headerTextClass = fromGoogleAd ? "text-header-foreground" : "text-gray-800";
+  const borderClass = fromGoogleAd ? "border-white/10" : "border-gray-200";
 
   return (
     <div className="md:contents">
       {/* Mobile Header: Logo and Banner (Not fixed) */}
       <div className="md:hidden">
-        <div className="bg-header">
+        <div className={headerBgClass}>
           <img src={freteBanner} alt="Frete grátis para todo Brasil" className="w-full h-auto block" loading="lazy"/>
         </div>
         
-        <div className="bg-header px-4 py-3 flex items-center justify-between border-b border-white/10">
+        <div className={`${headerBgClass} px-4 py-3 flex items-center justify-between border-b ${borderClass}`}>
           <button
             onClick={onToggleMobileMenu}
-            className="text-header-foreground flex-shrink-0"
+            className={`${headerTextClass} flex-shrink-0`}
             aria-label="Menu"
           >
             <Menu className="h-7 w-7" />
@@ -49,7 +54,7 @@ const StoreHeader = ({ onToggleMobileMenu, mobileMenuOpen }: StoreHeaderProps) =
 
           <button
             onClick={() => setIsOpen(true)}
-            className="flex items-center text-header-foreground transition-opacity hover:opacity-80 flex-shrink-0"
+            className={`flex items-center ${headerTextClass} transition-opacity hover:opacity-80 flex-shrink-0`}
             aria-label="Carrinho"
           >
             <div className="relative">
@@ -63,18 +68,18 @@ const StoreHeader = ({ onToggleMobileMenu, mobileMenuOpen }: StoreHeaderProps) =
         
         {/* Initial Search Bar (Not fixed) */}
         {!scrolled && (
-          <div className="bg-header px-3 py-2 w-full border-b border-white/10">
+          <div className={`${headerBgClass} px-3 py-2 w-full border-b ${borderClass}`}>
             <SearchBar placeholder="Buscar" />
           </div>
         )}
       </div>
 
       {/* Mobile Fixed Bar: Shows only after scrolling */}
-      <div className={`fixed top-0 left-0 right-0 z-50 block w-full md:hidden shadow-md bg-header transition-transform duration-300 ${scrolled ? 'translate-y-0 opacity-100' : '-translate-y-full opacity-0 pointer-events-none'}`}>
+      <div className={`fixed top-0 left-0 right-0 z-50 block w-full md:hidden shadow-md ${headerBgClass} transition-transform duration-300 ${scrolled ? 'translate-y-0 opacity-100' : '-translate-y-full opacity-0 pointer-events-none'}`}>
         <div className="flex items-center gap-2 px-3 py-2 w-full">
           <button
             onClick={onToggleMobileMenu}
-            className="text-header-foreground flex-shrink-0"
+            className={`${headerTextClass} flex-shrink-0`}
             aria-label="Menu"
           >
             <Menu className="h-7 w-7" />
@@ -86,7 +91,7 @@ const StoreHeader = ({ onToggleMobileMenu, mobileMenuOpen }: StoreHeaderProps) =
           
           <button
             onClick={() => setIsOpen(true)}
-            className="flex items-center text-header-foreground transition-opacity hover:opacity-80 flex-shrink-0"
+            className={`flex items-center ${headerTextClass} transition-opacity hover:opacity-80 flex-shrink-0`}
             aria-label="Carrinho"
           >
             <div className="relative">
@@ -99,14 +104,8 @@ const StoreHeader = ({ onToggleMobileMenu, mobileMenuOpen }: StoreHeaderProps) =
         </div>
       </div>
 
-
-
-
-
-
-
       {/* Desktop header */}
-      <header className="hidden md:block w-full bg-header sticky top-0 z-50 border-b border-white/10 py-4">
+      <header className={`hidden md:block w-full ${headerBgClass} sticky top-0 z-50 border-b ${borderClass} py-4`}>
         <div className="container-page">
           <div className="relative flex items-center justify-between">
             <Link to="/" className="no-underline flex-shrink-0">
@@ -120,7 +119,7 @@ const StoreHeader = ({ onToggleMobileMenu, mobileMenuOpen }: StoreHeaderProps) =
 
             <button
               onClick={() => setIsOpen(true)}
-              className="flex items-center text-header-foreground transition-opacity hover:opacity-80"
+              className={`flex items-center ${headerTextClass} transition-opacity hover:opacity-80`}
               aria-label="Carrinho"
             >
               <div className="relative">
