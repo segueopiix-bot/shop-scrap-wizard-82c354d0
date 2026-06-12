@@ -65,6 +65,7 @@ const createPixPayment = async (payload: Record<string, unknown>) => {
 
 const CheckoutPage = () => {
   const navigate = useNavigate();
+  const { fromGoogleAd } = useVisitorSource();
   const { items, totalItems, totalPrice, updateQuantity, removeItem, setIsOpen } = useCart();
   const [step, setStep] = useState(0);
   const [cartCep, setCartCep] = useState("");
