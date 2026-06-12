@@ -44,8 +44,8 @@
     --price-old: 0 0% 55%;
     --announcement-bg: 203 100% 39%;
     --announcement-foreground: 0 0% 100%;
-    --header-bg: 0 0% 100%; /* White bg */
-    --header-foreground: 220 10% 15%;
+    --header-bg: 0 0% 14%; /* #252424 */
+    --header-foreground: 0 0% 100%;
     --nav-bg: 0 0% 100%;
     --nav-foreground: 220 10% 25%;
     --nav-border: 220 10% 88%;
