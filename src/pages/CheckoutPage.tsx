@@ -358,7 +358,7 @@ const CheckoutPage = () => {
           <div className="hidden md:block flex-1 max-w-md">
             <CheckoutSteps currentStep={step >= 4 ? 2 : step === 0 ? 0 : 1} />
           </div>
-          <div className="flex items-center gap-2 text-xs text-header-foreground md:hidden">
+          <div className="flex items-center gap-2 text-xs text-gray-600 md:hidden">
             <Lock className="h-4 w-4" />
             <div className="text-right leading-tight">
               <p className="font-bold">PAGAMENTO</p>
