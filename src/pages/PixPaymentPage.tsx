@@ -238,7 +238,7 @@ const PixPaymentPage = () => {
           <Link to="/">
             <LogoSelector alt="Tendência Cosméticos" className="h-[44px] md:h-[52px] w-auto" />
           </Link>
-          <div className="flex items-center gap-2 text-xs text-header-foreground">
+          <div className="flex items-center gap-2 text-xs text-gray-600">
             <Lock className="h-4 w-4" />
             <div className="text-right leading-tight">
               <p className="font-bold">PAGAMENTO</p>
