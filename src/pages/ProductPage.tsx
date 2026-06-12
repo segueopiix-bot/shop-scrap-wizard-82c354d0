@@ -550,9 +550,33 @@ const ProductPage = () => {
         )}
       </main>
 
+      {/* Mobile Sticky Buy Button */}
+      <div className="fixed bottom-0 left-0 right-0 z-40 border-t border-border bg-white p-3 shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.1)] md:hidden">
+        <div className="flex gap-2">
+          <div className="flex flex-col justify-center min-w-[100px]">
+            <span className="text-[10px] text-muted-foreground line-through leading-tight">
+              {formatPrice(effectiveOriginal || effectivePrice * 1.2)}
+            </span>
+            <span className="text-lg font-bold text-foreground leading-tight">
+              {formatPrice(effectivePrice)}
+            </span>
+          </div>
+          <button
+            onClick={() => {
+              let finalName = product.name;
+              if (selectedVariant) finalName += ` - ${selectedVariant}`;
+              addItem({ ...product, name: finalName, price: effectivePrice }, quantity);
+              setIsOpen(true);
+            }}
+            className="flex flex-1 items-center justify-center gap-2 rounded-full bg-[#2bb5a0] py-3 text-sm font-bold text-white shadow-lg active:scale-95 transition-transform"
+          >
+            <ShoppingCart className="h-5 w-5" />
+            COMPRAR AGORA
+          </button>
+        </div>
+      </div>
     </StoreLayout>
   );
 };
-
 
 export default ProductPage;
