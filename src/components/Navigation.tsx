@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { ChevronDown, ChevronRight, X } from "lucide-react";
+import { ChevronDown, ChevronRight, X, Home, ShoppingBag, BookOpen, Phone, MessageCircle, Mail, HelpCircle, ShieldCheck, User } from "lucide-react";
 
 type SubItem = {
   label: string;
@@ -13,19 +13,6 @@ type NavItem = {
   path: string;
   children?: SubItem[];
 };
-
-const supplementSubcategories: SubItem[] = [
-  { label: "Queima de Estoque", path: "/collections/queima-de-estoque" },
-  { label: "Whey Protein", path: "/collections/whey-protein" },
-  { label: "Creatina", path: "/collections/creatina" },
-  { label: "Pre Treino", path: "/collections/pre-treino" },
-  { label: "Pasta de Amendoim", path: "/collections/pasta-de-amendoim" },
-  { label: "Vitaminas", path: "/collections/vitaminas" },
-  { label: "Vestuario", path: "/collections/vestuario" },
-  { label: "Comestiveis", path: "/collections/comestiveis" },
-  { label: "Kits", path: "/collections/kits" },
-  { label: "Barrinhas", path: "/collections/barrinhas" },
-];
 
 const cosmeticosSubcategories: SubItem[] = [
   {
@@ -101,31 +88,12 @@ const cosmeticosSubcategories: SubItem[] = [
     ],
   },
   {
-    label: "Mundo Época",
-    path: "/collections/cosmeticos-mundo-epoca",
-    children: [
-      { label: "Mundo Época", path: "/collections/cosmeticos-mundo-epoca-mundo-epoca" },
-    ],
-  },
-  {
     label: "Perfumes",
     path: "/collections/cosmeticos-perfumes",
     children: [
       { label: "Perfume Feminino", path: "/collections/cosmeticos-perfumes-perfume-feminino" },
       { label: "Perfume Masculino", path: "/collections/cosmeticos-perfumes-perfume-masculino" },
       { label: "Perfume para o Corpo", path: "/collections/cosmeticos-perfumes-perfume-para-o-corpo" },
-    ],
-  },
-  {
-    label: "Tratamentos",
-    path: "/collections/cosmeticos-tratamentos",
-    children: [
-      { label: "Água Micelar", path: "/collections/cosmeticos-tratamentos-agua-micelar" },
-      { label: "Cuidados Faciais Específicos", path: "/collections/cosmeticos-tratamentos-cuidados-faciais-especificos" },
-      { label: "Hidratantes Faciais", path: "/collections/cosmeticos-tratamentos-hidratantes-faciais" },
-      { label: "Limpadores Faciais", path: "/collections/cosmeticos-tratamentos-limpadores-faciais" },
-      { label: "Protetor Solar", path: "/collections/cosmeticos-tratamentos-protetor-solar" },
-      { label: "Protetor Solar com Cor", path: "/collections/cosmeticos-tratamentos-protetor-solar-com-cor" },
     ],
   },
 ];
@@ -215,80 +183,140 @@ const Navigation = ({ mobileOpen, onClose }: NavigationProps) => {
       {/* Mobile overlay menu */}
       {mobileOpen && (
         <>
-          <div className="fixed inset-0 z-40 bg-black/50 md:hidden" onClick={onClose} />
-          <div className="fixed inset-y-0 left-0 z-50 w-72 overflow-y-auto bg-background shadow-xl md:hidden">
-            <div className="flex items-center justify-between border-b border-border p-4">
-              <span className="text-sm font-bold text-foreground">Menu</span>
-              <button onClick={onClose} className="text-foreground">
-                <X className="h-5 w-5" />
+          <div className="fixed inset-0 z-40 bg-black/50 md:hidden animate-in fade-in duration-300" onClick={onClose} />
+          <div className="fixed inset-y-0 left-0 z-50 w-[85%] max-w-sm overflow-y-auto bg-white shadow-2xl md:hidden flex flex-col animate-in slide-in-from-left duration-300">
+            <div className="flex items-center justify-between border-b border-gray-100 p-5 bg-gray-50/50">
+              <div className="flex items-center gap-3">
+                <div className="bg-primary/10 p-2 rounded-full">
+                  <User className="h-5 w-5 text-primary" />
+                </div>
+                <div>
+                  <p className="text-xs text-muted-foreground font-medium uppercase tracking-wider leading-none mb-1">Bem-vindo(a)</p>
+                  <p className="text-sm font-bold text-foreground leading-none">Minha Conta</p>
+                </div>
+              </div>
+              <button onClick={onClose} className="p-2 hover:bg-gray-100 rounded-full transition-colors" aria-label="Fechar menu">
+                <X className="h-6 w-6 text-foreground" />
               </button>
             </div>
-            <div className="py-2">
-              {navItems.map((item) =>
-                item.children ? (
-                  <div key={item.path}>
-                    <button
-                      onClick={() => setOpenMenu((v) => (v === item.path ? null : item.path))}
-                      className={`flex w-full items-center justify-between px-6 py-3 text-sm font-medium transition-colors hover:bg-secondary ${
-                        location.pathname === item.path
-                          ? "text-primary font-bold"
-                          : "text-foreground"
-                      }`}
-                    >
-                      {item.label}
-                      <ChevronDown
-                        className={`h-4 w-4 transition-transform ${openMenu === item.path ? "rotate-180" : ""}`}
-                      />
-                    </button>
-                    {openMenu === item.path && (
-                      <div className="bg-secondary/40">
-                        {item.children.map((child) => (
-                          <div key={child.path}>
-                            <Link
-                              to={child.path}
-                              className={`block px-10 py-2.5 text-sm transition-colors hover:bg-secondary ${
-                                location.pathname === child.path
-                                  ? "text-primary font-bold"
-                                  : "text-foreground"
-                              }`}
-                              onClick={onClose}
-                            >
-                              {child.label}
-                            </Link>
-                            {child.children?.map((leaf) => (
-                              <Link
-                                key={leaf.path}
-                                to={leaf.path}
-                                className={`block px-14 py-2 text-xs transition-colors hover:bg-secondary ${
-                                  location.pathname === leaf.path
-                                    ? "text-primary font-bold"
-                                    : "text-muted-foreground"
-                                }`}
-                                onClick={onClose}
-                              >
-                                › {leaf.label}
-                              </Link>
+            
+            <div className="flex-1 py-4 overflow-y-auto">
+              <div className="px-4 mb-6">
+                <p className="px-2 mb-2 text-[10px] font-bold text-muted-foreground uppercase tracking-[0.2em]">Navegação</p>
+                <div className="space-y-1">
+                  {navItems.map((item) => {
+                    const Icon = item.label === "Início" ? Home : item.label === "Cosméticos" ? ShoppingBag : BookOpen;
+                    return item.children ? (
+                      <div key={item.path} className="border-b border-gray-50 last:border-0">
+                        <button
+                          onClick={() => setOpenMenu((v) => (v === item.path ? null : item.path))}
+                          className={`flex w-full items-center justify-between px-3 py-4 text-sm font-semibold transition-colors rounded-lg hover:bg-gray-50 ${
+                            location.pathname === item.path
+                              ? "text-primary bg-primary/5"
+                              : "text-foreground"
+                          }`}
+                        >
+                          <div className="flex items-center gap-3">
+                            <Icon className={`h-5 w-5 ${location.pathname === item.path ? "text-primary" : "text-gray-400"}`} />
+                            {item.label}
+                          </div>
+                          <ChevronDown
+                            className={`h-4 w-4 transition-transform duration-300 ${openMenu === item.path ? "rotate-180" : ""}`}
+                          />
+                        </button>
+                        {openMenu === item.path && (
+                          <div className="bg-gray-50/50 rounded-lg mx-2 my-1 overflow-hidden">
+                            {item.children.map((child) => (
+                              <div key={child.path}>
+                                <Link
+                                  to={child.path}
+                                  className={`flex items-center justify-between px-6 py-3.5 text-sm transition-colors hover:bg-white border-b border-gray-100/30 last:border-0 ${
+                                    location.pathname === child.path
+                                      ? "text-primary font-bold"
+                                      : "text-gray-700"
+                                  }`}
+                                  onClick={onClose}
+                                >
+                                  {child.label}
+                                  {child.children && <ChevronRight className="h-3 w-3 opacity-50" />}
+                                </Link>
+                                {child.children?.map((leaf) => (
+                                  <Link
+                                    key={leaf.path}
+                                    to={leaf.path}
+                                    className={`block px-10 py-2.5 text-xs transition-colors hover:bg-white border-l-2 ml-6 ${
+                                      location.pathname === leaf.path
+                                        ? "text-primary font-bold border-primary"
+                                        : "text-muted-foreground border-transparent"
+                                    }`}
+                                    onClick={onClose}
+                                  >
+                                    {leaf.label}
+                                  </Link>
+                                ))}
+                              </div>
                             ))}
                           </div>
-                        ))}
+                        )}
                       </div>
-                    )}
-                  </div>
-                ) : (
-                  <Link
-                    key={item.path}
-                    to={item.path}
-                    className={`block px-6 py-3 text-sm font-medium transition-colors hover:bg-secondary ${
-                      location.pathname === item.path
-                        ? "text-primary font-bold"
-                        : "text-foreground"
-                    }`}
-                    onClick={onClose}
-                  >
-                    {item.label}
+                    ) : (
+                      <Link
+                        key={item.path}
+                        to={item.path}
+                        className={`flex items-center gap-3 px-3 py-4 text-sm font-semibold transition-colors rounded-lg hover:bg-gray-50 ${
+                          location.pathname === item.path
+                            ? "text-primary bg-primary/5"
+                            : "text-foreground"
+                        }`}
+                        onClick={onClose}
+                      >
+                        <Icon className={`h-5 w-5 ${location.pathname === item.path ? "text-primary" : "text-gray-400"}`} />
+                        {item.label}
+                      </Link>
+                    );
+                  })}
+                </div>
+              </div>
+
+              <div className="px-4 mb-6">
+                <p className="px-2 mb-2 text-[10px] font-bold text-muted-foreground uppercase tracking-[0.2em]">Suporte & Contato</p>
+                <div className="space-y-1">
+                  <a href="https://wa.me/5511998397447" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 px-3 py-3 text-sm font-medium text-gray-700 transition-colors rounded-lg hover:bg-gray-50" onClick={onClose}>
+                    <MessageCircle className="h-5 w-5 text-green-500" />
+                    WhatsApp
+                  </a>
+                  <a href="tel:+5511998397447" className="flex items-center gap-3 px-3 py-3 text-sm font-medium text-gray-700 transition-colors rounded-lg hover:bg-gray-50" onClick={onClose}>
+                    <Phone className="h-5 w-5 text-blue-500" />
+                    Ligar agora
+                  </a>
+                  <Link to="/fale-conosco" className="flex items-center gap-3 px-3 py-3 text-sm font-medium text-gray-700 transition-colors rounded-lg hover:bg-gray-50" onClick={onClose}>
+                    <Mail className="h-5 w-5 text-orange-500" />
+                    E-mail
                   </Link>
-                )
-              )}
+                  <Link to="/paginas/faq" className="flex items-center gap-3 px-3 py-3 text-sm font-medium text-gray-700 transition-colors rounded-lg hover:bg-gray-50" onClick={onClose}>
+                    <HelpCircle className="h-5 w-5 text-purple-500" />
+                    Dúvidas Frequentes
+                  </Link>
+                </div>
+              </div>
+
+              <div className="px-4 mb-8">
+                <div className="p-4 bg-gray-50 rounded-xl border border-gray-100">
+                  <div className="flex items-center gap-2 mb-2">
+                    <ShieldCheck className="h-4 w-4 text-green-600" />
+                    <p className="text-[10px] font-bold text-gray-700 uppercase tracking-wider">Compra 100% Segura</p>
+                  </div>
+                  <p className="text-[11px] text-muted-foreground leading-relaxed">
+                    Seus dados estão protegidos com criptografia de ponta a ponta.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="p-6 border-t border-gray-100 bg-gray-50/30 text-center">
+              <p className="text-[10px] text-muted-foreground font-medium uppercase tracking-widest">
+                Tendência Cosméticos © 2026
+              </p>
             </div>
           </div>
         </>
