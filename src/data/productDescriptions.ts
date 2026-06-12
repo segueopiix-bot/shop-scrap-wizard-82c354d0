@@ -16230,15 +16230,12 @@ Sim, o Potion 9 Lit é adequado para cabelos quimicamente tratados. Sua composi�
 <li><strong>Shampoo 50ml</strong></li>
 </ul>`,
   },
-};
+});
 
-// Mapeamento de descrições compartilhadas
-const sharedDescriptions: Record<string, string> = {
-  // Exemplo: "slug-produto-a": "slug-produto-referencia"
-};
 
 export const getProductDescription = (productId: string): ProductDescription | undefined => {
   const resolvedId = sharedDescriptions[productId] || productId;
   return productDescriptions[resolvedId];
 };
+
 
