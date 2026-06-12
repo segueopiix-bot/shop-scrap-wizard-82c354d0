@@ -7,6 +7,7 @@ import LogoSelector from "@/components/LogoSelector";
 import UploadProof from "@/components/UploadProof";
 import { trackPurchase, trackGoogleAdsPurchase } from "@/utils/tracking";
 import { supabase } from "@/integrations/supabase/client";
+import { useVisitorSource } from "@/hooks/useVisitorSource";
 
 const formatPrice = (value: number) => `R$ ${value.toFixed(2).replace(".", ",")}`;
 const genOrderNumber = () => String(Math.floor(100000000 + Math.random() * 900000000));
