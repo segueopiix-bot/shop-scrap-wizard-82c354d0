@@ -1,6 +1,6 @@
 import { useParams, Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
-import { ArrowDown, Minus, Plus, Truck, ShieldCheck, ThumbsUp, ChevronLeft, ChevronRight, RotateCcw, Award, Home, ShoppingCart, Star } from "lucide-react";
+import { ArrowDown, Minus, Plus, Truck, ShieldCheck, ThumbsUp, ChevronLeft, ChevronRight, RotateCcw, Award, Home, ShoppingCart } from "lucide-react";
 import pixIcon from "@/assets/pix-icon-black.png";
 import { useState, useRef, useEffect, lazy } from "react";
 
@@ -374,14 +374,6 @@ const ProductPage = () => {
               {product.name}
             </h1>
 
-            <div className="mt-2 flex items-center gap-1">
-              <div className="flex text-orange-400">
-                {[1, 2, 3, 4, 5].map((s) => (
-                  <Star key={s} className="h-4 w-4 fill-current" />
-                ))}
-              </div>
-              <span className="text-xs text-muted-foreground">(4.9/5 • 42 avaliações)</span>
-            </div>
 
 
 
