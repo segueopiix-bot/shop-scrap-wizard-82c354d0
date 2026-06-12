@@ -4,7 +4,7 @@ import StoreHeader from "@/components/StoreHeader";
 import Navigation from "@/components/Navigation";
 
 import Footer from "@/components/Footer";
-import WhatsAppButton from "@/components/WhatsAppButton";
+
 
 import CookieConsent from "@/components/CookieConsent";
 
@@ -29,7 +29,6 @@ const StoreLayout = ({ children }: StoreLayoutProps) => {
       {children}
       
       <Footer />
-      <WhatsAppButton />
       <CookieConsent />
     </div>
   );
