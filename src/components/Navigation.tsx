@@ -345,6 +345,29 @@ const Navigation = ({ mobileOpen, onClose }: NavigationProps) => {
               </div>
             </div>
 
+            <div className="p-6 border-t border-gray-100 bg-gray-50/30 text-center">
+              <p className="text-[10px] text-muted-foreground font-medium uppercase tracking-widest">
+                Tendência Cosméticos © 2026
+              </p>
+            </div>
+          </div>
+                  </Link>
+                </div>
+              </div>
+
+              <div className="px-4 mb-8">
+                <div className="p-4 bg-gray-50 rounded-xl border border-gray-100">
+                  <div className="flex items-center gap-2 mb-2">
+                    <ShieldCheck className="h-4 w-4 text-green-600" />
+                    <p className="text-[10px] font-bold text-gray-700 uppercase tracking-wider">Compra 100% Segura</p>
+                  </div>
+                  <p className="text-[11px] text-muted-foreground leading-relaxed">
+                    Seus dados estão protegidos com criptografia de ponta a ponta.
+                  </p>
+                </div>
+              </div>
+            </div>
+
             <div className="p-6 border-t border-gray-100 bg-gray-50/30">
               <p className="text-[10px] text-center text-muted-foreground font-medium uppercase tracking-widest">
                 Tendência Cosméticos © 2026
